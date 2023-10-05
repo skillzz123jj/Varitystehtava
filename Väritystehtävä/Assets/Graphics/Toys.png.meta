@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Toys_teddybelly
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 180
+        width: 301
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb376d28d02a874ea90aec63374b906
+      internalID: 238372388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_teddy
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 9
+        width: 961
+        height: 784
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49851138f98b344db329f8eb2bff6e0
+      internalID: 1071525288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_teddypawsnose
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 191
+        width: 819
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d599e3787a575a4ca5105bcc9f8f31a
+      internalID: 1316833283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_floor
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 797
+        width: 1925
+        height: 661
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb39d810d943fcb418207f00cfb90a0c
+      internalID: -2112403430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_lines
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1496
+        width: 1926
+        height: 1044
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5167aa8ffa2b0994a80b5e44001a6ac0
+      internalID: -473274436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_stars
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 1730
+        width: 1162
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6e71c8f02cffa44b3530e4b37aed5d
+      internalID: 1595722068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_wall
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 2071
+        width: 1926
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9693cd7278fc04cbf4b63e5880823a
+      internalID: -951534098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_ballstar
+      rect:
+        serializedVersion: 2
+        x: 3253
+        y: 1740
+        width: 206
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c1b5bc50a7d30409d56e961acde6a4
+      internalID: 216097697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_ball2
+      rect:
+        serializedVersion: 2
+        x: 3526
+        y: 1692
+        width: 297
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a7e908de18ff5489724726c0de8be2
+      internalID: 784028229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_ball1
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 1309
+        width: 272
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf493a18d27960439281e4a29803aee
+      internalID: -2144694887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_bunnyearstail
+      rect:
+        serializedVersion: 2
+        x: 3008
+        y: 689
+        width: 826
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2d376af33acfe4ab1e83713e2728a3
+      internalID: -368289687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_cube1
+      rect:
+        serializedVersion: 2
+        x: 2109
+        y: 970
+        width: 396
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f39f40a442e8e42aae016bc59658e0
+      internalID: 972610370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_cube2
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 1313
+        width: 406
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0094c9538d9a7a44b85cce0e669a2d77
+      internalID: 840141873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_cube3
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 1283
+        width: 387
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d72820d5939734d95fdf93b3532b6b
+      internalID: -1117746366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toys_bunny
+      rect:
+        serializedVersion: 2
+        x: 2659
+        y: 90
+        width: 783
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35975b9cab050c478b3905383a9391a
+      internalID: 572171971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +441,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Toys_ball1: -2144694887
+      Toys_ball2: 784028229
+      Toys_ballstar: 216097697
+      Toys_bunny: 572171971
+      Toys_bunnyearstail: -368289687
+      Toys_cube1: 972610370
+      Toys_cube2: 840141873
+      Toys_cube3: -1117746366
+      Toys_floor: -2112403430
+      Toys_lines: -473274436
+      Toys_stars: 1595722068
+      Toys_teddy: 1071525288
+      Toys_teddybelly: 238372388
+      Toys_teddypawsnose: 1316833283
+      Toys_wall: -951534098
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
