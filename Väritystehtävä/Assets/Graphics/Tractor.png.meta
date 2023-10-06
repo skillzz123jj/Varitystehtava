@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Tractor_lines
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1533
+        width: 1382
+        height: 952
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0975b33b5bdbfec49a3c505cbd1a7ba4
+      internalID: -1008584141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tractor_bg
+      rect:
+        serializedVersion: 2
+        x: 1586
+        y: 1461
+        width: 1925
+        height: 1083
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7b1599af01d42468b2d5b1b9f1267d
+      internalID: -1160052705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tractor_tires1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 944
+        width: 1182
+        height: 549
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3c6c9221af8b3408bff81a8566670c
+      internalID: 1249072312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tractor_tires4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 651
+        width: 673
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28d7d71c31958244b544d9305df3315
+      internalID: 1335085137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tractor_tires2
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 390
+        width: 1336
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4817c2fe6cd5246b2b019bc235c4d6
+      internalID: -84439874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tractor_tires3
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 22
+        width: 1130
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e55153498ea7a458f9a3a720690083
+      internalID: -1395280816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tractor_front
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 54
+        width: 278
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b923985bdbf7c4a954665a261325dc
+      internalID: 945481917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tractor_lights
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 91
+        width: 510
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41bca1a0b3ab504408202c90ae87cf84
+      internalID: -238537987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tractor_seat
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 707
+        width: 226
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f4109d3c1d09c46879708876e18bff
+      internalID: 1210257858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tractor_body1
+      rect:
+        serializedVersion: 2
+        x: 2652
+        y: 619
+        width: 858
+        height: 809
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953bfba6176a1144ab7cb7b17682d1bf
+      internalID: -2094502239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tractor_body2
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 1121
+        width: 202
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5551d2b9f8287b4e9f2e820befb46ab
+      internalID: 1550453915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tractor_body3
+      rect:
+        serializedVersion: 2
+        x: 2927
+        y: 99
+        width: 606
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ff6f71467768746a5e0e46d549c69b
+      internalID: -384435018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tractor_mudguard
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 223
+        width: 654
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe998154ab0517449f568be6e6eeec1
+      internalID: -2081184112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +399,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tractor_bg: -1160052705
+      Tractor_body1: -2094502239
+      Tractor_body2: 1550453915
+      Tractor_body3: -384435018
+      Tractor_front: 945481917
+      Tractor_lights: -238537987
+      Tractor_lines: -1008584141
+      Tractor_mudguard: -2081184112
+      Tractor_seat: 1210257858
+      Tractor_tires1: 1249072312
+      Tractor_tires2: -84439874
+      Tractor_tires3: -1395280816
+      Tractor_tires4: 1335085137
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

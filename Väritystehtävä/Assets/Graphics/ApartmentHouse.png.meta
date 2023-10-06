@@ -121,9 +121,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 1053
+        y: 1064
         width: 1638
-        height: 1016
+        height: 1005
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85345606a0c69a6469df737959a67550
-      internalID: 2040879673
+      spriteID: ed5fbf5b0b7e4094783e0017140dce23
+      internalID: -1558076828
       vertices: []
       indices: 
       edges: []
@@ -152,29 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d078daf8854d84942a69a25173269676
-      internalID: 1240247460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ApartmentHouse_door
-      rect:
-        serializedVersion: 2
-        x: 892
-        y: 578
-        width: 141
-        height: 243
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05648babcc7dfa248b04592cb0723e67
-      internalID: 1405090959
+      spriteID: 565d93932f8d2c041b10617d788ac450
+      internalID: -181055031
       vertices: []
       indices: 
       edges: []
@@ -194,8 +173,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fc345d77748e4f4690f76776bdad8d7
-      internalID: 578026446
+      spriteID: 53d3b3320ad440b4badc7209bb1082e7
+      internalID: -926688187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ApartmentHouse_door
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 578
+        width: 141
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed5c9cff75b9c347940accd448ee553
+      internalID: -1679573475
       vertices: []
       indices: 
       edges: []
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a62ce8a2f4c2af648bb75ee19d2e631c
-      internalID: 1316639204
+      spriteID: 49cb5373cbbc67f43ad030de3c70033a
+      internalID: 578173052
       vertices: []
       indices: 
       edges: []
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0e1d1897f3b68045872baa8b4fcf2d7
-      internalID: -552176410
+      spriteID: 5f9b2fe718659444888d58ff22639c5b
+      internalID: -1890395142
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ApartmentHouse_bg: 1240247460
-      ApartmentHouse_building: -552176410
-      ApartmentHouse_bushes: 1316639204
-      ApartmentHouse_door: 1405090959
-      ApartmentHouse_lines: 2040879673
-      ApartmentHouse_windows: 578026446
+      ApartmentHouse_bg: -181055031
+      ApartmentHouse_building: -1890395142
+      ApartmentHouse_bushes: 578173052
+      ApartmentHouse_door: -1679573475
+      ApartmentHouse_lines: -1558076828
+      ApartmentHouse_windows: -926688187
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
