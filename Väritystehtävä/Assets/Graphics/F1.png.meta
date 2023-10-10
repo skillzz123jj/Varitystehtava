@@ -115,7 +115,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: F1_0
+      rect:
+        serializedVersion: 2
+        x: 1973
+        y: 1937
+        width: 734
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593fc31c02a262045ac603b789bcb32b
+      internalID: 802325728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1_1
+      rect:
+        serializedVersion: 2
+        x: 2827
+        y: 2198
+        width: 124
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674b4487e627282468812cc7e4d03dd8
+      internalID: -330484848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1_body2
+      rect:
+        serializedVersion: 2
+        x: 3109
+        y: 1808
+        width: 735
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2b6850e926a954a861b837865fee65
+      internalID: 2103644469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1_bumpers
+      rect:
+        serializedVersion: 2
+        x: 3131
+        y: 944
+        width: 1172
+        height: 833
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5501dff22b02340b36170339ecc086
+      internalID: 655761137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1_stripes2
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 1296
+        width: 1031
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0000d8885107a74080255898dbe76a7
+      internalID: 522167691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1_stripes1
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 719
+        width: 1014
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1880edc594d81d64c996c0459e007e4c
+      internalID: 65263137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1_body1
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 159
+        width: 723
+        height: 553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc51b86ecb1b2f148b2ba5f7d2254695
+      internalID: 425051384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1_tires1
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 51
+        width: 1093
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ce4785bee25fe49a0eb9e6e8f8d894
+      internalID: -1024830615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1_tires2
+      rect:
+        serializedVersion: 2
+        x: 3863
+        y: 102
+        width: 997
+        height: 599
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f86e38e1a8f7f846a019ef643c18592
+      internalID: 1724265285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1_asphalt
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 219
+        width: 1925
+        height: 1086
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c2bf51f99964c44a436da0c78b70a8
+      internalID: 662288267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1_lines
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1344
+        width: 1718
+        height: 1009
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d3cf11b328efee40876b3d81c16733d
+      internalID: 424111989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: F1_seat
+      rect:
+        serializedVersion: 2
+        x: 2793
+        y: 1973
+        width: 194
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a30c74160195a4a98d30543656bad0
+      internalID: 1987808433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +378,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      F1_0: 802325728
+      F1_1: -330484848
+      F1_asphalt: 662288267
+      F1_body1: 425051384
+      F1_body2: 2103644469
+      F1_bumpers: 655761137
+      F1_lines: 424111989
+      F1_seat: 1987808433
+      F1_stripes1: 65263137
+      F1_stripes2: 522167691
+      F1_tires1: -1024830615
+      F1_tires2: 1724265285
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
