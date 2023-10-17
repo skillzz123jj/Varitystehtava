@@ -8,6 +8,7 @@ public class ColorPreview : MonoBehaviour
     GameObject coloringArea;
     Color originalColor;
     public Color currentColor;
+    [SerializeField] GameObject highLight;
     Dictionary<GameObject, Color> ObjectsAndTheirColorsDictionary = new Dictionary<GameObject, Color>();
 
     void Update()
@@ -25,7 +26,11 @@ public class ColorPreview : MonoBehaviour
                 coloringArea = newHit.collider.gameObject;
                 OnHoverEnter();
               
-            }          
+            }
+            if (newHit.collider.CompareTag("Color"))
+            {
+                highLight.transform.position = newHit.collider.gameObject.transform.position;
+            }
         }
         else
         {
@@ -40,7 +45,6 @@ public class ColorPreview : MonoBehaviour
         {
             if (newHit.collider != null && newHit.collider.gameObject.CompareTag("ColoringArea"))
             {
-                Debug.Log("working");
                 ColorTheArea(newHit.collider.gameObject);       
 
             }
@@ -63,6 +67,7 @@ public class ColorPreview : MonoBehaviour
     {
          SpriteRenderer sprireRenderer = area.GetComponent<SpriteRenderer>();
          sprireRenderer.color = currentColor;
+     
 
         if (ObjectsAndTheirColorsDictionary.ContainsKey(coloringArea))
         {
