@@ -7,6 +7,8 @@ public class ColorPreview : MonoBehaviour
     RaycastHit2D newHit;
     GameObject coloringArea;
     Color originalColor;
+    public Color currentColor;
+    [SerializeField] GameObject highLight;
     Dictionary<GameObject, Color> ObjectsAndTheirColorsDictionary = new Dictionary<GameObject, Color>();
 
     void Update()
@@ -18,13 +20,17 @@ public class ColorPreview : MonoBehaviour
         //This is constantly checking whether the player is hovering over a coloring area or not
         if (newHit.collider != null)
         {
-            if (newHit.collider.gameObject != coloringArea)
+            if (newHit.collider.gameObject != coloringArea && newHit.collider.CompareTag("ColoringArea"))
             {
                 OnHoverExit();
                 coloringArea = newHit.collider.gameObject;
                 OnHoverEnter();
+              
             }
-
+            if (newHit.collider.CompareTag("Color"))
+            {
+                highLight.transform.position = newHit.collider.gameObject.transform.position;
+            }
         }
         else
         {
@@ -35,8 +41,44 @@ public class ColorPreview : MonoBehaviour
                 coloringArea = null;
             }
         }
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (newHit.collider != null && newHit.collider.gameObject.CompareTag("ColoringArea"))
+            {
+                ColorTheArea(newHit.collider.gameObject);       
+
+            }
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (newHit.collider != null && newHit.collider.gameObject.CompareTag("Color"))
+            {
+                Debug.Log(newHit.collider.gameObject.name);
+                GameObject test = newHit.collider.gameObject;
+                SpriteRenderer spriteRenderer = test.GetComponent<SpriteRenderer>();
+                currentColor = spriteRenderer.color;
+
+            }
+        }
     }
 
+    void ColorTheArea(GameObject area)
+    {
+         SpriteRenderer sprireRenderer = area.GetComponent<SpriteRenderer>();
+         sprireRenderer.color = currentColor;
+     
+
+        if (ObjectsAndTheirColorsDictionary.ContainsKey(coloringArea))
+        {
+            ObjectsAndTheirColorsDictionary[coloringArea] = currentColor;
+        }
+        else
+        {
+            ObjectsAndTheirColorsDictionary.Add(area, currentColor);
+        }
+        
+    }
     //This one changes the color
     void OnHoverEnter()
     {
@@ -50,7 +92,8 @@ public class ColorPreview : MonoBehaviour
                 ObjectsAndTheirColorsDictionary.Add(coloringArea, originalColor);
             }
 
-            sprireRenderer.color = Color.magenta;
+            sprireRenderer.color = currentColor; // Color.magenta;
+           // ChooseAColor.chooseAColor.currentColor
         }
 
     }
