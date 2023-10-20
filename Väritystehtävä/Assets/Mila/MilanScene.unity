@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 164229539}
   - component: {fileID: 164229538}
-  - component: {fileID: 164229541}
   - component: {fileID: 164229540}
   m_Layer: 0
   m_Name: Musta
@@ -235,27 +234,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.97, y: 0.96}
   m_EdgeRadius: 0
---- !u!50 &164229541
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164229536}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &226749154
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +244,6 @@ GameObject:
   m_Component:
   - component: {fileID: 226749155}
   - component: {fileID: 226749158}
-  - component: {fileID: 226749157}
   - component: {fileID: 226749156}
   m_Layer: 0
   m_Name: dog_bg
@@ -283,12 +260,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226749154}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.88, y: 3.63, z: 0.156465}
+  m_LocalPosition: {x: -0.84, y: 3.63, z: 0.156465}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 409445212}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &226749156
 PolygonCollider2D:
@@ -378,27 +355,6 @@ PolygonCollider2D:
       - {x: -8.743662, y: -3.5603647}
       - {x: -8.724538, y: -3.5412407}
       - {x: -2.4135895, y: -3.5412407}
---- !u!50 &226749157
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 226749154}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &226749158
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -461,7 +417,6 @@ GameObject:
   m_Component:
   - component: {fileID: 295554786}
   - component: {fileID: 295554785}
-  - component: {fileID: 295554788}
   - component: {fileID: 295554787}
   m_Layer: 0
   m_Name: Oranssi
@@ -563,27 +518,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.97, y: 0.96}
   m_EdgeRadius: 0
---- !u!50 &295554788
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295554783}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &339709039
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,7 +528,6 @@ GameObject:
   m_Component:
   - component: {fileID: 339709042}
   - component: {fileID: 339709041}
-  - component: {fileID: 339709044}
   - component: {fileID: 339709043}
   m_Layer: 0
   m_Name: Sininen
@@ -696,27 +629,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.97, y: 0.96}
   m_EdgeRadius: 0
---- !u!50 &339709044
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 339709039}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &409445211
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,8 +657,8 @@ Transform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 226749155}
   - {fileID: 1756960975}
+  - {fileID: 226749155}
   - {fileID: 1778473764}
   - {fileID: 1331250409}
   - {fileID: 513763340}
@@ -850,7 +762,6 @@ GameObject:
   m_Component:
   - component: {fileID: 513763340}
   - component: {fileID: 513763343}
-  - component: {fileID: 513763342}
   - component: {fileID: 513763341}
   m_Layer: 0
   m_Name: dog_body
@@ -867,7 +778,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513763339}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3580587, y: 1.7542257, z: 0.156465}
+  m_LocalPosition: {x: -0.37, y: 1.7542257, z: 0.156465}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1077,27 +988,6 @@ PolygonCollider2D:
       - {x: -2.899846, y: 3.6864233}
       - {x: -2.9380944, y: 3.609927}
       - {x: -3.0719628, y: 3.609927}
---- !u!50 &513763342
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513763339}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &513763343
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1160,7 +1050,6 @@ GameObject:
   m_Component:
   - component: {fileID: 552213961}
   - component: {fileID: 552213960}
-  - component: {fileID: 552213963}
   - component: {fileID: 552213962}
   m_Layer: 0
   m_Name: Valkoinen
@@ -1262,27 +1151,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.97, y: 0.96}
   m_EdgeRadius: 0
---- !u!50 &552213963
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 552213958}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &599308264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,7 +1279,6 @@ GameObject:
   m_Component:
   - component: {fileID: 749580135}
   - component: {fileID: 749580134}
-  - component: {fileID: 749580137}
   - component: {fileID: 749580136}
   m_Layer: 0
   m_Name: Pinkki
@@ -1513,27 +1380,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.97, y: 0.96}
   m_EdgeRadius: 0
---- !u!50 &749580137
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749580132}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &758297351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1544,7 +1390,6 @@ GameObject:
   m_Component:
   - component: {fileID: 758297354}
   - component: {fileID: 758297353}
-  - component: {fileID: 758297356}
   - component: {fileID: 758297355}
   m_Layer: 0
   m_Name: Keltainen
@@ -1646,27 +1491,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.97, y: 0.96}
   m_EdgeRadius: 0
---- !u!50 &758297356
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758297351}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &813990201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1677,7 +1501,6 @@ GameObject:
   m_Component:
   - component: {fileID: 813990204}
   - component: {fileID: 813990203}
-  - component: {fileID: 813990206}
   - component: {fileID: 813990205}
   m_Layer: 0
   m_Name: Lime
@@ -1779,27 +1602,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.97, y: 0.96}
   m_EdgeRadius: 0
---- !u!50 &813990206
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813990201}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &951348865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,7 +1612,6 @@ GameObject:
   m_Component:
   - component: {fileID: 951348868}
   - component: {fileID: 951348867}
-  - component: {fileID: 951348870}
   - component: {fileID: 951348869}
   m_Layer: 0
   m_Name: Punainen
@@ -1912,27 +1713,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.97, y: 0.96}
   m_EdgeRadius: 0
---- !u!50 &951348870
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951348865}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1205382217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,7 +1723,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1205382218}
   - component: {fileID: 1205382221}
-  - component: {fileID: 1205382220}
   - component: {fileID: 1205382219}
   m_Layer: 0
   m_Name: dog_tongue
@@ -1960,7 +1739,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205382217}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.372, y: 3.814, z: 0.156465}
+  m_LocalPosition: {x: -3.357, y: 3.814, z: 0.156465}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2000,27 +1779,6 @@ PolygonCollider2D:
       - {x: 0.48063508, y: 0.029781003}
       - {x: 0.48063508, y: 0.14452553}
       - {x: 0.07902926, y: 0.43138683}
---- !u!50 &1205382220
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205382217}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &1205382221
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2151,7 +1909,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1331250409}
   - component: {fileID: 1331250412}
-  - component: {fileID: 1331250411}
   - component: {fileID: 1331250410}
   m_Layer: 0
   m_Name: dog_bowl
@@ -2168,7 +1925,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331250408}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.983, y: -0.659, z: 0.156465}
+  m_LocalPosition: {x: -5.976, y: -0.687, z: 0.156465}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2286,27 +2043,6 @@ PolygonCollider2D:
       - {x: 0.277888, y: 0.30306554}
       - {x: -0.25758645, y: 0.30306554}
       - {x: -0.27671054, y: 0.32218963}
---- !u!50 &1331250411
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331250408}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &1331250412
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2710,7 +2446,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1635600389}
   - component: {fileID: 1635600388}
-  - component: {fileID: 1635600391}
   - component: {fileID: 1635600390}
   m_Layer: 0
   m_Name: Harmaa
@@ -2812,27 +2547,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.97, y: 0.96}
   m_EdgeRadius: 0
---- !u!50 &1635600391
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635600386}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1756960974
 GameObject:
   m_ObjectHideFlags: 0
@@ -2863,7 +2577,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 409445212}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1756960978
 SpriteRenderer:
@@ -2927,7 +2641,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1778473764}
   - component: {fileID: 1778473767}
-  - component: {fileID: 1778473766}
   - component: {fileID: 1778473765}
   m_Layer: 0
   m_Name: dog_floor
@@ -3088,27 +2801,6 @@ PolygonCollider2D:
       - {x: 3.2641277, y: 0.6667882}
       - {x: 3.4936166, y: 0.9345255}
       - {x: 3.7231057, y: 1.259635}
---- !u!50 &1778473766
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778473763}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &1778473767
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3171,7 +2863,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1806392566}
   - component: {fileID: 1806392565}
-  - component: {fileID: 1806392568}
   - component: {fileID: 1806392567}
   m_Layer: 0
   m_Name: Aqua
@@ -3273,27 +2964,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.97, y: 0.96}
   m_EdgeRadius: 0
---- !u!50 &1806392568
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806392563}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1914462605
 GameObject:
   m_ObjectHideFlags: 0
@@ -3452,7 +3122,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: fc87d7de87f248b4ebf2a52d3eecdb40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
