@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 164229538}
   - component: {fileID: 164229540}
   m_Layer: 0
-  m_Name: Musta
+  m_Name: Black
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -225,7 +225,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.97, y: 0.96}
+    oldSize: {x: 0.91, y: 0.91}
     newSize: {x: 0.97, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 295554785}
   - component: {fileID: 295554787}
   m_Layer: 0
-  m_Name: Oranssi
+  m_Name: Orange
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -509,7 +509,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.97, y: 0.96}
+    oldSize: {x: 0.91, y: 0.91}
     newSize: {x: 0.97, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -530,7 +530,7 @@ GameObject:
   - component: {fileID: 339709041}
   - component: {fileID: 339709043}
   m_Layer: 0
-  m_Name: Sininen
+  m_Name: Blue
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -620,7 +620,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.97, y: 0.96}
+    oldSize: {x: 0.91, y: 0.91}
     newSize: {x: 0.97, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1052,7 +1052,7 @@ GameObject:
   - component: {fileID: 552213960}
   - component: {fileID: 552213962}
   m_Layer: 0
-  m_Name: Valkoinen
+  m_Name: White
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1142,7 +1142,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.97, y: 0.96}
+    oldSize: {x: 0.91, y: 0.91}
     newSize: {x: 0.97, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1281,7 +1281,7 @@ GameObject:
   - component: {fileID: 749580134}
   - component: {fileID: 749580136}
   m_Layer: 0
-  m_Name: Pinkki
+  m_Name: Pink
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1371,7 +1371,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.97, y: 0.96}
+    oldSize: {x: 0.91, y: 0.91}
     newSize: {x: 0.97, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1392,7 +1392,7 @@ GameObject:
   - component: {fileID: 758297353}
   - component: {fileID: 758297355}
   m_Layer: 0
-  m_Name: Keltainen
+  m_Name: Yellow
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1482,7 +1482,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.97, y: 0.96}
+    oldSize: {x: 0.91, y: 0.91}
     newSize: {x: 0.97, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1593,7 +1593,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.97, y: 0.96}
+    oldSize: {x: 0.91, y: 0.91}
     newSize: {x: 0.97, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1614,7 +1614,7 @@ GameObject:
   - component: {fileID: 951348867}
   - component: {fileID: 951348869}
   m_Layer: 0
-  m_Name: Punainen
+  m_Name: Red
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1704,7 +1704,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.97, y: 0.96}
+    oldSize: {x: 0.91, y: 0.91}
     newSize: {x: 0.97, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2405,7 +2405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1588703089}
   m_Layer: 0
-  m_Name: "V\xE4rit"
+  m_Name: Colors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2448,7 +2448,7 @@ GameObject:
   - component: {fileID: 1635600388}
   - component: {fileID: 1635600390}
   m_Layer: 0
-  m_Name: Harmaa
+  m_Name: Grey
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2538,7 +2538,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.97, y: 0.96}
+    oldSize: {x: 0.91, y: 0.91}
     newSize: {x: 0.97, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2865,7 +2865,7 @@ GameObject:
   - component: {fileID: 1806392565}
   - component: {fileID: 1806392567}
   m_Layer: 0
-  m_Name: Aqua
+  m_Name: Turquoise
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2955,7 +2955,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.97, y: 0.96}
+    oldSize: {x: 0.91, y: 0.91}
     newSize: {x: 0.97, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
