@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_0"
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 658
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd52394477fc9f48ad46179fb0fbf03
+      internalID: -585999044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_1"
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 507
+        width: 217
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec0cbae2e69430418316a60fb53ad0d
+      internalID: -1734991689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_2"
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 559
+        width: 285
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69573ee980f149c498a4443c1367e727
+      internalID: 1804949914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_3"
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 691
+        width: 55
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ce5009decba164f99c3e2dc9e5955f
+      internalID: 844006757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_4"
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 543
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef9f8572c4bd7c47bb0afab971c9fb7
+      internalID: -888292682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_5"
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 576
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7f326589dcd7d47a2642875432f6d5
+      internalID: -1843890435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_6"
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 519
+        width: 129
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c263afcaba2697941a6a8fb461905d63
+      internalID: 1569544980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_7"
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 540
+        width: 66
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25be26409072ba74db0a98bad5c36a65
+      internalID: -1104351505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_8"
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 500
+        width: 146
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9384e9bdd1bee479a08f64a9fd94c5
+      internalID: -1384568057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_9"
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 419
+        width: 173
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1995581b6976f084ea695ba19f6fb8e2
+      internalID: -730340844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_10"
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 570
+        width: 55
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051aa4aa3f71be44cb77e0f34655c187
+      internalID: 1053592475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_11"
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 412
+        width: 170
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca99ca14e9b8e04382cf9dc0ccd79c0
+      internalID: -145456232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_12"
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 456
+        width: 123
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8ffd4e99d27d741b594dd1bafb755b
+      internalID: 1781041996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_13"
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 364
+        width: 136
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa528fee983e404fac53e1e1df51dac
+      internalID: -329148041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_14"
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 446
+        width: 30
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96a93b8bc981d7408ddc9ea9ca0b63e
+      internalID: 1346317046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "V\xE4rityskirja_15"
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 434
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fae53cc6322a54e8a4e489c02bc750
+      internalID: -1638087655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +450,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "V\xE4rityskirja_0": -585999044
+      "V\xE4rityskirja_1": -1734991689
+      "V\xE4rityskirja_10": 1053592475
+      "V\xE4rityskirja_11": -145456232
+      "V\xE4rityskirja_12": 1781041996
+      "V\xE4rityskirja_13": -329148041
+      "V\xE4rityskirja_14": 1346317046
+      "V\xE4rityskirja_15": -1638087655
+      "V\xE4rityskirja_2": 1804949914
+      "V\xE4rityskirja_3": 844006757
+      "V\xE4rityskirja_4": -888292682
+      "V\xE4rityskirja_5": -1843890435
+      "V\xE4rityskirja_6": 1569544980
+      "V\xE4rityskirja_7": -1104351505
+      "V\xE4rityskirja_8": -1384568057
+      "V\xE4rityskirja_9": -730340844
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
