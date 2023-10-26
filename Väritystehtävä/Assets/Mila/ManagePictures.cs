@@ -5,8 +5,9 @@ using UnityEngine;
 public class ManagePictures : MonoBehaviour
 {
     [SerializeField] List<GameObject> pictures = new List<GameObject>();
-    [SerializeField] Vector2 imagePosition;
-  
+    [SerializeField] Coloring coloring;
+
+
     void Start()
     {
         string chosenImage = ChosenPicture.chosenPicture.currentPicture;
@@ -16,8 +17,15 @@ public class ManagePictures : MonoBehaviour
     void FindImage(string image)
     {
         GameObject chosenImage = pictures.Find(obj => obj.name == image);
-       // chosenImage.transform.position = new Vector2(imagePosition.x, imagePosition.y);
         chosenImage.SetActive(true);
+        foreach (Transform area in chosenImage.transform)
+        {
+            if (area.CompareTag("ColoringArea"))
+            {
+                coloring.coloringAreas.Add(area.gameObject);
+            }
+           
+        }
     }
  
     

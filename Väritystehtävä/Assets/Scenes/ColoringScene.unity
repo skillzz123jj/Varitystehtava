@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 52649409}
   m_Layer: 0
   m_Name: House_lines
-  m_TagString: ColoringArea
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 59409097}
   - component: {fileID: 59409096}
   m_Layer: 0
-  m_Name: orange
+  m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4855,7 +4855,7 @@ GameObject:
   - component: {fileID: 409055983}
   m_Layer: 0
   m_Name: Fisu_lines
-  m_TagString: ColoringArea
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6522,7 +6522,7 @@ GameObject:
   - component: {fileID: 462334428}
   m_Layer: 0
   m_Name: Presents_lines
-  m_TagString: ColoringArea
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7986,7 +7986,7 @@ GameObject:
   - component: {fileID: 510209725}
   m_Layer: 0
   m_Name: Airplane_lines
-  m_TagString: ColoringArea
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8048,7 +8048,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 86831889, guid: 31eaa87840493ca4f9812bdb858d3f29, type: 3}
-  m_Color: {r: 0.9150943, g: 0.15107687, b: 0.15107687, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10992,7 +10992,7 @@ MonoBehaviour:
   - {fileID: 736578304}
   - {fileID: 1008356994}
   - {fileID: 1504306355}
-  imagePosition: {x: 0, y: -20}
+  coloring: {fileID: 1017373287}
 --- !u!4 &778833835
 Transform:
   m_ObjectHideFlags: 0
@@ -11974,7 +11974,7 @@ GameObject:
   - component: {fileID: 845913483}
   m_Layer: 0
   m_Name: lohis_lines
-  m_TagString: ColoringArea
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13670,7 +13670,7 @@ GameObject:
   - component: {fileID: 1006497736}
   m_Layer: 0
   m_Name: Pear_lines
-  m_TagString: ColoringArea
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14846,8 +14846,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1017373286}
   - component: {fileID: 1017373285}
+  - component: {fileID: 1017373287}
   m_Layer: 0
-  m_Name: ColorPreview
+  m_Name: Coloring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14865,7 +14866,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9807d4fd4eb46684d901f5b180d2ed37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
+  coloringArea: {fileID: 0}
+  originalColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
+  currentColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
   highLight: {fileID: 59409095}
 --- !u!4 &1017373286
 Transform:
@@ -14882,6 +14893,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1017373287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017373284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b58505b5aa39d7849a8f13ca6193a35c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentColor: {r: 0, g: 0, b: 0, a: 0}
+  highlight: {fileID: 59409095}
+  coloringAreas: []
 --- !u!1 &1064126014
 GameObject:
   m_ObjectHideFlags: 0
@@ -17630,7 +17656,7 @@ GameObject:
   - component: {fileID: 1220303989}
   m_Layer: 0
   m_Name: cat_lines
-  m_TagString: ColoringArea
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24411,6 +24437,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1777721760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1777721762}
+  - component: {fileID: 1777721761}
+  m_Layer: 0
+  m_Name: ColoringWithKeys
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1777721761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777721760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9624724a7ede7984e816a5e75021ceb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colors:
+  - {fileID: 601601729}
+  - {fileID: 390399744}
+  - {fileID: 488336471}
+  - {fileID: 2071459779}
+  - {fileID: 753076512}
+  - {fileID: 489876696}
+  - {fileID: 796470900}
+  - {fileID: 2068152519}
+  - {fileID: 131520200}
+  - {fileID: 1146013421}
+  - {fileID: 1968514324}
+  coloringAreas: []
+  coloring: {fileID: 1017373287}
+--- !u!4 &1777721762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777721760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 280.9896, y: 2.6687565, z: 2.498323}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1793295080
 GameObject:
   m_ObjectHideFlags: 0

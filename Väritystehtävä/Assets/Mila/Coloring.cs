@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColorPreview : MonoBehaviour
+public class Coloring : MonoBehaviour
 {
     RaycastHit2D newHit;
-    GameObject coloringArea;
-    Color originalColor;
+    public GameObject coloringArea;
+    public Color originalColor;
     public Color currentColor;
-    [SerializeField] GameObject highLight;
-    Dictionary<GameObject, Color> ObjectsAndTheirColorsDictionary = new Dictionary<GameObject, Color>();
+    public GameObject highlight;
+    public List<GameObject> coloringAreas = new List<GameObject>();
+    public Dictionary<GameObject, Color> ObjectsAndTheirColorsDictionary = new Dictionary<GameObject, Color>();
+
+    public static Coloring coloring;
 
     void Update()
     {
@@ -25,11 +28,11 @@ public class ColorPreview : MonoBehaviour
                 OnHoverExit();
                 coloringArea = newHit.collider.gameObject;
                 OnHoverEnter();
-              
+
             }
             if (newHit.collider.CompareTag("Color"))
             {
-                highLight.transform.position = newHit.collider.gameObject.transform.position;
+                highlight.transform.position = newHit.collider.gameObject.transform.position;
             }
         }
         else
@@ -45,7 +48,7 @@ public class ColorPreview : MonoBehaviour
         {
             if (newHit.collider != null && newHit.collider.gameObject.CompareTag("ColoringArea"))
             {
-                ColorTheArea(newHit.collider.gameObject);       
+                ColorTheArea(newHit.collider.gameObject);
 
             }
         }
@@ -65,9 +68,9 @@ public class ColorPreview : MonoBehaviour
 
     void ColorTheArea(GameObject area)
     {
-         SpriteRenderer sprireRenderer = area.GetComponent<SpriteRenderer>();
-         sprireRenderer.color = currentColor;
-     
+        SpriteRenderer sprireRenderer = area.GetComponent<SpriteRenderer>();
+        sprireRenderer.color = currentColor;
+
 
         if (ObjectsAndTheirColorsDictionary.ContainsKey(coloringArea))
         {
@@ -77,10 +80,10 @@ public class ColorPreview : MonoBehaviour
         {
             ObjectsAndTheirColorsDictionary.Add(area, currentColor);
         }
-        
+
     }
     //This one changes the color
-    void OnHoverEnter()
+    public void OnHoverEnter()
     {
         if (coloringArea != null)
         {
@@ -92,8 +95,8 @@ public class ColorPreview : MonoBehaviour
                 ObjectsAndTheirColorsDictionary.Add(coloringArea, originalColor);
             }
 
-            sprireRenderer.color = currentColor; // Color.magenta;
-           // ChooseAColor.chooseAColor.currentColor
+            sprireRenderer.color = currentColor; 
+                                                
         }
 
     }
