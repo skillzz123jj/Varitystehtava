@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class ColoringWithKeys : MonoBehaviour
 {
-    [SerializeField] List<GameObject> colors = new List<GameObject>();
-  
-    [SerializeField] Coloring coloring;
-
     bool colorWasChosen;
-    int colorIndex;
-    int colorAreaIndex;
+
+    int colorIndex = -1;
+    int colorAreaIndex = -1;
+
     GameObject currentColor;
     GameObject currentArea;
 
     Color chosenColorValue;
+
+    [SerializeField] List<GameObject> colors = new List<GameObject>();
+    [SerializeField] Coloring coloring;
 
     // Update is called once per frame
     void Update()
@@ -37,6 +38,7 @@ public class ColoringWithKeys : MonoBehaviour
                     SpriteRenderer spriteRenderer = currentColor.GetComponent<SpriteRenderer>();
                     chosenColorValue = spriteRenderer.color;
                     coloring.currentColor = chosenColorValue;
+                    ChangeColoringArea();
                 }
             }
         }
@@ -46,10 +48,21 @@ public class ColoringWithKeys : MonoBehaviour
             {
                 ChangeColoringArea();
             }
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                if (currentArea != null)
+                {   
+                    coloring.ColorTheArea(currentArea);
+                    colorWasChosen = false;
+                    SpriteRenderer spriteRenderer = colors[0].GetComponent<SpriteRenderer>();
+                    coloring.currentColor = spriteRenderer.color;
+                    colorIndex = -1;
+                    colorAreaIndex = -1;
+                    ChangeColor();
 
+                }             
+            }
         }
-
-      
     }
 
     public void ChangeColor()
@@ -66,6 +79,7 @@ public class ColoringWithKeys : MonoBehaviour
         coloring.highlight.transform.position = currentColor.transform.position;
         
     }
+
     public void ChangeColoringArea()
     {
         if (coloring.coloringAreas.Count == 0)
@@ -91,8 +105,8 @@ public class ColoringWithKeys : MonoBehaviour
             }
 
             sprireRenderer.color = coloring.currentColor;
-
     }
+
     public void ResetColor(GameObject currentArea, SpriteRenderer spriteRenderer)
     {
         if (currentArea != null)

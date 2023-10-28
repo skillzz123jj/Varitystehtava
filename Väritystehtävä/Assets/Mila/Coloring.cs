@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Coloring : MonoBehaviour
 {
-    RaycastHit2D newHit;
+    RaycastHit2D Hit;
+
     public GameObject coloringArea;
+    public GameObject highlight;
+
     public Color originalColor;
     public Color currentColor;
-    public GameObject highlight;
+   
     public List<GameObject> coloringAreas = new List<GameObject>();
     public Dictionary<GameObject, Color> ObjectsAndTheirColorsDictionary = new Dictionary<GameObject, Color>();
 
@@ -18,21 +21,21 @@ public class Coloring : MonoBehaviour
     {
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        newHit = Physics2D.Raycast(mousePosition, Vector2.zero);
+        Hit = Physics2D.Raycast(mousePosition, Vector2.zero);
 
         //This is constantly checking whether the player is hovering over a coloring area or not
-        if (newHit.collider != null)
+        if (Hit.collider != null)
         {
-            if (newHit.collider.gameObject != coloringArea && newHit.collider.CompareTag("ColoringArea"))
+            if (Hit.collider.gameObject != coloringArea && Hit.collider.CompareTag("ColoringArea"))
             {
                 OnHoverExit();
-                coloringArea = newHit.collider.gameObject;
+                coloringArea = Hit.collider.gameObject;
                 OnHoverEnter();
 
             }
-            if (newHit.collider.CompareTag("Color"))
+            if (Hit.collider.CompareTag("Color"))
             {
-                highlight.transform.position = newHit.collider.gameObject.transform.position;
+                highlight.transform.position = Hit.collider.gameObject.transform.position;
             }
         }
         else
@@ -46,40 +49,40 @@ public class Coloring : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0))
         {
-            if (newHit.collider != null && newHit.collider.gameObject.CompareTag("ColoringArea"))
+            if (Hit.collider != null && Hit.collider.gameObject.CompareTag("ColoringArea"))
             {
-                ColorTheArea(newHit.collider.gameObject);
+                ColorTheArea(Hit.collider.gameObject);
 
             }
         }
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (newHit.collider != null && newHit.collider.gameObject.CompareTag("Color"))
+            if (Hit.collider != null && Hit.collider.gameObject.CompareTag("Color"))
             {
-                Debug.Log(newHit.collider.gameObject.name);
-                GameObject test = newHit.collider.gameObject;
-                SpriteRenderer spriteRenderer = test.GetComponent<SpriteRenderer>();
+                Debug.Log(Hit.collider.gameObject.name);
+                GameObject color = Hit.collider.gameObject;
+                SpriteRenderer spriteRenderer = color.GetComponent<SpriteRenderer>();
                 currentColor = spriteRenderer.color;
 
             }
         }
     }
 
-    void ColorTheArea(GameObject area)
+    public void ColorTheArea(GameObject area)
     {
         SpriteRenderer sprireRenderer = area.GetComponent<SpriteRenderer>();
         sprireRenderer.color = currentColor;
 
-
-        if (ObjectsAndTheirColorsDictionary.ContainsKey(coloringArea))
+        if (ObjectsAndTheirColorsDictionary.ContainsKey(area))
         {
-            ObjectsAndTheirColorsDictionary[coloringArea] = currentColor;
+            ObjectsAndTheirColorsDictionary[area] = currentColor;
         }
         else
         {
             ObjectsAndTheirColorsDictionary.Add(area, currentColor);
         }
+        sprireRenderer.color = currentColor;
 
     }
     //This one changes the color
