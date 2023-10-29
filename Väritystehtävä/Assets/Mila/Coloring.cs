@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Coloring : MonoBehaviour
@@ -11,7 +12,7 @@ public class Coloring : MonoBehaviour
 
     public Color originalColor;
     public Color currentColor;
-   
+
     public List<GameObject> coloringAreas = new List<GameObject>();
     public Dictionary<GameObject, Color> ObjectsAndTheirColorsDictionary = new Dictionary<GameObject, Color>();
 
@@ -98,8 +99,8 @@ public class Coloring : MonoBehaviour
                 ObjectsAndTheirColorsDictionary.Add(coloringArea, originalColor);
             }
 
-            sprireRenderer.color = currentColor; 
-                                                
+            sprireRenderer.color = currentColor;
+
         }
 
     }
@@ -122,5 +123,10 @@ public class Coloring : MonoBehaviour
             }
 
         }
+    }
+    public void NewPicture(int scene)
+    {
+       
+        SceneManager.LoadScene(scene);
     }
 }
