@@ -21,6 +21,13 @@ public class Pictures : MonoBehaviour
           
         }
     }
+    public void test(int picture)
+    {
+        easyImages[picture].Select();
+        highlight.transform.position = easyImages[picture].transform.position;
+        pictureIndex = picture;
+
+    }
     public void Picture(GameObject image)
     {
         if (Input.GetKey(KeyCode.Space))

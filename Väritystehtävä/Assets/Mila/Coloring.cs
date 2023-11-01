@@ -9,6 +9,7 @@ public class Coloring : MonoBehaviour
 
     public GameObject coloringArea;
     public GameObject highlight;
+    public GameObject chosenColorHighlight;
 
     public Color originalColor;
     public Color currentColor;
@@ -36,7 +37,15 @@ public class Coloring : MonoBehaviour
             }
             if (Hit.collider.CompareTag("Color"))
             {
+               
                 highlight.transform.position = Hit.collider.gameObject.transform.position;
+                highlight.SetActive(true);
+              
+            }
+            else
+            {           
+                highlight.SetActive(false);
+        
             }
         }
         else
@@ -47,6 +56,7 @@ public class Coloring : MonoBehaviour
                 OnHoverExit();
                 coloringArea = null;
             }
+        
         }
         if (Input.GetMouseButtonDown(0))
         {
@@ -65,6 +75,8 @@ public class Coloring : MonoBehaviour
                 GameObject color = Hit.collider.gameObject;
                 SpriteRenderer spriteRenderer = color.GetComponent<SpriteRenderer>();
                 currentColor = spriteRenderer.color;
+                chosenColorHighlight.transform.position = Hit.collider.gameObject.transform.position;
+                highlight.SetActive(false);
 
             }
         }
@@ -121,6 +133,7 @@ public class Coloring : MonoBehaviour
             {
                 spriteRenderer.color = Color.white;
             }
+         
 
         }
     }

@@ -24,6 +24,7 @@ public class ColoringWithKeys : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                coloring.highlight.SetActive(true);
                 ChangeColor();
             }
             if (Input.GetKeyDown(KeyCode.Return))
@@ -38,6 +39,7 @@ public class ColoringWithKeys : MonoBehaviour
                     SpriteRenderer spriteRenderer = currentColor.GetComponent<SpriteRenderer>();
                     chosenColorValue = spriteRenderer.color;
                     coloring.currentColor = chosenColorValue;
+                    coloring.chosenColorHighlight.transform.position = currentColor.transform.position;
                     ChangeColoringArea();
                 }
             }
@@ -59,6 +61,7 @@ public class ColoringWithKeys : MonoBehaviour
                     colorIndex = -1;
                     colorAreaIndex = -1;
                     ChangeColor();
+                    coloring.highlight.SetActive(true);
 
                 }             
             }
