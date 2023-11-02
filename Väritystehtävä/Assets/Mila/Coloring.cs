@@ -8,6 +8,7 @@ public class Coloring : MonoBehaviour
     RaycastHit2D Hit;
 
     public GameObject coloringArea;
+    public GameObject color;
     public GameObject highlight;
     public GameObject chosenColorHighlight;
 
@@ -17,6 +18,7 @@ public class Coloring : MonoBehaviour
     public List<GameObject> coloringAreas = new List<GameObject>();
     public Dictionary<GameObject, Color> ObjectsAndTheirColorsDictionary = new Dictionary<GameObject, Color>();
 
+    [SerializeField] ColoringWithKeys coloringWithKeys;
     public static Coloring coloring;
 
     void Update()
@@ -37,15 +39,10 @@ public class Coloring : MonoBehaviour
             }
             if (Hit.collider.CompareTag("Color"))
             {
-               
-                highlight.transform.position = Hit.collider.gameObject.transform.position;
-                highlight.SetActive(true);
               
-            }
-            else
-            {           
-                highlight.SetActive(false);
-        
+                highlight.transform.position = Hit.collider.gameObject.transform.position;
+                color = Hit.collider.gameObject;
+                highlight.SetActive(true);
             }
         }
         else
@@ -56,7 +53,14 @@ public class Coloring : MonoBehaviour
                 OnHoverExit();
                 coloringArea = null;
             }
-        
+           
+            if (color != null)
+            {        
+                coloringWithKeys.colorIndex = -1;
+                highlight.SetActive(false);
+                color = null;
+            }
+
         }
         if (Input.GetMouseButtonDown(0))
         {
@@ -75,6 +79,7 @@ public class Coloring : MonoBehaviour
                 GameObject color = Hit.collider.gameObject;
                 SpriteRenderer spriteRenderer = color.GetComponent<SpriteRenderer>();
                 currentColor = spriteRenderer.color;
+                coloringWithKeys.colorAreaIndex = -1;
                 chosenColorHighlight.transform.position = Hit.collider.gameObject.transform.position;
                 highlight.SetActive(false);
 
@@ -96,6 +101,8 @@ public class Coloring : MonoBehaviour
             ObjectsAndTheirColorsDictionary.Add(area, currentColor);
         }
         sprireRenderer.color = currentColor;
+        coloringWithKeys.colorWasChosen = false;
+        coloringWithKeys.colorIndex = -1;
 
     }
     //This one changes the color

@@ -129,34 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fisu_lines
+      name: Fisu_fins
       rect:
         serializedVersion: 2
-        x: 17
-        y: 976
-        width: 1919
-        height: 881
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 49, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 198978c7555811f48b7499ae8a99cfe3
-      internalID: 2050949560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fisu_bg
-      rect:
-        serializedVersion: 2
-        x: 2157
-        y: 1082
-        width: 1926
-        height: 789
+        x: 2111
+        y: 267
+        width: 799
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,29 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a33d63f63ea89af4eb1b87168a4b7fc0
-      internalID: -1682723409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fisu_ground
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 564
-        width: 1926
-        height: 328
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63d7c641c9d69be4ba6e547f0ef8b7cd
-      internalID: -2015569219
+      spriteID: 48adab539bc8f1d4e80e1240d7085080
+      internalID: -502675322
       vertices: []
       indices: 
       edges: []
@@ -195,10 +153,10 @@ TextureImporter:
       name: Fisu_body
       rect:
         serializedVersion: 2
-        x: 2191
-        y: 341
-        width: 745
-        height: 501
+        x: 3010
+        y: 383
+        width: 743
+        height: 499
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca670f6521ea56b40bd320a1f0990aec
-      internalID: 908244257
+      spriteID: ac614ec0a048ca34bacd3a5bae05eb9f
+      internalID: 457205325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fisu_seaweed
+      name: Fisu_bg
       rect:
         serializedVersion: 2
-        x: 161
-        y: 29
-        width: 1632
-        height: 463
+        x: 1959
+        y: 1084
+        width: 1916
+        height: 787
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 101f7e0bd983c5b46aa4fb8d13661533
-      internalID: -37874481
+      spriteID: 9f2d6e96fdd2ea0409bb9fc5c1c979ac
+      internalID: -1858076762
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fisu_fins
+      name: Fisu_bottom
       rect:
         serializedVersion: 2
-        x: 3113
-        y: 286
-        width: 795
-        height: 633
+        x: 1
+        y: 1
+        width: 1932
+        height: 336
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,8 +206,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ea64c243105d104fb91d7a26846010f
-      internalID: 1121620347
+      spriteID: bd44ba925b538a943a7363a9e3d3fe70
+      internalID: 647063859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisu_weeds
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 446
+        width: 1634
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da4210a2cd88be4bbdd5cf021e9b725
+      internalID: 1514294362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisu_lines
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 988
+        width: 1910
+        height: 885
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ba26d64e700cd48baa17f956943085
+      internalID: -2008123654
       vertices: []
       indices: 
       edges: []
@@ -265,20 +265,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fisu_10: 1724193601
-      Fisu_11: -392990723
-      Fisu_12: 363137050
-      Fisu_13: -1617550780
-      Fisu_2: 1431150515
-      Fisu_6: 666012960
-      Fisu_7: 2128333639
-      Fisu_9: 1239280956
-      Fisu_bg: -1682723409
-      Fisu_body: 908244257
-      Fisu_fins: 1121620347
-      Fisu_ground: -2015569219
-      Fisu_lines: 2050949560
-      Fisu_seaweed: -37874481
+      Fisu_bg: -1858076762
+      Fisu_body: 457205325
+      Fisu_bottom: 647063859
+      Fisu_fins: -502675322
+      Fisu_lines: -2008123654
+      Fisu_weeds: 1514294362
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

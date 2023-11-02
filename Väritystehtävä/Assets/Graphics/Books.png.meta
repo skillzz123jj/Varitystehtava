@@ -120,8 +120,8 @@ TextureImporter:
       name: Books_lines
       rect:
         serializedVersion: 2
-        x: 140
-        y: 1341
+        x: 168
+        y: 1335
         width: 1626
         height: 1013
       alignment: 0
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cde226fdbc2fc45479277f820705eddc
-      internalID: 1136369612
+      spriteID: 753135df1a239a842aea8f9ca048f688
+      internalID: -1130252310
       vertices: []
       indices: 
       edges: []
@@ -141,10 +141,10 @@ TextureImporter:
       name: Books_bg
       rect:
         serializedVersion: 2
-        x: 1947
-        y: 1297
-        width: 1925
-        height: 1085
+        x: 2043
+        y: 1309
+        width: 1918
+        height: 1077
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67176e392ba122540a517df2184d4f07
-      internalID: 1545422797
+      spriteID: e4db67c755ccfab46958ff40b534b5ea
+      internalID: 1449144006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Books_A
+      name: Books_book1
       rect:
         serializedVersion: 2
-        x: 629
-        y: 864
-        width: 680
-        height: 377
+        x: 33
+        y: 454
+        width: 1356
+        height: 767
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cb3dda3010662d49b31cdac4b7fe4da
-      internalID: 1724358718
+      spriteID: 53ad095eae46fd54fb540f11b43d2c73
+      internalID: 579247339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Books_cover1
+      name: Books_book2
       rect:
         serializedVersion: 2
-        x: 1721
-        y: 186
-        width: 1351
-        height: 761
+        x: 1462
+        y: 19
+        width: 1604
+        height: 704
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d1cc2c42aac4cd469a2658f6383ab74
-      internalID: -574285822
+      spriteID: 8f66dc5946481f54f8c10a6174f429f0
+      internalID: 295748768
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
       name: Books_pages
       rect:
         serializedVersion: 2
-        x: 3135
-        y: 534
-        width: 957
-        height: 576
+        x: 3142
+        y: 265
+        width: 948
+        height: 567
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1cd0abf4487e734b86098a5eea6110f
-      internalID: -1236587319
+      spriteID: 344ff6b269122a94e85a696ee2d40137
+      internalID: -836111175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Books_cover2
+      name: Books_A
       rect:
         serializedVersion: 2
-        x: 39
-        y: 43
-        width: 1600
-        height: 699
+        x: 490
+        y: 27
+        width: 666
+        height: 374
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8186ae92ec13af842b9c67bfacb8f848
-      internalID: 2026641302
+      spriteID: eabd1f927744b224788ad4ba3106661a
+      internalID: 1999140401
       vertices: []
       indices: 
       edges: []
@@ -253,13 +253,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Books_5: -1555765725
-      Books_A: 1724358718
-      Books_bg: 1545422797
-      Books_cover1: -574285822
-      Books_cover2: 2026641302
-      Books_lines: 1136369612
-      Books_pages: -1236587319
+      Books_5: -1609093218
+      Books_A: 1999140401
+      Books_bg: 1449144006
+      Books_book1: 579247339
+      Books_book2: 295748768
+      Books_lines: -1130252310
+      Books_pages: -836111175
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

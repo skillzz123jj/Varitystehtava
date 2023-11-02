@@ -120,10 +120,10 @@ TextureImporter:
       name: Pear_lines
       rect:
         serializedVersion: 2
-        x: 31
-        y: 708
-        width: 1612
-        height: 1040
+        x: 13
+        y: 926
+        width: 1611
+        height: 1039
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,71 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ada5a3cc7828b39479d41c0e424174e5
-      internalID: -491695126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pear_plate
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 168
-        width: 1585
-        height: 329
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29a2dfacfcd1c9b45868c7020ee0e784
-      internalID: -743244812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pear_pear
-      rect:
-        serializedVersion: 2
-        x: 1680
-        y: 40
-        width: 782
-        height: 608
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ab645d9ea35a6c4288bfb615902c1ea
-      internalID: 1306550562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pear_leaf
-      rect:
-        serializedVersion: 2
-        x: 2543
-        y: 319
-        width: 436
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c1ae621a542e774ca52992224d1ee64
-      internalID: 951888755
+      spriteID: f32763cdf8e73db46a295bdf4590d0e3
+      internalID: -1995924746
       vertices: []
       indices: 
       edges: []
@@ -204,10 +141,10 @@ TextureImporter:
       name: Pear_bg
       rect:
         serializedVersion: 2
-        x: 1662
-        y: 674
-        width: 1925
-        height: 1085
+        x: 1674
+        y: 885
+        width: 1916
+        height: 1077
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +152,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc4a48e10f269064992b39c1ae8b4353
-      internalID: -1491818170
+      spriteID: fbf94d123dd323f4681a3ca242303d3e
+      internalID: 2093371274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pear_pear
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 59
+        width: 613
+        height: 786
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d73908b65ec60e46845c6b6a861800f
+      internalID: 1041823991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pear_leaf
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 500
+        width: 452
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b667480d35f44449112eb9c1deefd6
+      internalID: 2078379328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pear_plate
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 252
+        width: 1593
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29635af94b1ad8348b4d7b8c0200e650
+      internalID: 364414662
       vertices: []
       indices: 
       edges: []
@@ -232,11 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Pear_bg: -1491818170
-      Pear_leaf: 951888755
-      Pear_lines: -491695126
-      Pear_pear: 1306550562
-      Pear_plate: -743244812
+      Pear_bg: 2093371274
+      Pear_leaf: 2078379328
+      Pear_lines: -1995924746
+      Pear_pear: 1041823991
+      Pear_plate: 364414662
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

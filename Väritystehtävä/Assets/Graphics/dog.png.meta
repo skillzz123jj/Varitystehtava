@@ -120,10 +120,10 @@ TextureImporter:
       name: dog_lines
       rect:
         serializedVersion: 2
-        x: 12
-        y: 823
-        width: 1925
-        height: 897
+        x: 5
+        y: 768
+        width: 1923
+        height: 894
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,50 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5a0bcc1b8e7e9547b54f95d44719c6e
-      internalID: -1501651058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dog_bg
-      rect:
-        serializedVersion: 2
-        x: 1981
-        y: 1106
-        width: 1924
-        height: 712
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f6fc65e06f3aae4aa47447936be5738
-      internalID: 467482251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dog_floor
-      rect:
-        serializedVersion: 2
-        x: 116
-        y: 16
-        width: 1925
-        height: 383
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac5b5ee2454938e44a34519eededd0bb
-      internalID: 861483436
+      spriteID: 1c626a70cd3eb5548a94b100e6fb0bfc
+      internalID: -682169569
       vertices: []
       indices: 
       edges: []
@@ -183,10 +141,10 @@ TextureImporter:
       name: dog_body
       rect:
         serializedVersion: 2
-        x: 2287
-        y: 77
-        width: 851
-        height: 884
+        x: 2037
+        y: 777
+        width: 854
+        height: 887
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71feb82f072a32647aa1d184617b1b74
-      internalID: 1017157838
+      spriteID: b03d6fa9253632d41ac9ec941fceab33
+      internalID: 1426742857
       vertices: []
       indices: 
       edges: []
@@ -204,10 +162,10 @@ TextureImporter:
       name: dog_bowl
       rect:
         serializedVersion: 2
-        x: 196
-        y: 561
+        x: 3318
+        y: 1282
         width: 304
-        height: 146
+        height: 147
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a03b05c3d2f4b54fb47111c5cda1b57
-      internalID: -440767859
+      spriteID: 18799e221a8f8c34bb1294b31f7bcdd6
+      internalID: 1648776490
       vertices: []
       indices: 
       edges: []
@@ -225,10 +183,10 @@ TextureImporter:
       name: dog_tongue
       rect:
         serializedVersion: 2
-        x: 1217
-        y: 592
-        width: 91
-        height: 82
+        x: 3400
+        y: 1003
+        width: 99
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +194,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63a275d164672524f98268f31e2f6f95
-      internalID: -49299654
+      spriteID: ce4bb9b499662ab4ab4093655bd2acf8
+      internalID: -1986273942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog_wall
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 32
+        width: 1915
+        height: 707
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2d189b60d744c478fd8aba52352fab
+      internalID: 192749552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog_floor
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 272
+        width: 1914
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9978fece4226424e95f822e96ea74f5
+      internalID: 566906429
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dog_bg: 467482251
-      dog_body: 1017157838
-      dog_bowl: -440767859
-      dog_floor: 861483436
-      dog_lines: -1501651058
-      dog_tongue: -49299654
+      dog_body: 1426742857
+      dog_bowl: 1648776490
+      dog_floor: 566906429
+      dog_lines: -682169569
+      dog_tongue: -1986273942
+      dog_wall: 192749552
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
