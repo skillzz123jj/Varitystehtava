@@ -120,40 +120,19 @@ TextureImporter:
       name: Airplane_lines
       rect:
         serializedVersion: 2
-        x: 94
-        y: 1131
-        width: 1777
+        x: 19
+        y: 1331
+        width: 1778
         height: 864
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d86cb608cfc7ae4ca59b199443fc334
-      internalID: 86831889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Airplane_bg
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 6
-        width: 1926
-        height: 1084
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe33ec200b623604ba2575fd7b43fb60
-      internalID: 1358875547
+      spriteID: 3f6fc7ce0bd90bb468ddbb3b5c2ee49e
+      internalID: 1799812956
       vertices: []
       indices: 
       edges: []
@@ -162,19 +141,19 @@ TextureImporter:
       name: Airplane_clouds
       rect:
         serializedVersion: 2
-        x: 2022
-        y: 1534
-        width: 1766
-        height: 659
+        x: 2025
+        y: 1537
+        width: 1770
+        height: 663
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 146270f22d0a47d4cbc8141e549d9312
-      internalID: 2044154918
+      spriteID: 7d9ab31cff3e89a43a425d22f9cfd960
+      internalID: -214505756
       vertices: []
       indices: 
       edges: []
@@ -183,19 +162,19 @@ TextureImporter:
       name: Airplane_body1
       rect:
         serializedVersion: 2
-        x: 1994
-        y: 684
-        width: 1566
-        height: 849
+        x: 2046
+        y: 680
+        width: 1567
+        height: 851
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4313a28ce46b1504e83b7eba102b9153
-      internalID: 980896637
+      spriteID: fab01a908c0e4074a82d057c6de58d99
+      internalID: 1513932343
       vertices: []
       indices: 
       edges: []
@@ -204,10 +183,31 @@ TextureImporter:
       name: Airplane_body2
       rect:
         serializedVersion: 2
-        x: 1966
-        y: 14
-        width: 1473
-        height: 647
+        x: 1951
+        y: 0
+        width: 1511
+        height: 656
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21092681c06f4ca41a46901379b0592e
+      internalID: 975697876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Airplane_bg
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 12
+        width: 1917
+        height: 1076
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f0befbe4e24ea74280d3564019dbca9
-      internalID: -625411253
+      spriteID: 1f05f050b6a2b66478916aed313b7021
+      internalID: 1986455062
       vertices: []
       indices: 
       edges: []
@@ -232,11 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Airplane_bg: 1358875547
-      Airplane_body1: 980896637
-      Airplane_body2: -625411253
-      Airplane_clouds: 2044154918
-      Airplane_lines: 86831889
+      Airplane_bg: 1986455062
+      Airplane_body1: 1513932343
+      Airplane_body2: 975697876
+      Airplane_clouds: -214505756
+      Airplane_lines: 1799812956
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
