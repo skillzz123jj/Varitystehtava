@@ -19,6 +19,7 @@ public class ChosenPicture : MonoBehaviour
 
             Destroy(gameObject);
         }
+
+
     }
-   
 }

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ColoringWithKeys : MonoBehaviour
 {
-    bool colorWasChosen;
+    public bool colorWasChosen;
 
-    int colorIndex = -1;
-    int colorAreaIndex = -1;
+    public int colorIndex = -1;
+    public int colorAreaIndex = -1;
 
     GameObject currentColor;
     GameObject currentArea;
@@ -17,13 +17,16 @@ public class ColoringWithKeys : MonoBehaviour
     [SerializeField] List<GameObject> colors = new List<GameObject>();
     [SerializeField] Coloring coloring;
 
-    // Update is called once per frame
     void Update()
     {
         if (!colorWasChosen)
         {
             if (Input.GetKeyDown(KeyCode.Space))
-            {
+            {             
+                if (coloring.color != null)
+                {
+                    return;
+                }
                 coloring.highlight.SetActive(true);
                 ChangeColor();
             }
@@ -40,7 +43,8 @@ public class ColoringWithKeys : MonoBehaviour
                     chosenColorValue = spriteRenderer.color;
                     coloring.currentColor = chosenColorValue;
                     coloring.chosenColorHighlight.transform.position = currentColor.transform.position;
-                    ChangeColoringArea();
+                    coloring.highlight.SetActive(false);
+
                 }
             }
         }
@@ -55,14 +59,9 @@ public class ColoringWithKeys : MonoBehaviour
                 if (currentArea != null)
                 {   
                     coloring.ColorTheArea(currentArea);
-                    colorWasChosen = false;
-                    SpriteRenderer spriteRenderer = colors[0].GetComponent<SpriteRenderer>();
-                    coloring.currentColor = spriteRenderer.color;
+                    colorWasChosen = false;            
                     colorIndex = -1;
-                    colorAreaIndex = -1;
-                    ChangeColor();
-                    coloring.highlight.SetActive(true);
-
+                    colorAreaIndex = -1;                           
                 }             
             }
         }
