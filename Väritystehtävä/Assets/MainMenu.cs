@@ -20,4 +20,17 @@ public class MainMenu : MonoBehaviour
         Debug.Log("QUIT");
         Application.Quit();
     }
+
+    public void Easy()
+    {
+        ChosenPicture.chosenPicture.easy = true;
+        ChosenPicture.chosenPicture.hard = false;
+    }
+
+    public void Hard()
+    {
+        ChosenPicture.chosenPicture.easy = false;
+        ChosenPicture.chosenPicture.hard = true;
+
+    }
 }

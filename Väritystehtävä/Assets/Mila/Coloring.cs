@@ -12,6 +12,9 @@ public class Coloring : MonoBehaviour
     public GameObject highlight;
     public GameObject chosenColorHighlight;
 
+    [SerializeField] GameObject smallerHighLight;
+    [SerializeField] GameObject smallerChosenColor;
+
     public Color originalColor;
     public Color currentColor;
 
@@ -21,6 +24,15 @@ public class Coloring : MonoBehaviour
     [SerializeField] ColoringWithKeys coloringWithKeys;
     public static Coloring coloring;
 
+
+    private void Start()
+    {    
+        if (ChosenPicture.chosenPicture.hard)
+        {
+            highlight = smallerHighLight;
+            chosenColorHighlight = smallerChosenColor;
+        }
+    }
     void Update()
     {
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);

@@ -5,6 +5,9 @@ using UnityEngine;
 public class ChosenPicture : MonoBehaviour
 {
     public string currentPicture;
+    public bool easy;
+    public bool hard;
+
     public static ChosenPicture chosenPicture;
 
     void Start()
@@ -19,7 +22,5 @@ public class ChosenPicture : MonoBehaviour
 
             Destroy(gameObject);
         }
-
-
     }
 }
