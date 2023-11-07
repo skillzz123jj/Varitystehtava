@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,8 +11,10 @@ public class Pictures : MonoBehaviour
     [SerializeField] GameObject hardHighlight;
     [SerializeField] GameObject easyImages;
     [SerializeField] GameObject hardImages;
-    [SerializeField] Button[] buttons;
- 
+    //[SerializeField] Button[] buttons;
+
+    List<Button> buttons = new List<Button>();
+
     int pictureIndex = 0;
 
     private void Start()
@@ -39,7 +42,7 @@ public class Pictures : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {            
-            pictureIndex = (pictureIndex + 1) % buttons.Length;
+            pictureIndex = (pictureIndex + 1) % buttons.Count;
 
             buttons[pictureIndex].Select();
             highlight.transform.position = buttons[pictureIndex].transform.position;
@@ -49,14 +52,6 @@ public class Pictures : MonoBehaviour
     public void HoverOnImage(int picture)
     {
         buttons[picture].Select();
-        //if (ChosenPicture.chosenPicture.easy)
-        //{
-        //    easyHighlight.transform.position = buttons[picture].transform.position;
-        //}
-        //else if (ChosenPicture.chosenPicture.hard)
-        //{
-        //    hardHighlight.transform.position = buttons[picture].transform.position;
-        //}
         highlight.transform.position = buttons[picture].transform.position;
         pictureIndex = picture;
 
@@ -78,6 +73,21 @@ public class Pictures : MonoBehaviour
         SceneManager.LoadScene(scene);
 
     }
+    //void FindAndAddButtons(Transform parentTransform)
+    //{
+    //    // Iterate through all immediate children of the parentTransform
+    //    foreach (Transform childTransform in parentTransform)
+    //    {
+    //        // Attempt to get a Button component from the child
+    //        Button button = childTransform.GetComponent<Button>();
+
+    //        if (button != null)
+    //        {
+    //            // Add the button to the array
+    //            ArrayUtility.Add(ref buttons, button);
+    //        }      
+    //    }
+    //}
     void FindAndAddButtons(Transform parentTransform)
     {
         // Iterate through all immediate children of the parentTransform
@@ -88,22 +98,17 @@ public class Pictures : MonoBehaviour
 
             if (button != null)
             {
-                // Add the button to the array
-                ArrayUtility.Add(ref buttons, button);
-            }      
+                // Add the button to the List<Button>
+                buttons.Add(button);
+            }
         }
+
+        //// Convert the List<Button> to an array if necessary
+        //buttons = buttonList.ToArray();
     }
-
-    void ChooseAHighlight()
+    public void NewPicture(int scene)
     {
-        if (ChosenPicture.chosenPicture.easy)
-        {
-            
-        }
-        else if (ChosenPicture.chosenPicture.hard)
-        {      
 
-        }
-
+        SceneManager.LoadScene(scene);
     }
 }

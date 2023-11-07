@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class ColoringWithKeys : MonoBehaviour
@@ -15,8 +16,23 @@ public class ColoringWithKeys : MonoBehaviour
     Color chosenColorValue;
 
     [SerializeField] List<GameObject> colors = new List<GameObject>();
+    [SerializeField] List<GameObject> colors_12 = new List<GameObject>();
+    [SerializeField] List<GameObject> colors_36 = new List<GameObject>();
     [SerializeField] Coloring coloring;
 
+    private void Start()
+    {
+
+        if (ChosenPicture.chosenPicture.easy)
+        {
+            colors.AddRange(colors_12);
+
+        }
+        else if (ChosenPicture.chosenPicture.hard)
+        { 
+            colors.AddRange(colors_36);
+        }
+    }
     void Update()
     {
         if (!colorWasChosen)
