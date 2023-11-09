@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6587e7ee801c03b4e99863a367d086e1
+guid: 207a7676d94cef04396d3356e6487a5e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,143 +113,236 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fisu_fins
+      name: Fish_0
       rect:
         serializedVersion: 2
-        x: 2111
-        y: 267
-        width: 799
-        height: 639
+        x: 3
+        y: 1586
+        width: 1926
+        height: 973
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48adab539bc8f1d4e80e1240d7085080
-      internalID: -502675322
+      spriteID: 13a6ec4b2d2ab0a4cba49570a95a9cf1
+      internalID: -834845239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fisu_body
+      name: Fish_body
       rect:
         serializedVersion: 2
-        x: 3010
-        y: 383
+        x: 1973
+        y: 1967
         width: 743
         height: 499
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac614ec0a048ca34bacd3a5bae05eb9f
-      internalID: 457205325
+      spriteID: 4b4940d4ad01d694b938cf2461aae9cc
+      internalID: 1412926159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fisu_bg
+      name: Fish_fins
       rect:
         serializedVersion: 2
-        x: 1959
-        y: 1084
-        width: 1916
-        height: 787
+        x: 2007
+        y: 1227
+        width: 796
+        height: 638
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f2d6e96fdd2ea0409bb9fc5c1c979ac
-      internalID: -1858076762
+      spriteID: ca94cb5f33bd77641a8721629581e1e9
+      internalID: 680629411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fisu_bottom
+      name: Fish_clam
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 1932
-        height: 336
+        x: 2076
+        y: 931
+        width: 227
+        height: 104
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd44ba925b538a943a7363a9e3d3fe70
-      internalID: 647063859
+      spriteID: e8210a5af535f47499aa045027490ee8
+      internalID: -1049776466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fisu_weeds
+      name: Fish_star
       rect:
         serializedVersion: 2
-        x: 131
-        y: 446
-        width: 1634
-        height: 464
+        x: 2435
+        y: 916
+        width: 243
+        height: 129
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1da4210a2cd88be4bbdd5cf021e9b725
-      internalID: 1514294362
+      spriteID: b8c6a3df8a9c2cb45aa9d0e3a53343cd
+      internalID: 1685909276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fisu_lines
+      name: Fish_shell
       rect:
         serializedVersion: 2
-        x: 11
-        y: 988
-        width: 1910
-        height: 885
+        x: 2306
+        y: 670
+        width: 159
+        height: 127
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73ba26d64e700cd48baa17f956943085
-      internalID: -2008123654
+      spriteID: 4f89e3f857357e74db4c055c2e43bebb
+      internalID: 1205892738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_bottom
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 425
+        width: 1927
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e58b1e481442947ab1db3015795834
+      internalID: -963721918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_bg
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 784
+        width: 1915
+        height: 785
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbd5f9415fe52e4597342635dd8bd80
+      internalID: 1204345806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_bubbles
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 59
+        width: 1457
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7c4cd96d7cf7f4ab3f21d2049a17d9
+      internalID: -1689743698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_seaweed1
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 79
+        width: 217
+        height: 468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee65d5f03b546346bbe0e92151e964a
+      internalID: -738967396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish_seaweed2
+      rect:
+        serializedVersion: 2
+        x: 2447
+        y: 109
+        width: 273
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8642dfad3f8b1c4087783c367d31641
+      internalID: 1125834356
       vertices: []
       indices: 
       edges: []
@@ -265,12 +358,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fisu_bg: -1858076762
-      Fisu_body: 457205325
-      Fisu_bottom: 647063859
-      Fisu_fins: -502675322
-      Fisu_lines: -2008123654
-      Fisu_weeds: 1514294362
+      Fish_0: -834845239
+      Fish_bg: 1204345806
+      Fish_body: 1412926159
+      Fish_bottom: -963721918
+      Fish_bubbles: -1689743698
+      Fish_clam: -1049776466
+      Fish_fins: 680629411
+      Fish_seaweed1: -738967396
+      Fish_seaweed2: 1125834356
+      Fish_shell: 1205892738
+      Fish_star: 1685909276
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
