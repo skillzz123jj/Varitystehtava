@@ -1,42 +1,69 @@
-using System;
+
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Net.Cache;
 using System.Text.RegularExpressions;
+using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class SaveImage : MonoBehaviour
 {
-    
+
     void Start()
     {
-      
+        if (ChosenPicture.chosenPicture.easy)
+        {
+            colors = easyColors;
+
+        }
+        else if (ChosenPicture.chosenPicture.hard)
+        {
+            colors = hardColors;
+
+        }
     }
 
 
     void Update()
     {
-        
+
     }
     public string[] tagsToCapture;
     public void TakeScreenshotButton()
     {
         StartCoroutine(TakeScreenshot());
+
     }
 
     IEnumerator TakeScreenshot()
     {
         //Wait for the end of the frame to ensure everything is rendered
-           yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
 
-        // Capture the screenshot
-        Texture2D screenshotTexture = ScreenCapture.CaptureScreenshotAsTexture();
+
+        //// Capture the screenshot
+        Texture2D screenshotTexture = CreateScreenshot();  //ScreenCapture.CaptureScreenshotAsTexture();
+
+
+        background.SetActive(true);
+        colors.SetActive(true);
+        highLights.SetActive(true);
+
+        if (screenshotTexture != null)
+        {
+            CropTexture(screenshotTexture);
+        }
+        else
+        {
+            Debug.LogError("Texture not assigned. Please assign a texture in the Inspector.");
+        }
 
         // Convert the texture to a PNG byte array
-        byte[] pngBytes = screenshotTexture.EncodeToPNG();
+        byte[] pngBytes = croppedTexture.EncodeToPNG();
         Destroy(screenshotTexture);
+        Destroy(croppedTexture);
 
         // Convert the byte array to a base64-encoded string
         string base64String = System.Convert.ToBase64String(pngBytes);
@@ -56,12 +83,114 @@ public class SaveImage : MonoBehaviour
         Application.ExternalEval(jsCode);
 
     }
+
+
+
+
+    [SerializeField] Camera camera;
+    [SerializeField] GameObject background;
+    [SerializeField] GameObject colors;
+    [SerializeField] GameObject easyColors;
+    [SerializeField] GameObject hardColors;
+    [SerializeField] GameObject highLights;
+    public int UpScale = 4;
+
+    public bool AlphaBackground = true;
+    public void SaveScreenshot()
+    {
+        //string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        //string filename = "SS-" + DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss") + ".png";
+        //File.WriteAllBytes(Application.dataPath + filename, CreateScreenshot().EncodeToPNG());
+
+        TakeScreenshot();
+
+
+
+        background.SetActive(true);
+        colors.SetActive(true);
+        highLights.SetActive(true);
+    }
+    Texture2D CreateScreenshot()
+    {
+        int w = camera.pixelWidth * UpScale;
+        int h = camera.pixelHeight * UpScale;
+        background.SetActive(false);
+        colors.SetActive(false);
+        highLights.SetActive(false);
+
+        RenderTexture rt = new RenderTexture(w, h, 32);
+        camera.targetTexture = rt;
+        var screenShot = new Texture2D(w, h, TextureFormat.ARGB32, false);
+        var clearFlags = camera.clearFlags;
+        if (AlphaBackground)
+        {
+            camera.clearFlags = CameraClearFlags.SolidColor;
+            camera.backgroundColor = new Color(0, 0, 0, 0);
+        }
+        camera.Render();
+        RenderTexture.active = rt;
+        screenShot.ReadPixels(new Rect(0, 0, w, h), 0, 0);
+        screenShot.Apply();
+        camera.targetTexture = null;
+        RenderTexture.active = null;
+        DestroyImmediate(rt);
+        camera.clearFlags = clearFlags;
+        return screenShot;
+    }
+
+
+
+    public Texture2D texture;  // Assign your texture in the Inspector
+
+    Texture2D croppedTexture;
+    void CropTexture(Texture2D targetTexture)
+    {
+        Color[] pixels = targetTexture.GetPixels();
+        Rect nonTransparentRect = CalculateNonTransparentBounds(targetTexture);
+
+        // Create a new texture with the non-transparent bounds
+        croppedTexture = new Texture2D((int)nonTransparentRect.width, (int)nonTransparentRect.height);
+        croppedTexture.SetPixels(targetTexture.GetPixels((int)nonTransparentRect.x, (int)nonTransparentRect.y, (int)nonTransparentRect.width, (int)nonTransparentRect.height));
+        croppedTexture.Apply();
+
+        // Optional: Replace the original texture with the cropped one
+        // targetTexture = croppedTexture;
+
+        // You can now use 'croppedTexture' for further processing or rendering
+    }
+
+    Rect CalculateNonTransparentBounds(Texture2D targetTexture)
+    {
+        Color[] pixels = targetTexture.GetPixels();
+
+        int minX = targetTexture.width;
+        int minY = targetTexture.height;
+        int maxX = 0;
+        int maxY = 0;
+
+        // Iterate through each pixel to find the bounds of non-transparent pixels
+        for (int x = 0; x < targetTexture.width; x++)
+        {
+            for (int y = 0; y < targetTexture.height; y++)
+            {
+                if (pixels[y * targetTexture.width + x].a > 0)
+                {
+                    // Found a non-transparent pixel
+                    minX = Mathf.Min(minX, x);
+                    minY = Mathf.Min(minY, y);
+                    maxX = Mathf.Max(maxX, x);
+                    maxY = Mathf.Max(maxY, y);
+                }
+            }
+        }
+
+        // Calculate the rect bounds
+        int width = maxX - minX + 1;
+        int height = maxY - minY + 1;
+
+        return new Rect(minX, minY, width, height);
+    }
 }
-
-
-
-
-
 
 
 
