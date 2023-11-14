@@ -1,4 +1,5 @@
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -16,11 +17,13 @@ public class SaveImage : MonoBehaviour
         if (ChosenPicture.chosenPicture.easy)
         {
             colors = easyColors;
+            paper = easyPaper;
 
         }
         else if (ChosenPicture.chosenPicture.hard)
         {
             colors = hardColors;
+            paper = hardPaper;
 
         }
     }
@@ -31,58 +34,175 @@ public class SaveImage : MonoBehaviour
 
     }
     public string[] tagsToCapture;
-    public void TakeScreenshotButton()
+    bool mobile;
+    public void SaveScreenshotButton()
     {
-        StartCoroutine(TakeScreenshot());
+           
+        SaveScreenshot(test);       
 
     }
+    public void CloseScreenshotSaving()
+    {
+        Destroy(test);
+        saveImageScreen.SetActive(false);
+        coloringWithKeys.enabled = true;
+        coloring.enabled = true;
 
+    }
+    [SerializeField] Coloring coloring;
+    [SerializeField] ColoringWithKeys coloringWithKeys;
+    public void TakeScreenshotButton()
+    {
+        
+        if (Input.touchCount > 0)
+        {
+            mobile = true;
+        }
+        else
+        {
+            mobile = false;
+        }
+   
+        StartCoroutine(TakeScreenshot());
+       
+
+    }
+    Texture2D test;
+    [SerializeField] GameObject saveImageScreen;
     IEnumerator TakeScreenshot()
     {
         //Wait for the end of the frame to ensure everything is rendered
         yield return new WaitForEndOfFrame();
+        // Capture the screenshot
+        Texture2D screenshotTexture = CreateScreenshot();   // ScreenCapture.CaptureScreenshotAsTexture();
 
-
-        //// Capture the screenshot
-        Texture2D screenshotTexture = CreateScreenshot();  //ScreenCapture.CaptureScreenshotAsTexture();
-
-
-        background.SetActive(true);
-        colors.SetActive(true);
-        highLights.SetActive(true);
-
-        if (screenshotTexture != null)
+        if (mobile)
         {
-            CropTexture(screenshotTexture);
+            test = screenshotTexture;
+            Destroy(screenshotTexture);
         }
         else
         {
-            Debug.LogError("Texture not assigned. Please assign a texture in the Inspector.");
+            CropTexture(screenshotTexture);
+            Destroy(screenshotTexture);
+            test = croppedTexture;
         }
 
+        coloringWithKeys.enabled = false;
+        coloring.enabled = false;
+        background.SetActive(true);
+        colors.SetActive(true);
+        highLights.SetActive(true);
+   
+        paper.SetActive(true);
+        uiButtons.SetActive(true);
+        saveImageScreen.SetActive(true);
+
         // Convert the texture to a PNG byte array
-        byte[] pngBytes = croppedTexture.EncodeToPNG();
-        Destroy(screenshotTexture);
-        Destroy(croppedTexture);
-
-        // Convert the byte array to a base64-encoded string
-        string base64String = System.Convert.ToBase64String(pngBytes);
 
 
-        string screenshotName = System.DateTime.Now.ToString("dd.MM.yyyy klo HH.mm");
-        Debug.Log($"piirrustus {screenshotName}.png");
 
-        // Call a JavaScript function to trigger download
-        string jsCode = $"var a = document.createElement('a');" +
-                            $"a.href = 'data:image/png;base64,{base64String}';" +
-                            $"a.download = 'piirrustus {screenshotName}.png';" +
-                            $"a.style.display = 'none';" +
-                            $"document.body.appendChild(a);" +
-                            $"a.click();" +
-                            $"document.body.removeChild(a);";
-        Application.ExternalEval(jsCode);
 
+        //byte[] pngBytes = screenshotTexture.EncodeToPNG();
+        //Destroy(screenshotTexture);
+        //// Convert the byte array to a base64-encoded string
+        //string base64String = System.Convert.ToBase64String(pngBytes);
+        //string screenshotName = System.DateTime.Now.ToString("dd.MM.yyyy klo HH.mm");
+        //Debug.Log($"piirrustus {screenshotName}.png");
+        //// Call a JavaScript function to trigger download
+        //string jsCode = $"var a = document.createElement('a');" +
+        //                    $"a.href = 'data:image/png;base64,{base64String}';" +
+        //                    $"a.download = 'piirrustus {screenshotName}.png';" +
+        //                    $"a.style.display = 'none';" +
+        //                    $"document.body.appendChild(a);" +
+        //                    $"a.click();" +
+        //                    $"document.body.removeChild(a);";
+        //Application.ExternalEval(jsCode);
     }
+
+    public void SaveScreenshot(Texture2D screenshotTexture)
+    {
+        //byte[] pngBytes = screenshotTexture.EncodeToPNG();
+        //Destroy(screenshotTexture);
+        //// Convert the byte array to a base64-encoded string
+        //string base64String = System.Convert.ToBase64String(pngBytes);
+        //string screenshotName = System.DateTime.Now.ToString("dd.MM.yyyy klo HH.mm");
+        //Debug.Log($"piirrustus {screenshotName}.png");
+        //// Call a JavaScript function to trigger download
+        //string jsCode = $"var a = document.createElement('a');" +
+        //                    $"a.href = 'data:image/png;base64,{base64String}';" +
+        //                    $"a.download = 'piirrustus {screenshotName}.png';" +
+        //                    $"a.style.display = 'none';" +
+        //                    $"document.body.appendChild(a);" +
+        //                    $"a.click();" +
+        //                    $"document.body.removeChild(a);";
+        //Application.ExternalEval(jsCode);
+
+        string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        string filename = "SS-" + DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss") + ".png";
+        File.WriteAllBytes(Application.dataPath + filename, test.EncodeToPNG());
+    }
+    //IEnumerator TakeScreenshot()
+    //{
+    //    //Wait for the end of the frame to ensure everything is rendered
+    //    yield return new WaitForEndOfFrame();
+
+
+    //    //// Capture the screenshot
+    //    Texture2D screenshotTexture = CreateScreenshot();  //ScreenCapture.CaptureScreenshotAsTexture();
+
+    //    Destroy(screenshotTexture);
+    //    Destroy(croppedTexture);
+
+    //    //background.SetActive(true);
+    //    //colors.SetActive(true);
+    //    //highLights.SetActive(true);
+
+    //    if (screenshotTexture != null)
+    //    {
+    //        CropTexture(screenshotTexture);
+    //    }
+    //    else
+    //    {
+    //        Debug.LogError("Texture not assigned. Please assign a texture in the Inspector.");
+    //    }
+
+    //    // Convert the texture to a PNG byte array
+    //    byte[] pngBytes = croppedTexture.EncodeToPNG();
+    //    Destroy(screenshotTexture);
+    //    Destroy(croppedTexture);
+
+    //    // Convert the byte array to a base64-encoded string
+    //    string base64String = System.Convert.ToBase64String(pngBytes);
+
+    //    //string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+    //    //string filename = "SS-" + DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss") + ".png";
+    //    //File.WriteAllBytes(Application.dataPath + filename, CreateScreenshot().EncodeToPNG());
+
+
+
+    //    background.SetActive(true);
+    //    colors.SetActive(true);
+    //    highLights.SetActive(true);
+    //    string screenshotName = System.DateTime.Now.ToString("dd.MM.yyyy klo HH.mm");
+    //    Debug.Log($"piirrustus {screenshotName}.png");
+
+    //    //// Call a JavaScript function to trigger download
+    //    string jsCode = $"var a = document.createElement('a');" +
+    //                        $"a.href = 'data:image/png;base64,{base64String}';" +
+    //                        $"a.download = 'piirrustus {screenshotName}.png';" +
+    //                        $"a.style.display = 'none';" +
+    //                        $"document.body.appendChild(a);" +
+    //                        $"a.click();" +
+    //                        $"document.body.removeChild(a);";
+    //    Application.ExternalEval(jsCode);
+
+
+    //    //background.SetActive(true);
+    //    //colors.SetActive(true);
+    //    //highLights.SetActive(true);
+
+    //}
 
 
 
@@ -90,9 +210,13 @@ public class SaveImage : MonoBehaviour
     [SerializeField] Camera camera;
     [SerializeField] GameObject background;
     [SerializeField] GameObject colors;
+    [SerializeField] GameObject paper;
+    [SerializeField] GameObject easyPaper;
+    [SerializeField] GameObject hardPaper;
     [SerializeField] GameObject easyColors;
     [SerializeField] GameObject hardColors;
     [SerializeField] GameObject highLights;
+    [SerializeField] GameObject uiButtons;
     public int UpScale = 4;
 
     public bool AlphaBackground = true;
@@ -117,6 +241,8 @@ public class SaveImage : MonoBehaviour
         background.SetActive(false);
         colors.SetActive(false);
         highLights.SetActive(false);
+        paper.SetActive(false);
+        uiButtons.SetActive(false);
 
         RenderTexture rt = new RenderTexture(w, h, 32);
         camera.targetTexture = rt;
@@ -131,6 +257,7 @@ public class SaveImage : MonoBehaviour
         RenderTexture.active = rt;
         screenShot.ReadPixels(new Rect(0, 0, w, h), 0, 0);
         screenShot.Apply();
+
         camera.targetTexture = null;
         RenderTexture.active = null;
         DestroyImmediate(rt);

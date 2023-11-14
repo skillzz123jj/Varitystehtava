@@ -1442,7 +1442,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: -1
   m_TargetDisplay: 0
@@ -2074,7 +2074,7 @@ GameObject:
   - component: {fileID: 97522413}
   - component: {fileID: 97522412}
   m_Layer: 0
-  m_Name: Ocean
+  m_Name: Gasoline
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2163,7 +2163,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0, g: 0, b: 0.3254902, a: 1}
+  m_Color: {r: 0, g: 0.32156864, b: 0.31764707, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3228,7 +3228,7 @@ GameObject:
   - component: {fileID: 172218714}
   - component: {fileID: 172218713}
   m_Layer: 5
-  m_Name: Tallenna
+  m_Name: TallennaNappi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3241,18 +3241,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172218711}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1546616840}
-  m_Father: {fileID: 1057791777}
-  m_RootOrder: 0
+  m_Father: {fileID: 905304600}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39, y: -34.6}
+  m_AnchoredPosition: {x: -94.999985, y: 208.65564}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172218713
@@ -3301,7 +3301,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 866227174}
         m_TargetAssemblyTypeName: SaveImage, Assembly-CSharp
-        m_MethodName: SaveScreenshot
+        m_MethodName: SaveScreenshotButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4699,7 +4699,7 @@ GameObject:
   - component: {fileID: 197542130}
   - component: {fileID: 197542129}
   m_Layer: 0
-  m_Name: LightBlue
+  m_Name: Blue
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4788,7 +4788,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0, g: 0, b: 0.8235295, a: 1}
+  m_Color: {r: 0, g: 0, b: 0.5019608, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6316,7 +6316,7 @@ GameObject:
   - component: {fileID: 209964687}
   - component: {fileID: 209964686}
   m_Layer: 0
-  m_Name: DarkPurple
+  m_Name: Purple
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6405,7 +6405,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.32156864, g: 0, b: 0.32156864, a: 1}
+  m_Color: {r: 0.48627454, g: 0, b: 0.48627454, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6796,7 +6796,7 @@ GameObject:
   - component: {fileID: 238082231}
   - component: {fileID: 238082230}
   m_Layer: 0
-  m_Name: Yellow
+  m_Name: DarkOrange
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6885,7 +6885,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.97647065, g: 0.97647065, b: 0, a: 1}
+  m_Color: {r: 0.9686275, g: 0.38823533, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6907,7 +6907,7 @@ GameObject:
   - component: {fileID: 243549250}
   - component: {fileID: 243549249}
   m_Layer: 0
-  m_Name: Magenta
+  m_Name: LightBlue
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6996,7 +6996,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.8235295, g: 0, b: 0.8235295, a: 1}
+  m_Color: {r: 0, g: 0, b: 0.80392164, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9198,7 +9198,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.6313726, g: 0.6313726, b: 0.6313726, a: 1}
+  m_Color: {r: 0.62352943, g: 0.62352943, b: 0.62352943, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10305,7 +10305,7 @@ GameObject:
   - component: {fileID: 369161394}
   - component: {fileID: 369161393}
   m_Layer: 5
-  m_Name: Tausta
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10318,17 +10318,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369161391}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 906981841}
-  m_RootOrder: 0
+  m_Father: {fileID: 905304600}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -89.75951, y: 172.51485}
+  m_AnchoredPosition: {x: -96.75957, y: 186.7704}
   m_SizeDelta: {x: 293.4563, y: 182.9703}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &369161393
@@ -14019,7 +14019,7 @@ GameObject:
   - component: {fileID: 481425309}
   - component: {fileID: 481425308}
   m_Layer: 0
-  m_Name: DarkGreen
+  m_Name: Yellow
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14108,7 +14108,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0, g: 0.38823533, b: 0, a: 1}
+  m_Color: {r: 0.9686275, g: 0.9686275, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16349,7 +16349,7 @@ GameObject:
   - component: {fileID: 537577122}
   - component: {fileID: 537577121}
   m_Layer: 0
-  m_Name: Wine
+  m_Name: DarkPurple
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16438,7 +16438,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.31764707, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.31764707, g: 0, b: 0.31764707, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -18804,18 +18804,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606463324}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1513266178}
-  m_Father: {fileID: 2067535753}
+  m_Father: {fileID: 906981841}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 223, y: 34.69995}
+  m_AnchoredPosition: {x: 14487, y: 600}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &606463326
@@ -19608,7 +19608,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0, g: 0, b: 0.5019608, a: 1}
+  m_Color: {r: 0, g: 0, b: 0.32156864, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22379,7 +22379,7 @@ GameObject:
   - component: {fileID: 762413514}
   - component: {fileID: 762413513}
   m_Layer: 0
-  m_Name: Turquoise
+  m_Name: Lime
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22468,7 +22468,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0, g: 0.7803922, b: 0.7803922, a: 1}
+  m_Color: {r: 0.08235294, g: 0.909804, b: 0.08235294, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22779,7 +22779,7 @@ GameObject:
   - component: {fileID: 780996030}
   - component: {fileID: 780996029}
   m_Layer: 0
-  m_Name: DarkOrange
+  m_Name: DarkGrey
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22868,7 +22868,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.9803922, g: 0.3921569, b: 0, a: 1}
+  m_Color: {r: 0.3254902, g: 0.3254902, b: 0.3254902, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24331,6 +24331,95 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &835065977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 835065978}
+  - component: {fileID: 835065980}
+  - component: {fileID: 835065979}
+  - component: {fileID: 835065981}
+  m_Layer: 5
+  m_Name: blocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &835065978
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835065977}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.30000004, y: 0.30000004, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 905304600}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -116.83, y: 174.64}
+  m_SizeDelta: {x: 7203.63, y: 4236.62}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &835065979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835065977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.29803923}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &835065980
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835065977}
+  m_CullTransparentMesh: 1
+--- !u!225 &835065981
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835065977}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &835622415
 GameObject:
   m_ObjectHideFlags: 0
@@ -25031,7 +25120,7 @@ GameObject:
   - component: {fileID: 855443157}
   - component: {fileID: 855443156}
   m_Layer: 0
-  m_Name: Gasoline
+  m_Name: DarkTurquoise
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25120,7 +25209,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0, g: 0.3254902, b: 0.3254902, a: 1}
+  m_Color: {r: 0, g: 0.58431375, b: 0.5764706, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -25161,12 +25250,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagsToCapture:
   - ColoringArea
+  coloring: {fileID: 1017373287}
+  coloringWithKeys: {fileID: 1777721761}
+  saveImageScreen: {fileID: 905304599}
   camera: {fileID: 1335513441}
   background: {fileID: 80277701}
   colors: {fileID: 0}
+  paper: {fileID: 0}
+  easyPaper: {fileID: 1959499865}
+  hardPaper: {fileID: 77001563}
   easyColors: {fileID: 1377880322}
   hardColors: {fileID: 1651432655}
   highLights: {fileID: 823448374}
+  uiButtons: {fileID: 906981840}
   UpScale: 4
   AlphaBackground: 1
   texture: {fileID: 0}
@@ -25559,7 +25655,7 @@ GameObject:
   - component: {fileID: 897262071}
   - component: {fileID: 897262070}
   m_Layer: 0
-  m_Name: Purple
+  m_Name: Magenta
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25648,7 +25744,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.48627454, g: 0, b: 0.48627454, a: 1}
+  m_Color: {r: 0.8196079, g: 0, b: 0.8117648, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -26251,6 +26347,47 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &905304599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 905304600}
+  m_Layer: 5
+  m_Name: SaveImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &905304600
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905304599}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 835065978}
+  - {fileID: 369161392}
+  - {fileID: 1057791777}
+  - {fileID: 172218712}
+  - {fileID: 1311564088}
+  m_Father: {fileID: 2067535753}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 223.00003, y: -357.51117}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &906981840
 GameObject:
   m_ObjectHideFlags: 0
@@ -26266,7 +26403,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &906981841
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26275,18 +26412,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906981840}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 235.85078}
+  m_LocalScale: {x: 0.08621254, y: 0.08621254, z: 0.08621254}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 369161392}
-  - {fileID: 1057791777}
-  m_Father: {fileID: 2067535753}
+  - {fileID: 1562627147}
+  - {fileID: 606463325}
+  m_Father: {fileID: 1653915358}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 209, y: -329}
+  m_AnchoredPosition: {x: -950.99084, y: -406.39307}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &907423261
@@ -26390,7 +26527,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.49411768, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.31764707, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -26628,7 +26765,7 @@ GameObject:
   - component: {fileID: 939879595}
   - component: {fileID: 939879594}
   m_Layer: 0
-  m_Name: LightBrown
+  m_Name: DarkerGrey
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26717,7 +26854,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.77647066, g: 0.38823533, b: 0, a: 1}
+  m_Color: {r: 0.24705884, g: 0.24705884, b: 0.24705884, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -27213,7 +27350,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.47450984, g: 0.47450984, b: 0.47450984, a: 1}
+  m_Color: {r: 0.42352945, g: 0.42352945, b: 0.42352945, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -29388,7 +29525,7 @@ GameObject:
   - component: {fileID: 1014947573}
   - component: {fileID: 1014947572}
   m_Layer: 0
-  m_Name: LightGreen
+  m_Name: Orange
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29477,7 +29614,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0, g: 0.7803922, b: 0, a: 1}
+  m_Color: {r: 0.9686275, g: 0.5803922, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30127,7 +30264,7 @@ GameObject:
   - component: {fileID: 1050904168}
   - component: {fileID: 1050904167}
   m_Layer: 0
-  m_Name: DarkGrey
+  m_Name: LightRed
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30216,7 +30353,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.32941177, g: 0.32941177, b: 0.32941177, a: 1}
+  m_Color: {r: 0.79215693, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -30255,15 +30392,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 172218712}
-  - {fileID: 1311564088}
-  m_Father: {fileID: 906981841}
-  m_RootOrder: 1
+  m_Children: []
+  m_Father: {fileID: 905304600}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -127, y: 229}
+  m_AnchoredPosition: {x: -133.99997, y: 243.25562}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1057791778
@@ -34855,7 +34990,7 @@ GameObject:
   - component: {fileID: 1215008716}
   - component: {fileID: 1215008715}
   m_Layer: 0
-  m_Name: LightRed
+  m_Name: Red
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34944,7 +35079,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.80392164, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.49411768, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -34966,7 +35101,7 @@ GameObject:
   - component: {fileID: 1216848843}
   - component: {fileID: 1216848842}
   m_Layer: 0
-  m_Name: Green
+  m_Name: LightOrange
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35055,7 +35190,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0, g: 0.5882353, b: 0, a: 1}
+  m_Color: {r: 0.97647065, g: 0.7803922, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -35161,7 +35296,7 @@ GameObject:
   - component: {fileID: 1266926373}
   - component: {fileID: 1266926372}
   m_Layer: 0
-  m_Name: Lime
+  m_Name: DarkGreen
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35250,7 +35385,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0, g: 0.9803922, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.38823533, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -35989,8 +36124,9 @@ GameObject:
   - component: {fileID: 1311564091}
   - component: {fileID: 1311564090}
   - component: {fileID: 1311564089}
+  - component: {fileID: 1311564092}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: SuljeNappi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36003,17 +36139,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311564087}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1057791777}
-  m_RootOrder: 1
+  m_Father: {fileID: 905304600}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38, y: -122.1}
+  m_AnchoredPosition: {x: -95.99994, y: 121.15563}
   m_SizeDelta: {x: 280, y: 114}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1311564089
@@ -36059,7 +36195,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1311564090}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 866227174}
+        m_TargetAssemblyTypeName: SaveImage, Assembly-CSharp
+        m_MethodName: CloseScreenshotSaving
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1311564090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36098,6 +36246,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311564087}
   m_CullTransparentMesh: 1
+--- !u!225 &1311564092
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311564087}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1321579841
 GameObject:
   m_ObjectHideFlags: 0
@@ -39357,7 +39517,7 @@ GameObject:
   - component: {fileID: 1478357234}
   - component: {fileID: 1478357233}
   m_Layer: 0
-  m_Name: LightTurquoise
+  m_Name: Green
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39446,7 +39606,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0, g: 0.9803922, b: 0.9803922, a: 1}
+  m_Color: {r: 0.039215688, g: 0.7058824, b: 0.039215688, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -40615,7 +40775,7 @@ GameObject:
   - component: {fileID: 1541776179}
   - component: {fileID: 1541776178}
   m_Layer: 0
-  m_Name: LightOrange
+  m_Name: LightBrown
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40704,7 +40864,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.9803922, g: 0.7843138, b: 0, a: 1}
+  m_Color: {r: 0.7725491, g: 0.38823533, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -41516,18 +41676,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562627146}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 20, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1681024810}
-  m_Father: {fileID: 2067535753}
+  m_Father: {fileID: 906981841}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -186, y: 34.69995}
+  m_AnchoredPosition: {x: 6987.4995, y: 599.99994}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1562627148
@@ -44677,7 +44837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1651432656}
   m_Layer: 0
-  m_Name: 36Colors
+  m_Name: 27Colors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44725,6 +44885,11 @@ Transform:
   m_Father: {fileID: 1268506874}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &1653915358 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1156394265084261278, guid: e3d8ddd795701a746bf81405447fa86c, type: 3}
+  m_PrefabInstance: {fileID: 135097335}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1661251382
 GameObject:
   m_ObjectHideFlags: 0
@@ -46102,7 +46267,7 @@ GameObject:
   - component: {fileID: 1739740120}
   - component: {fileID: 1739740119}
   m_Layer: 0
-  m_Name: DarkTurquoise
+  m_Name: Turquoise
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46191,7 +46356,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0, g: 0.5882353, b: 0.5882353, a: 1}
+  m_Color: {r: 0.08627451, g: 0.8980393, b: 0.89019614, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -49970,7 +50135,7 @@ GameObject:
   - component: {fileID: 1922840288}
   - component: {fileID: 1922840287}
   m_Layer: 0
-  m_Name: Orange
+  m_Name: Brown
   m_TagString: Color
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50059,7 +50224,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5806227b26de53747900d6fa3c386686, type: 3}
-  m_Color: {r: 0.9803922, g: 0.5882353, b: 0, a: 1}
+  m_Color: {r: 0.45882356, g: 0.27058825, b: 0.078431375, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -52777,8 +52942,8 @@ Canvas:
   m_GameObject: {fileID: 2067535749}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1335513441}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -52787,7 +52952,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &2067535753
 RectTransform:
@@ -52801,9 +52966,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1562627147}
-  - {fileID: 606463325}
-  - {fileID: 906981841}
+  - {fileID: 905304600}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
