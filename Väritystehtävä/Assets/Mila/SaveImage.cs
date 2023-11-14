@@ -26,6 +26,18 @@ public class SaveImage : MonoBehaviour
             paper = hardPaper;
 
         }
+
+        if (Application.platform == RuntimePlatform.WebGLPlayer)
+        {
+            if (Application.isMobilePlatform)
+            {
+                mobile = true;
+            }
+            else
+            {
+                mobile = false;
+            }
+        }
     }
 
 
@@ -54,14 +66,14 @@ public class SaveImage : MonoBehaviour
     public void TakeScreenshotButton()
     {
         
-        if (Input.touchCount > 0)
-        {
-            mobile = true;
-        }
-        else
-        {
-            mobile = false;
-        }
+        //if (Input.touchCount > 0)
+        //{
+        //    mobile = true;
+        //}
+        //else
+        //{
+        //    mobile = false;
+        //}
    
         StartCoroutine(TakeScreenshot());
        
@@ -122,25 +134,25 @@ public class SaveImage : MonoBehaviour
 
     public void SaveScreenshot(Texture2D screenshotTexture)
     {
-        //byte[] pngBytes = screenshotTexture.EncodeToPNG();
-        //Destroy(screenshotTexture);
-        //// Convert the byte array to a base64-encoded string
-        //string base64String = System.Convert.ToBase64String(pngBytes);
-        //string screenshotName = System.DateTime.Now.ToString("dd.MM.yyyy klo HH.mm");
-        //Debug.Log($"piirrustus {screenshotName}.png");
-        //// Call a JavaScript function to trigger download
-        //string jsCode = $"var a = document.createElement('a');" +
-        //                    $"a.href = 'data:image/png;base64,{base64String}';" +
-        //                    $"a.download = 'piirrustus {screenshotName}.png';" +
-        //                    $"a.style.display = 'none';" +
-        //                    $"document.body.appendChild(a);" +
-        //                    $"a.click();" +
-        //                    $"document.body.removeChild(a);";
-        //Application.ExternalEval(jsCode);
+        byte[] pngBytes = screenshotTexture.EncodeToPNG();
+        Destroy(screenshotTexture);
+        // Convert the byte array to a base64-encoded string
+        string base64String = System.Convert.ToBase64String(pngBytes);
+        string screenshotName = System.DateTime.Now.ToString("dd.MM.yyyy klo HH.mm");
+        Debug.Log($"piirrustus {screenshotName}.png");
+        // Call a JavaScript function to trigger download
+        string jsCode = $"var a = document.createElement('a');" +
+                            $"a.href = 'data:image/png;base64,{base64String}';" +
+                            $"a.download = 'piirrustus {screenshotName}.png';" +
+                            $"a.style.display = 'none';" +
+                            $"document.body.appendChild(a);" +
+                            $"a.click();" +
+                            $"document.body.removeChild(a);";
+        Application.ExternalEval(jsCode);
 
-        string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-        string filename = "SS-" + DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss") + ".png";
-        File.WriteAllBytes(Application.dataPath + filename, test.EncodeToPNG());
+        //string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        //string filename = "SS-" + DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss") + ".png";
+        //File.WriteAllBytes(Application.dataPath + filename, test.EncodeToPNG());
     }
     //IEnumerator TakeScreenshot()
     //{
