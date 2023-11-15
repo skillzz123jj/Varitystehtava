@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 207a7676d94cef04396d3356e6487a5e
+guid: 05233b19759a677498b40a9a15053646
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fish_0
+      name: Fisu_lines
       rect:
         serializedVersion: 2
         x: 3
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13a6ec4b2d2ab0a4cba49570a95a9cf1
-      internalID: -834845239
+      spriteID: 7e3d4c3cac8873645a5c8c6a6d03e3e9
+      internalID: -563233554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fish_body
+      name: Fisu_body
       rect:
         serializedVersion: 2
         x: 1973
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b4940d4ad01d694b938cf2461aae9cc
-      internalID: 1412926159
+      spriteID: a8a983ec189e8ba40b6cb63ee3dfd065
+      internalID: -526103275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fish_fins
+      name: Fisu_fins
       rect:
         serializedVersion: 2
         x: 2007
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca94cb5f33bd77641a8721629581e1e9
-      internalID: 680629411
+      spriteID: c0e6dc39ab4d278408da5413b87ba840
+      internalID: 1199697437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fish_clam
+      name: Fisu_clam
       rect:
         serializedVersion: 2
         x: 2076
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8210a5af535f47499aa045027490ee8
-      internalID: -1049776466
+      spriteID: c72c54536830a244cb5a9c4a68a1e8d4
+      internalID: 944386656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fish_star
+      name: Fisu_star
       rect:
         serializedVersion: 2
         x: 2435
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8c6a3df8a9c2cb45aa9d0e3a53343cd
-      internalID: 1685909276
+      spriteID: 3fd32eaea2b6a1a46b1ba0d4647720e4
+      internalID: -285935899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fish_shell
+      name: Fisu_shell
       rect:
         serializedVersion: 2
         x: 2306
@@ -236,77 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f89e3f857357e74db4c055c2e43bebb
-      internalID: 1205892738
+      spriteID: 48e257fb65f713245b71d56622ef9b11
+      internalID: -1105051871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fish_bottom
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 425
-        width: 1927
-        height: 333
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8e58b1e481442947ab1db3015795834
-      internalID: -963721918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fish_bg
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 784
-        width: 1915
-        height: 785
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bbd5f9415fe52e4597342635dd8bd80
-      internalID: 1204345806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fish_bubbles
-      rect:
-        serializedVersion: 2
-        x: 133
-        y: 59
-        width: 1457
-        height: 312
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c7c4cd96d7cf7f4ab3f21d2049a17d9
-      internalID: -1689743698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fish_seaweed1
+      name: Fisu_seaweed1
       rect:
         serializedVersion: 2
         x: 2059
@@ -320,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fee65d5f03b546346bbe0e92151e964a
-      internalID: -738967396
+      spriteID: efa1f7cc240038945b3271fe9b44714e
+      internalID: -514898348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fish_seaweed2
+      name: Fisu_seaweed2
       rect:
         serializedVersion: 2
         x: 2447
@@ -341,8 +278,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8642dfad3f8b1c4087783c367d31641
-      internalID: 1125834356
+      spriteID: 57f6803a7a6e7dd41838deaa7e52e2e0
+      internalID: -1309214540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisu_bubbles
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 59
+        width: 1457
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930552a941aa3fb4a8bd211a9b80dc60
+      internalID: 1888505202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisu_bottom
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 1927
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2297584ecd9d5e4e9632832de056c55
+      internalID: 29947372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fisu_bg
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 772
+        width: 1915
+        height: 786
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921c6d722fe2a604399b5189558f04cd
+      internalID: -528423331
       vertices: []
       indices: 
       edges: []
@@ -358,17 +358,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fish_0: -834845239
-      Fish_bg: 1204345806
-      Fish_body: 1412926159
-      Fish_bottom: -963721918
-      Fish_bubbles: -1689743698
-      Fish_clam: -1049776466
-      Fish_fins: 680629411
-      Fish_seaweed1: -738967396
-      Fish_seaweed2: 1125834356
-      Fish_shell: 1205892738
-      Fish_star: 1685909276
+      Fisu_bg: -528423331
+      Fisu_body: -526103275
+      Fisu_bottom: 29947372
+      Fisu_bubbles: 1888505202
+      Fisu_clam: 944386656
+      Fisu_fins: 1199697437
+      Fisu_lines: -563233554
+      Fisu_seaweed1: -514898348
+      Fisu_seaweed2: -1309214540
+      Fisu_shell: -1105051871
+      Fisu_star: -285935899
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
