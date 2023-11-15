@@ -81,63 +81,72 @@ public class SaveImage : MonoBehaviour
     }
     Texture2D test;
     [SerializeField] GameObject saveImageScreen;
-    IEnumerator TakeScreenshot()
-    {
-        //Wait for the end of the frame to ensure everything is rendered
-        yield return new WaitForEndOfFrame();
-        // Capture the screenshot
-        Texture2D screenshotTexture = CreateScreenshot();   // ScreenCapture.CaptureScreenshotAsTexture();
+    //IEnumerator TakeScreenshot()
+    //{
+    //    //Wait for the end of the frame to ensure everything is rendered
+    //    yield return new WaitForEndOfFrame();
+    //    // Capture the screenshot
+    //    Texture2D screenshotTexture = CreateScreenshot();
+    //    test = CompressAndDownsampleTexture(screenshotTexture);// ScreenCapture.CaptureScreenshotAsTexture();
 
-        if (mobile)
-        {
-            test = screenshotTexture;
-            Destroy(screenshotTexture);
-        }
-        else
-        {
-            CropTexture(screenshotTexture);
-            Destroy(screenshotTexture);
-            test = croppedTexture;
-        }
+    //    //if (mobile)
+    //    //{
+    //    //    //test = screenshotTexture;
+    //    //    //Destroy(screenshotTexture);
+    //    //}
+    //    //else
+    //    //{
+    //    //    CropTexture(screenshotTexture);
+    //    //    Destroy(screenshotTexture);
+    //    //    test = croppedTexture;
+    //    //}
 
-        coloringWithKeys.enabled = false;
-        coloring.enabled = false;
-        background.SetActive(true);
-        colors.SetActive(true);
-        highLights.SetActive(true);
+    //    coloringWithKeys.enabled = false;
+    //    coloring.enabled = false;
+    //    background.SetActive(true);
+    //    colors.SetActive(true);
+    //    highLights.SetActive(true);
    
-        paper.SetActive(true);
-        uiButtons.SetActive(true);
-        saveImageScreen.SetActive(true);
+    //    paper.SetActive(true);
+    //    uiButtons.SetActive(true);
+    //    saveImageScreen.SetActive(true);
 
-        // Convert the texture to a PNG byte array
-
-
+    //    // Convert the texture to a PNG byte array
 
 
+
+
+    //    //byte[] pngBytes = screenshotTexture.EncodeToPNG();
+    //    //Destroy(screenshotTexture);
+    //    //// Convert the byte array to a base64-encoded string
+    //    //string base64String = System.Convert.ToBase64String(pngBytes);
+    //    //string screenshotName = System.DateTime.Now.ToString("dd.MM.yyyy klo HH.mm");
+    //    //Debug.Log($"piirrustus {screenshotName}.png");
+    //    //// Call a JavaScript function to trigger download
+    //    //string jsCode = $"var a = document.createElement('a');" +
+    //    //                    $"a.href = 'data:image/png;base64,{base64String}';" +
+    //    //                    $"a.download = 'piirrustus {screenshotName}.png';" +
+    //    //                    $"a.style.display = 'none';" +
+    //    //                    $"document.body.appendChild(a);" +
+    //    //                    $"a.click();" +
+    //    //                    $"document.body.removeChild(a);";
+    //    //Application.ExternalEval(jsCode);
+    //}
+
+    public void SaveScreenshot(Texture2D screenshotTexture)
+    {
         //byte[] pngBytes = screenshotTexture.EncodeToPNG();
         //Destroy(screenshotTexture);
         //// Convert the byte array to a base64-encoded string
         //string base64String = System.Convert.ToBase64String(pngBytes);
-        //string screenshotName = System.DateTime.Now.ToString("dd.MM.yyyy klo HH.mm");
-        //Debug.Log($"piirrustus {screenshotName}.png");
-        //// Call a JavaScript function to trigger download
-        //string jsCode = $"var a = document.createElement('a');" +
-        //                    $"a.href = 'data:image/png;base64,{base64String}';" +
-        //                    $"a.download = 'piirrustus {screenshotName}.png';" +
-        //                    $"a.style.display = 'none';" +
-        //                    $"document.body.appendChild(a);" +
-        //                    $"a.click();" +
-        //                    $"document.body.removeChild(a);";
-        //Application.ExternalEval(jsCode);
-    }
 
-    public void SaveScreenshot(Texture2D screenshotTexture)
-    {
-        byte[] pngBytes = screenshotTexture.EncodeToPNG();
-        Destroy(screenshotTexture);
+        //Compress the texture before converting to PNG
+        //byte[] compressedBytes = screenshotTexture.EncodeToJPG();
+        byte[] compressedBytes = screenshotTexture.EncodeToPNG();// Use EncodeToJPG for JPEG compression
+
         // Convert the byte array to a base64-encoded string
-        string base64String = System.Convert.ToBase64String(pngBytes);
+        string base64String = System.Convert.ToBase64String(compressedBytes);
+
         string screenshotName = System.DateTime.Now.ToString("dd.MM.yyyy klo HH.mm");
         Debug.Log($"piirrustus {screenshotName}.png");
         // Call a JavaScript function to trigger download
@@ -276,8 +285,123 @@ public class SaveImage : MonoBehaviour
         camera.clearFlags = clearFlags;
         return screenShot;
     }
+ 
+        IEnumerator TakeScreenshot()
+        {
+            yield return new WaitForEndOfFrame();
+            Texture2D screenshotTexture = CreateScreenshot();
+            test = CompressAndDownsampleTexture(screenshotTexture);
+
+            coloringWithKeys.enabled = false;
+            coloring.enabled = false;
+            background.SetActive(true);
+            colors.SetActive(true);
+            highLights.SetActive(true);
+            paper.SetActive(true);
+            uiButtons.SetActive(true);
+            saveImageScreen.SetActive(true);
+        }
+
+    //Texture2D CompressAndDownsampleTexture(Texture2D originalTexture)
+    //{
+    //    int maxSize = 2048;
+
+    //    // Downsample the texture if it exceeds the maximum size
+    //    if (originalTexture.width > maxSize || originalTexture.height > maxSize)
+    //    {
+    //        int newWidth = Mathf.Min(originalTexture.width, maxSize);
+    //        int newHeight = Mathf.Min(originalTexture.height, maxSize);
+
+    //        Texture2D downsampledTexture = new Texture2D(newWidth, newHeight);
+    //        Graphics.CopyTexture(originalTexture, downsampledTexture);
+    //        Destroy(originalTexture);
+
+    //        // Use the downsampled texture from now on
+    //        originalTexture = downsampledTexture;
+    //    }
+
+    //    // Compress the texture before converting to PNG
+    //    byte[] compressedBytes = originalTexture.EncodeToPNG();
+
+    //    // Create a new Texture2D to load the compressed bytes
+    //    Texture2D compressedTexture = new Texture2D(2, 2);
+    //    compressedTexture.LoadImage(compressedBytes);
+
+    //    return compressedTexture;
+    //}
+
+    Texture2D CompressAndDownsampleTexture(Texture2D originalTexture)
+    {
+        int maxSize = 2048;
+        //2048
+
+        // Downsample the texture if it exceeds the maximum size
+        if (originalTexture.width > maxSize || originalTexture.height > maxSize)
+        {
+            int newWidth = Mathf.Min(originalTexture.width, maxSize);
+            int newHeight = Mathf.Min(originalTexture.height, maxSize);
+
+            // Create a new downsampled texture without destroying the original one
+            Texture2D downsampledTexture = new Texture2D(newWidth, newHeight);
+            for (int x = 0; x < newWidth; x++)
+            {
+                for (int y = 0; y < newHeight; y++)
+                {
+                    downsampledTexture.SetPixel(x, y, originalTexture.GetPixelBilinear((float)x / newWidth, (float)y / newHeight));
+                }
+            }
+            downsampledTexture.Apply();
+
+            // Compress the downsampled texture before converting to PNG
+            byte[] compressedBytes = downsampledTexture.EncodeToPNG();
+            Destroy(downsampledTexture);
+
+            // Create a new Texture2D to load the compressed bytes
+            Texture2D compressedTexture = new Texture2D(2, 2);
+            compressedTexture.LoadImage(compressedBytes);
+
+            return compressedTexture;
+        }
+
+        // If no downsampling is needed, directly compress the original texture
+        byte[] compressedOriginalBytes = originalTexture.EncodeToPNG();
+        Texture2D compressedOriginalTexture = new Texture2D(2, 2);
+        compressedOriginalTexture.LoadImage(compressedOriginalBytes);
+
+        return compressedOriginalTexture;
+    }
 
 
+    // ... (rest of your code)
+
+    //Texture2D CompressAndDownsampleTexture(Texture2D originalTexture)
+    //{
+    //    // Choose a reasonable maximum size for your needs
+    //    int maxSize = 2048;
+
+    //    // Downsample the texture if it exceeds the maximum size
+    //    if (originalTexture.width > maxSize || originalTexture.height > maxSize)
+    //    {
+    //        int newWidth = Mathf.Min(originalTexture.width, maxSize);
+    //        int newHeight = Mathf.Min(originalTexture.height, maxSize);
+
+    //        Texture2D downsampledTexture = new Texture2D(newWidth, newHeight);
+    //        Graphics.CopyTexture(originalTexture, downsampledTexture);
+    //        Destroy(originalTexture);
+
+    //        // Use the downsampled texture from now on
+    //        originalTexture = downsampledTexture;
+
+    //    }
+    //    return originalTexture;
+    //    // Compress the texture before converting to PNG
+    //    //byte[] compressedBytes = originalTexture.EncodeToJPG(); // Use EncodeToJPG for JPEG compression
+
+    //    //// Convert the byte array to a base64-encoded string
+    //    //string base64String = System.Convert.ToBase64String(compressedBytes);
+
+    //    // ... (rest of your code)
+    //}
 
     public Texture2D texture;  // Assign your texture in the Inspector
 
@@ -330,6 +454,7 @@ public class SaveImage : MonoBehaviour
         return new Rect(minX, minY, width, height);
     }
 }
+
 
 
 
