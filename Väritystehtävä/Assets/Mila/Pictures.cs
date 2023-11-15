@@ -73,21 +73,7 @@ public class Pictures : MonoBehaviour
         SceneManager.LoadScene(scene);
 
     }
-    //void FindAndAddButtons(Transform parentTransform)
-    //{
-    //    // Iterate through all immediate children of the parentTransform
-    //    foreach (Transform childTransform in parentTransform)
-    //    {
-    //        // Attempt to get a Button component from the child
-    //        Button button = childTransform.GetComponent<Button>();
 
-    //        if (button != null)
-    //        {
-    //            // Add the button to the array
-    //            ArrayUtility.Add(ref buttons, button);
-    //        }      
-    //    }
-    //}
     void FindAndAddButtons(Transform parentTransform)
     {
         // Iterate through all immediate children of the parentTransform
@@ -102,9 +88,6 @@ public class Pictures : MonoBehaviour
                 buttons.Add(button);
             }
         }
-
-        //// Convert the List<Button> to an array if necessary
-        //buttons = buttonList.ToArray();
     }
     public void NewPicture(int scene)
     {

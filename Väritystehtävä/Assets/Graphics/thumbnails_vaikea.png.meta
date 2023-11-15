@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,9 +113,210 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: thumbnails_vaikea_0
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 365
+        width: 199
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba37cdfd9b80dea45b8ffe6acad1946d
+      internalID: -1814792445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thumbnails_vaikea_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 365
+        width: 200
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbbd3e6cbb34244a98f7e75b7766295
+      internalID: 1348554773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thumbnails_vaikea_2
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 365
+        width: 200
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6adcccbc22254ae4784b0d8cf0e3dbc3
+      internalID: 118361104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thumbnails_vaikea_3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 211
+        width: 199
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9758506bb3fde2f4289893802bed6292
+      internalID: 754230022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thumbnails_vaikea_4
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 211
+        width: 200
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9860c640daf78ba43bc74075909f6118
+      internalID: -133543354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thumbnails_vaikea_5
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 211
+        width: 200
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764a9dba236523b4786a679b14f017bd
+      internalID: -346234613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thumbnails_vaikea_6
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 63
+        width: 202
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db5ef6835cafd541a0936ee8b59e622
+      internalID: -1080747082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thumbnails_vaikea_7
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 63
+        width: 200
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b116141081f0f3e429aa1a57b468bd89
+      internalID: 1780335294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thumbnails_vaikea_8
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 63
+        width: 200
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4248ef75cde03c4c890339350fc366e
+      internalID: 917779487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +327,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      thumbnails_vaikea_0: -1814792445
+      thumbnails_vaikea_1: 1348554773
+      thumbnails_vaikea_2: 118361104
+      thumbnails_vaikea_3: 754230022
+      thumbnails_vaikea_4: -133543354
+      thumbnails_vaikea_5: -346234613
+      thumbnails_vaikea_6: -1080747082
+      thumbnails_vaikea_7: 1780335294
+      thumbnails_vaikea_8: 917779487
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

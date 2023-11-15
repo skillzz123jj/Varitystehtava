@@ -26,12 +26,11 @@ public class ManagePictures : MonoBehaviour
 
         }
         string chosenImage = ChosenPicture.chosenPicture.currentPicture;
-        FindImage(chosenImage);
-
-       
+        FindImage(chosenImage);   
 
     }
 
+    //Finds the chosen image's coloring areas so they can be colored with keys
     void FindImage(string image)
     {
         GameObject chosenImage = pictures.Find(obj => obj.name == image);
@@ -45,6 +44,4 @@ public class ManagePictures : MonoBehaviour
            
         }
     }
- 
-    
 }
