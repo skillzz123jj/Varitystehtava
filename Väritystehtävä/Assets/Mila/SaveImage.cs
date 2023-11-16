@@ -290,7 +290,7 @@ public class SaveImage : MonoBehaviour
         {
             yield return new WaitForEndOfFrame();
             Texture2D screenshotTexture = CreateScreenshot();
-            test = CompressAndDownsampleTexture(screenshotTexture);
+            test = screenshotTexture;   //CompressAndDownsampleTexture(screenshotTexture);
 
             coloringWithKeys.enabled = false;
             coloring.enabled = false;
