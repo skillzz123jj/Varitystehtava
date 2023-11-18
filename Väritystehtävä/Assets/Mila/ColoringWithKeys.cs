@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
 
 public class ColoringWithKeys : MonoBehaviour
 {
@@ -18,6 +20,7 @@ public class ColoringWithKeys : MonoBehaviour
     [SerializeField] List<GameObject> colors = new List<GameObject>();
     [SerializeField] List<GameObject> colors_12 = new List<GameObject>();
     [SerializeField] List<GameObject> colors_36 = new List<GameObject>();
+    [SerializeField] List<GameObject> uiButtons = new List<GameObject>();
     [SerializeField] Coloring coloring;
 
     private void Start()
@@ -26,12 +29,14 @@ public class ColoringWithKeys : MonoBehaviour
         if (ChosenPicture.chosenPicture.easy)
         {
             colors.AddRange(colors_12);
+         
 
         }
         else if (ChosenPicture.chosenPicture.hard)
         { 
             colors.AddRange(colors_36);
         }
+        colors.AddRange(uiButtons);
     }
     void Update()
     {
@@ -94,7 +99,27 @@ public class ColoringWithKeys : MonoBehaviour
 
         currentColor = colors[colorIndex];
 
-        coloring.highlight.transform.position = currentColor.transform.position;
+        if (currentColor.CompareTag("UI"))
+        {
+            coloring.highlight.SetActive(false);
+            Button button = currentColor.GetComponent<Button>();
+            button.Select();
+          
+        }
+        if (currentColor.CompareTag("Player"))
+        {
+            Button button = currentColor.GetComponent<Button>();
+            button.Select();
+            colorIndex++;
+            ChangeColor();
+        }
+        else
+        {
+
+            coloring.highlight.transform.position = currentColor.transform.position;
+            
+        }
+
         
     }
 

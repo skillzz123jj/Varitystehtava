@@ -158,7 +158,11 @@ public class Coloring : MonoBehaviour
     }
     public void NewPicture(int scene)
     {
-       
+        if (Input.GetKey(KeyCode.Space))
+        {
+            return;
+        }
+
         SceneManager.LoadScene(scene);
     }
 }

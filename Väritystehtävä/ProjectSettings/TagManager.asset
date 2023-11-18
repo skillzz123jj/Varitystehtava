@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ColoringArea
   - Color
+  - UI
   layers:
   - Default
   - TransparentFX

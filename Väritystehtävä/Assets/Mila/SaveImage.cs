@@ -7,11 +7,12 @@ using System.Net.Cache;
 using System.Text.RegularExpressions;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class SaveImage : MonoBehaviour
 {
-
+    [SerializeField] Button saveImage;
     void Start()
     {
         if (ChosenPicture.chosenPicture.easy)
@@ -49,7 +50,11 @@ public class SaveImage : MonoBehaviour
     bool mobile;
     public void SaveScreenshotButton()
     {
-           
+        if (Input.GetKey(KeyCode.Space))
+        {
+            return;
+        }
+
         SaveScreenshot(test);       
 
     }
@@ -65,7 +70,7 @@ public class SaveImage : MonoBehaviour
     [SerializeField] ColoringWithKeys coloringWithKeys;
     public void TakeScreenshotButton()
     {
-        
+
         //if (Input.touchCount > 0)
         //{
         //    mobile = true;
@@ -74,7 +79,16 @@ public class SaveImage : MonoBehaviour
         //{
         //    mobile = false;
         //}
-   
+        if (Input.GetKey(KeyCode.Space))
+        {
+            return;
+        }
+        if (Input.GetKey(KeyCode.Return))
+        {
+            saveImage.Select();
+        }
+        
+
         StartCoroutine(TakeScreenshot());
        
 
