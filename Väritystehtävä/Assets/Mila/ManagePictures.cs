@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 public class ManagePictures : MonoBehaviour
@@ -13,19 +11,19 @@ public class ManagePictures : MonoBehaviour
 
     void Start()
     {
-        if (ChosenPicture.chosenPicture.easy)
+        if (GameData.gameData.easy)
         {
             easycoloring.SetActive(true);
             hardColoring.SetActive(false);
 
         }
-        else if (ChosenPicture.chosenPicture.hard)
+        else if (GameData.gameData.hard)
         {
             easycoloring.SetActive(false);   
             hardColoring.SetActive(true);
 
         }
-        string chosenImage = ChosenPicture.chosenPicture.currentPicture;
+        string chosenImage = GameData.gameData.currentPicture;
         FindImage(chosenImage);   
 
     }

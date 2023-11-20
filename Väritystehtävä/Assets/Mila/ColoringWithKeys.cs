@@ -1,21 +1,24 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
-using static System.Net.Mime.MediaTypeNames;
+
 
 public class ColoringWithKeys : MonoBehaviour
 {
     public bool colorWasChosen;
+    public bool savingImage;
 
-    public int colorIndex = -1;
+    public int colorIndex = 0;
     public int colorAreaIndex = -1;
 
     GameObject currentColor;
     GameObject currentArea;
 
     Color chosenColorValue;
+
+    [SerializeField] public GameObject highlightKeys;
+    [SerializeField] GameObject highlightKeysEasy;
+    [SerializeField] GameObject highlightKeysHard;
 
     [SerializeField] List<GameObject> colors = new List<GameObject>();
     [SerializeField] List<GameObject> colors_12 = new List<GameObject>();
@@ -26,66 +29,67 @@ public class ColoringWithKeys : MonoBehaviour
     private void Start()
     {
 
-        if (ChosenPicture.chosenPicture.easy)
-        {
+        if (GameData.gameData.easy)
+        {     
             colors.AddRange(colors_12);
-         
-
+            highlightKeys = highlightKeysEasy;
         }
-        else if (ChosenPicture.chosenPicture.hard)
+        else if (GameData.gameData.hard)
         { 
+          
             colors.AddRange(colors_36);
+            highlightKeys = highlightKeysHard;
         }
         colors.AddRange(uiButtons);
     }
     void Update()
     {
-        if (!colorWasChosen)
+        if (!savingImage)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {             
-                if (coloring.color != null)
-                {
-                    return;
-                }
-                coloring.highlight.SetActive(true);
-                ChangeColor();
-            }
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (!colorWasChosen)
             {
-                if (coloring.currentColor == null)
-                {
-                    colorWasChosen = false;
+                if (Input.GetKeyDown(KeyCode.Space))
+                {                  
+                    highlightKeys.SetActive(true);
+                    ChangeColor();
                 }
-                else
+                if (Input.GetKeyDown(KeyCode.Return))
                 {
-                    colorWasChosen = true;
-                    SpriteRenderer spriteRenderer = currentColor.GetComponent<SpriteRenderer>();
-                    chosenColorValue = spriteRenderer.color;
-                    coloring.currentColor = chosenColorValue;
-                    coloring.chosenColorHighlight.transform.position = currentColor.transform.position;
-                    coloring.highlight.SetActive(false);
+                    if (coloring.currentColor == null)
+                    {
+                        colorWasChosen = false;
+                    }
+                    else if (currentColor.CompareTag("Color"))
+                    {
+                        colorWasChosen = true;
+                        SpriteRenderer spriteRenderer = currentColor.GetComponent<SpriteRenderer>();
+                        chosenColorValue = spriteRenderer.color;
+                        coloring.currentColor = chosenColorValue;
+                        coloring.chosenColorHighlight.transform.position = currentColor.transform.position;
+                        highlightKeys.SetActive(false);
 
+                    }
+                }
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    ChangeColoringArea();
+                }
+                if (Input.GetKeyDown(KeyCode.Return))
+                {
+                    if (currentArea != null)
+                    {
+                        coloring.ColorTheArea(currentArea);
+                        colorWasChosen = false;
+                        colorIndex = 0;
+                        colorAreaIndex = -1;
+                    }
                 }
             }
         }
-        else 
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                ChangeColoringArea();
-            }
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                if (currentArea != null)
-                {   
-                    coloring.ColorTheArea(currentArea);
-                    colorWasChosen = false;            
-                    colorIndex = -1;
-                    colorAreaIndex = -1;                           
-                }             
-            }
-        }
+      
     }
 
     public void ChangeColor()
@@ -99,28 +103,29 @@ public class ColoringWithKeys : MonoBehaviour
 
         currentColor = colors[colorIndex];
 
-        if (currentColor.CompareTag("UI"))
+        if (currentColor != null)
         {
-            coloring.highlight.SetActive(false);
-            Button button = currentColor.GetComponent<Button>();
-            button.Select();
-          
-        }
-        if (currentColor.CompareTag("Player"))
-        {
-            Button button = currentColor.GetComponent<Button>();
-            button.Select();
-            colorIndex++;
-            ChangeColor();
-        }
-        else
-        {
+            if (currentColor.CompareTag("UI"))
+            {
+                coloring.highlight.SetActive(false);
+                Button button = currentColor.GetComponent<Button>();
+                button.Select();
 
-            coloring.highlight.transform.position = currentColor.transform.position;
-            
-        }
+            }
+            if (currentColor.CompareTag("Player"))
+            {
+                Button button = currentColor.GetComponent<Button>();
+                button.Select();
+                colorIndex++;
+                ChangeColor();
+            }
+            else
+            {
 
-        
+                highlightKeys.transform.position = currentColor.transform.position;
+
+            }
+        }    
     }
 
     public void ChangeColoringArea()

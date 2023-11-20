@@ -23,14 +23,14 @@ public class MainMenu : MonoBehaviour
 
     public void Easy()
     {
-        ChosenPicture.chosenPicture.easy = true;
-        ChosenPicture.chosenPicture.hard = false;
+        GameData.gameData.easy = true;
+        GameData.gameData.hard = false;
     }
 
     public void Hard()
     {
-        ChosenPicture.chosenPicture.easy = false;
-        ChosenPicture.chosenPicture.hard = true;
+        GameData.gameData.easy = false;
+        GameData.gameData.hard = true;
 
     }
 }

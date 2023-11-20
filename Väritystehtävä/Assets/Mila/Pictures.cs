@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -19,7 +18,7 @@ public class Pictures : MonoBehaviour
 
     private void Start()
     {
-        if (ChosenPicture.chosenPicture.easy)
+        if (GameData.gameData.easy)
         {
 
             easyImages.SetActive(true);
@@ -28,7 +27,7 @@ public class Pictures : MonoBehaviour
             highlight = easyHighlight;
                
         }
-        else if (ChosenPicture.chosenPicture.hard) 
+        else if (GameData.gameData.hard) 
         { 
             
             hardImages.SetActive(true);
@@ -62,7 +61,7 @@ public class Pictures : MonoBehaviour
         {
             return;
         }
-        ChosenPicture.chosenPicture.currentPicture = image.name;
+        GameData.gameData.currentPicture = image.name;
     }
     public void ChangeScene(int scene)
     {

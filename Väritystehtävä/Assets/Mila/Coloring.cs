@@ -22,12 +22,14 @@ public class Coloring : MonoBehaviour
     public Dictionary<GameObject, Color> ObjectsAndTheirColorsDictionary = new Dictionary<GameObject, Color>();
 
     [SerializeField] ColoringWithKeys coloringWithKeys;
+    [SerializeField] SaveImage saveImage;
+
     public static Coloring coloring;
 
 
     private void Start()
     {    
-        if (ChosenPicture.chosenPicture.hard)
+        if (GameData.gameData.hard)
         {
             highlight = smallerHighLight;
             chosenColorHighlight = smallerChosenColor;
@@ -49,13 +51,19 @@ public class Coloring : MonoBehaviour
                 OnHoverEnter();
 
             }
-            if (Hit.collider.CompareTag("Color"))
+            if (Hit.collider.CompareTag("Color"))   
             {
               
                 highlight.transform.position = Hit.collider.gameObject.transform.position;
                 color = Hit.collider.gameObject;
                 highlight.SetActive(true);
             }
+            else if (coloringWithKeys.highlightKeys.transform.position == highlight.transform.position)
+            {
+             
+                highlight.SetActive(false);
+            }
+  
         }
         else
         {
@@ -68,7 +76,6 @@ public class Coloring : MonoBehaviour
            
             if (color != null)
             {        
-                coloringWithKeys.colorIndex = -1;
                 highlight.SetActive(false);
                 color = null;
             }
@@ -87,7 +94,7 @@ public class Coloring : MonoBehaviour
         {
             if (Hit.collider != null && Hit.collider.gameObject.CompareTag("Color"))
             {
-                Debug.Log(Hit.collider.gameObject.name);
+                coloringWithKeys.highlightKeys.SetActive(false);
                 GameObject color = Hit.collider.gameObject;
                 SpriteRenderer spriteRenderer = color.GetComponent<SpriteRenderer>();
                 currentColor = spriteRenderer.color;
@@ -96,6 +103,12 @@ public class Coloring : MonoBehaviour
                 highlight.SetActive(false);
 
             }
+        }
+
+        if (coloringWithKeys.highlightKeys.transform.position == highlight.transform.position)
+        {
+            
+            highlight.SetActive(false);
         }
     }
 
@@ -163,6 +176,11 @@ public class Coloring : MonoBehaviour
             return;
         }
 
+        if (saveImage.screenshot != null)
+        {
+            Destroy(saveImage.screenshot);    
+        }
+        coloringWithKeys.savingImage = false;
         SceneManager.LoadScene(scene);
     }
 }

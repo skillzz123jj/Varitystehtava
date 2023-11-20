@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChosenPicture : MonoBehaviour
+public class GameData : MonoBehaviour
 {
     public string currentPicture;
     public bool easy;
     public bool hard;
 
-    public static ChosenPicture chosenPicture;
+    public static GameData gameData;
 
     void Start()
     {
-        if (chosenPicture == null)
+        if (gameData == null)
         {
             DontDestroyOnLoad(gameObject);
-            chosenPicture = this;
+            gameData = this;
         }
         else
         {
