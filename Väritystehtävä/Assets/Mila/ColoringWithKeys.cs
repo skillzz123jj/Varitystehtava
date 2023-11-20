@@ -107,12 +107,14 @@ public class ColoringWithKeys : MonoBehaviour
         {
             if (currentColor.CompareTag("UI"))
             {
+                highlightKeys.SetActive(false);
                 coloring.highlight.SetActive(false);
+                coloring.highlight.transform.position = new Vector2(-100, 0);
                 Button button = currentColor.GetComponent<Button>();
                 button.Select();
 
             }
-            if (currentColor.CompareTag("Player"))
+            if (currentColor.CompareTag("Empty"))
             {
                 Button button = currentColor.GetComponent<Button>();
                 button.Select();

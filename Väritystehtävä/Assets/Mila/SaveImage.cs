@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 
@@ -107,6 +108,7 @@ public class SaveImage : MonoBehaviour
         coloringWithKeys.savingImage = false;
         saveImage.Select();
         ButtonStatus(true);
+       
 
     }
 
@@ -117,11 +119,11 @@ public class SaveImage : MonoBehaviour
         {
             return;
         }
-        if (Input.GetKey(KeyCode.Return))
-        {
-            save.Select();
-            coloringWithKeys.savingImage = true;
-        }
+        coloring.highlight.SetActive(false);
+        buttonIndex = 1;
+        buttons[buttonIndex].Select();
+        save.Select();
+        coloringWithKeys.savingImage = true;
         ButtonStatus(false);
     
         StartCoroutine(TakeScreenshot());      
@@ -205,6 +207,7 @@ public class SaveImage : MonoBehaviour
             highLights.SetActive(true);
             paper.SetActive(true);
             uiButtons.SetActive(true);
+           buttons[buttonIndex].Select();
             saveImageScreen.SetActive(true);
         }
 }
