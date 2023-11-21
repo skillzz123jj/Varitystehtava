@@ -111,7 +111,7 @@ public class SaveImage : MonoBehaviour
        
 
     }
-
+    public Button defaultButton;
     public void TakeScreenshotButton()
     {
 
@@ -121,11 +121,11 @@ public class SaveImage : MonoBehaviour
         }
         coloring.highlight.SetActive(false);
         buttonIndex = 1;
-        buttons[buttonIndex].Select();
-        save.Select();
+    //    buttons[buttonIndex].Select();
+     //   EventSystem.current.SetSelectedGameObject(defaultButton.gameObject);
+       // save.Select();
         coloringWithKeys.savingImage = true;
-        ButtonStatus(false);
-    
+        ButtonStatus(false); 
         StartCoroutine(TakeScreenshot());      
 
     }
@@ -209,7 +209,9 @@ public class SaveImage : MonoBehaviour
             uiButtons.SetActive(true);
            buttons[buttonIndex].Select();
             saveImageScreen.SetActive(true);
-        }
+        buttonIndex = 0;
+           EventSystem.current.SetSelectedGameObject(defaultButton.gameObject);
+    }
 }
 
 
