@@ -117,6 +117,27 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: yksisarvinen_body
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 52
+        width: 675
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70faaaa17c9701f49adbd19291f62f88
+      internalID: -2064452456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: yksisarvinen_lines
       rect:
         serializedVersion: 2
@@ -131,218 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a467d0bf3de2c948bb5b764c26cc867
-      internalID: 772956400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: yksisarvinen_body
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 39
-        width: 758
-        height: 930
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b093c2177a565ce45b2be8a81869659f
-      internalID: 742360344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: yksisarvinen_bangs_beard
-      rect:
-        serializedVersion: 2
-        x: 973
-        y: 77
-        width: 226
-        height: 363
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 507134a242620b74ea1e14f1684fb9a9
-      internalID: 760536901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: yksisarvinen_mane3
-      rect:
-        serializedVersion: 2
-        x: 961
-        y: 515
-        width: 243
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c308443533e81854782b39aee65f71a2
-      internalID: 1617496010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: yksisarvinen_mane2
-      rect:
-        serializedVersion: 2
-        x: 1320
-        y: 685
-        width: 324
-        height: 203
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 797af12f4f236384389ff976bcd0a3a3
-      internalID: 1067849947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: yksisarvinen_mane1
-      rect:
-        serializedVersion: 2
-        x: 914
-        y: 736
-        width: 328
-        height: 123
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6140457979b4e1143aae8811aecf2c1e
-      internalID: 1151351348
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: yksisarvinen_legtufts
-      rect:
-        serializedVersion: 2
-        x: 1798
-        y: 499
-        width: 675
-        height: 389
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dcbea4eabae34aa4cb899492540a9b75
-      internalID: 1139846379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: yksisarvinen_hooves
-      rect:
-        serializedVersion: 2
-        x: 1766
-        y: 52
-        width: 630
-        height: 349
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5dada0c35e132494cac347e4ba91ef12
-      internalID: -886626493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: yksisarvinen_tale1
-      rect:
-        serializedVersion: 2
-        x: 2581
-        y: 661
-        width: 514
-        height: 280
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b0d5175797f23a42927a1951b58eaaf
-      internalID: 382554660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: yksisarvinen_tale2
-      rect:
-        serializedVersion: 2
-        x: 2683
-        y: 317
-        width: 340
-        height: 231
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d644530f60cb814e961b3f388c04c76
-      internalID: -874655190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: yksisarvinen_tale3
-      rect:
-        serializedVersion: 2
-        x: 2801
-        y: 111
-        width: 125
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5a12b6fa15da674f87db2c8ca346c51
-      internalID: 949272017
+      spriteID: 5f13ba336bedc03468449ef86aa3692c
+      internalID: 972198367
       vertices: []
       indices: 
       edges: []
@@ -362,8 +173,218 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ae545aab4706ee4cba63a91ddb3ce59
-      internalID: 286361179
+      spriteID: ee0ad89b80863b04490b6db987717708
+      internalID: -1893583470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yksisarvinen_hooves
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 52
+        width: 630
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84fb3f3ccc72bd4ea75d086edeffbf5
+      internalID: 1612659357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yksisarvinen_horn
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 239
+        width: 198
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c7a64a4b886944493d014380077534
+      internalID: 601050924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yksisarvinen_legtufts
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 499
+        width: 675
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4a1a8d5949e7944be8d104b01578ca
+      internalID: 815474625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yksisarvinen_bangs-beard
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 77
+        width: 226
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77cf3541b8e5bf42a9e8df02cc9edb6
+      internalID: -977690627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yksisarvinen_mane1
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 736
+        width: 328
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601ad14a3d417ee4baf9e10998e69bac
+      internalID: -1011539677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yksisarvinen_mane2
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 685
+        width: 324
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1baf59d392ab36440a3af7fb5461b9a0
+      internalID: -1442797871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yksisarvinen_mane3
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 515
+        width: 243
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6963317fd8739c34484fc134f6e2ceab
+      internalID: 1529413816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yksisarvinen_tail1
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 661
+        width: 514
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c79c861f1e7f944f80e478f1dbe4369
+      internalID: 443339002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yksisarvinen_tail2
+      rect:
+        serializedVersion: 2
+        x: 2683
+        y: 317
+        width: 340
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eef2900f75daaf44962fb82783cfbe5
+      internalID: -32274247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yksisarvinen_tail3
+      rect:
+        serializedVersion: 2
+        x: 2801
+        y: 111
+        width: 125
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6174af1091e945a47ae306937a1097f5
+      internalID: -158702869
       vertices: []
       indices: 
       edges: []
@@ -379,18 +400,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      yksisarvinen_bangs_beard: 760536901
-      yksisarvinen_bg: 286361179
-      yksisarvinen_body: 742360344
-      yksisarvinen_hooves: -886626493
-      yksisarvinen_legtufts: 1139846379
-      yksisarvinen_lines: 772956400
-      yksisarvinen_mane1: 1151351348
-      yksisarvinen_mane2: 1067849947
-      yksisarvinen_mane3: 1617496010
-      yksisarvinen_tale1: 382554660
-      yksisarvinen_tale2: -874655190
-      yksisarvinen_tale3: 949272017
+      yksisarvinen_bangs-beard: -977690627
+      yksisarvinen_bg: -1893583470
+      yksisarvinen_body: -2064452456
+      yksisarvinen_hooves: 1612659357
+      yksisarvinen_horn: 601050924
+      yksisarvinen_legtufts: 815474625
+      yksisarvinen_lines: 972198367
+      yksisarvinen_mane1: -1011539677
+      yksisarvinen_mane2: -1442797871
+      yksisarvinen_mane3: 1529413816
+      yksisarvinen_tail1: 443339002
+      yksisarvinen_tail2: -32274247
+      yksisarvinen_tail3: -158702869
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
