@@ -91,9 +91,16 @@ public class SaveImage : MonoBehaviour
         {
             return;
         }
-        SaveScreenshot(screenshot);       
+        save.interactable = false;
+        Invoke("DelayedSaveScreenshot", 2f);
     }
 
+    void DelayedSaveScreenshot()
+    {     
+        SaveScreenshot(screenshot);
+        save.interactable = true; 
+    }
+ 
     public void CloseScreenshotSaving()
     {
         if (Input.GetKey(KeyCode.Space))
@@ -121,9 +128,6 @@ public class SaveImage : MonoBehaviour
         }
         coloring.highlight.SetActive(false);
         buttonIndex = 1;
-    //    buttons[buttonIndex].Select();
-     //   EventSystem.current.SetSelectedGameObject(defaultButton.gameObject);
-       // save.Select();
         coloringWithKeys.savingImage = true;
         ButtonStatus(false); 
         StartCoroutine(TakeScreenshot());      

@@ -7,6 +7,7 @@ public class GameData : MonoBehaviour
     public string currentPicture;
     public bool easy;
     public bool hard;
+    public bool audioMuted;
 
     public static GameData gameData;
 
@@ -22,5 +23,14 @@ public class GameData : MonoBehaviour
 
             Destroy(gameObject);
         }
+
+        //if (audioMuted)
+        //{
+        //    MenuManager.menuManager.MuteAudio();
+        //}
+        //else
+        //{
+        //    MenuManager.menuManager.Audio();
+        //}
     }
 }
