@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -66,6 +67,7 @@ public class ColoringWithKeys : MonoBehaviour
                         chosenColorValue = spriteRenderer.color;
                         coloring.currentColor = chosenColorValue;
                         coloring.chosenColorHighlight.transform.position = currentColor.transform.position;
+                        coloring.chosenColorHighlight.SetActive(true);
                         highlightKeys.SetActive(false);
 
                     }
@@ -85,6 +87,8 @@ public class ColoringWithKeys : MonoBehaviour
                         colorWasChosen = false;
                         colorIndex = 0;
                         colorAreaIndex = -1;
+                        coloring.currentColor = Color.white;
+                        coloring.chosenColorHighlight.SetActive(false);
                     }
                 }
             }

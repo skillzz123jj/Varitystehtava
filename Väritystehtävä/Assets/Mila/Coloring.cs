@@ -100,6 +100,7 @@ public class Coloring : MonoBehaviour
                 currentColor = spriteRenderer.color;
                 coloringWithKeys.colorAreaIndex = -1;
                 chosenColorHighlight.transform.position = Hit.collider.gameObject.transform.position;
+                chosenColorHighlight.SetActive(true);
                 highlight.SetActive(false);
 
             }

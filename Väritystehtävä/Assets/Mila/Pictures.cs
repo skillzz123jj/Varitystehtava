@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class Pictures : MonoBehaviour
 {
     [SerializeField] GameObject highlight;
+    [SerializeField] GameObject keyHighlight;
+    [SerializeField] GameObject easyKeyHighlight;
+    [SerializeField] GameObject hardKeyHighlight;
     [SerializeField] GameObject easyHighlight;
     [SerializeField] GameObject hardHighlight;
     [SerializeField] GameObject easyImages;
@@ -14,7 +17,7 @@ public class Pictures : MonoBehaviour
 
     List<Button> buttons = new List<Button>();
 
-    int pictureIndex = 0;
+    int pictureIndex = -1;
 
     private void Start()
     {
@@ -25,6 +28,7 @@ public class Pictures : MonoBehaviour
             FindAndAddButtons(easyImages.transform);
             easyHighlight.SetActive(true);
             highlight = easyHighlight;
+            keyHighlight = easyKeyHighlight;
                
         }
         else if (GameData.gameData.hard) 
@@ -34,6 +38,7 @@ public class Pictures : MonoBehaviour
             FindAndAddButtons(hardImages.transform);
             hardHighlight.SetActive(true);
             highlight = hardHighlight;
+            keyHighlight = hardKeyHighlight;
 
         } 
     }
@@ -42,18 +47,26 @@ public class Pictures : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {            
             pictureIndex = (pictureIndex + 1) % buttons.Count;
-
+            highlight.SetActive(false);
+            keyHighlight.SetActive(true);   
             buttons[pictureIndex].Select();
-            highlight.transform.position = buttons[pictureIndex].transform.position;
+            keyHighlight.transform.position = buttons[pictureIndex].transform.position;
           
         }
     }
     public void HoverOnImage(int picture)
     {
-        buttons[picture].Select();
-        highlight.transform.position = buttons[picture].transform.position;
-        pictureIndex = picture;
 
+        buttons[picture].Select();
+        highlight.SetActive(true);
+        keyHighlight.SetActive(false);
+        highlight.transform.position = buttons[picture].transform.position;
+
+
+    }
+    public void OnHoverExit()
+    {
+        pictureIndex = -1;
     }
     public void Picture(GameObject image)
     {
