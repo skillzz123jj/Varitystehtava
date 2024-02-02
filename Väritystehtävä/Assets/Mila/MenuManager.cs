@@ -91,7 +91,7 @@ public class MenuManager : MonoBehaviour
         muteAudioAsDefault.interactable = true;
         audioAsDefault.interactable = false;
         GameData.gameData.audioMuted = true;
-
+        GameData.gameData.skip = true;
         audioButton.SetActive(false);
         muteAudioButton.SetActive(true);
         muteAudioText.SetActive(false);

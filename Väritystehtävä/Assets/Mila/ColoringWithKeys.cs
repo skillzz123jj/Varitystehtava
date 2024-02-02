@@ -117,6 +117,7 @@ public class ColoringWithKeys : MonoBehaviour
                 {
                     ChangeColor();
                 }
+         
                 highlightKeys.SetActive(false);
                 coloring.highlight.SetActive(false);
                 coloring.highlight.transform.position = new Vector2(-100, 0);

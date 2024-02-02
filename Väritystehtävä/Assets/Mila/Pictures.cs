@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -13,11 +14,14 @@ public class Pictures : MonoBehaviour
     [SerializeField] GameObject hardHighlight;
     [SerializeField] GameObject easyImages;
     [SerializeField] GameObject hardImages;
-    //[SerializeField] Button[] buttons;
 
     List<Button> buttons = new List<Button>();
+    [SerializeField] List<Button> uiButtons = new List<Button>();
 
     int pictureIndex = -1;
+
+
+    private int currentIndex;
 
     private void Start()
     {
@@ -44,16 +48,52 @@ public class Pictures : MonoBehaviour
     }
     private void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Space))
-        {            
-            pictureIndex = (pictureIndex + 1) % buttons.Count;
-            highlight.SetActive(false);
-            keyHighlight.SetActive(true);   
-            buttons[pictureIndex].Select();
-            keyHighlight.transform.position = buttons[pictureIndex].transform.position;
-          
+        {
+
+            int nextIndex = currentIndex;
+
+           
+
+            do
+            {
+                nextIndex = (nextIndex + 1) % buttons.Count;
+                if (buttons[nextIndex].gameObject.CompareTag("UI"))
+                {
+                    highlight.SetActive(false);
+
+                }
+                else
+                {
+                    highlight.SetActive(true);
+                }
+                if (GameData.gameData.skip)
+                {
+
+                    nextIndex = (nextIndex + 1) % buttons.Count;
+                    GameData.gameData.skip = false;
+                }
+
+            }
+            while (!buttons[nextIndex].interactable);
+
+            currentIndex = nextIndex;
+            buttons[currentIndex].Select();
         }
+
+
+        //    if (Input.GetKeyDown(KeyCode.Space))
+        //{            
+        //    pictureIndex = (pictureIndex + 1) % buttons.Count;
+        //    highlight.SetActive(false);
+        //    keyHighlight.SetActive(true);   
+        //    buttons[pictureIndex].Select();
+        //    keyHighlight.transform.position = buttons[pictureIndex].transform.position;
+          
+        //}
     }
+
     public void HoverOnImage(int picture)
     {
 
@@ -85,7 +125,7 @@ public class Pictures : MonoBehaviour
         SceneManager.LoadScene(scene);
 
     }
-
+    int amountOfPictures;
     void FindAndAddButtons(Transform parentTransform)
     {
         // Iterate through all immediate children of the parentTransform
@@ -97,13 +137,21 @@ public class Pictures : MonoBehaviour
             if (button != null)
             {
                 // Add the button to the List<Button>
+                amountOfPictures++;
                 buttons.Add(button);
             }
         }
+        buttons.AddRange(uiButtons);
+
     }
     public void NewPicture(int scene)
     {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            return;
+        }
 
         SceneManager.LoadScene(scene);
     }
 }
+

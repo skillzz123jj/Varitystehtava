@@ -9,6 +9,8 @@ public class GameData : MonoBehaviour
     public bool hard;
     public bool audioMuted;
 
+    public bool skip;
+
     public static GameData gameData;
 
     void Start()

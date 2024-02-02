@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 3616412}
   m_Layer: 5
   m_Name: Dragon
-  m_TagString: Untagged
+  m_TagString: Picture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -869,7 +869,7 @@ GameObject:
   - component: {fileID: 156173998}
   m_Layer: 5
   m_Name: Tree
-  m_TagString: Untagged
+  m_TagString: Picture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1228,7 +1228,7 @@ GameObject:
   - component: {fileID: 173406826}
   m_Layer: 5
   m_Name: Apartment
-  m_TagString: Untagged
+  m_TagString: Picture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1436,7 +1436,7 @@ GameObject:
   - component: {fileID: 175937945}
   m_Layer: 5
   m_Name: Boat
-  m_TagString: Untagged
+  m_TagString: Picture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1928,7 +1928,7 @@ GameObject:
   - component: {fileID: 270196228}
   m_Layer: 5
   m_Name: House
-  m_TagString: Untagged
+  m_TagString: Picture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2121,6 +2121,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &415100923 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5523749933875492389, guid: 0c832e786f1d81b488f8114283fb00e1, type: 3}
+  m_PrefabInstance: {fileID: 560828787}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &415852187
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,7 +2355,7 @@ GameObject:
   - component: {fileID: 449081668}
   m_Layer: 5
   m_Name: Books
-  m_TagString: Untagged
+  m_TagString: Picture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2634,7 +2645,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1762287963}
     m_Modifications:
     - target: {fileID: 289616399434548695, guid: 0c832e786f1d81b488f8114283fb00e1, type: 3}
       propertyPath: m_IsActive
@@ -2890,7 +2901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5523749933531327051, guid: 0c832e786f1d81b488f8114283fb00e1, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5523749933531327051, guid: 0c832e786f1d81b488f8114283fb00e1, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3413,7 +3424,7 @@ GameObject:
   - component: {fileID: 709735482}
   m_Layer: 5
   m_Name: Cat
-  m_TagString: Untagged
+  m_TagString: Picture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4310,7 +4321,7 @@ GameObject:
   - component: {fileID: 830549610}
   m_Layer: 5
   m_Name: Pear
-  m_TagString: Untagged
+  m_TagString: Picture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4658,7 +4669,7 @@ GameObject:
   - component: {fileID: 954121993}
   m_Layer: 5
   m_Name: Flower
-  m_TagString: Untagged
+  m_TagString: Picture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4866,7 +4877,7 @@ GameObject:
   - component: {fileID: 1111672859}
   m_Layer: 5
   m_Name: Dog
-  m_TagString: Untagged
+  m_TagString: Picture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5334,6 +5345,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5523749932894471065, guid: 0c832e786f1d81b488f8114283fb00e1, type: 3}
   m_PrefabInstance: {fileID: 560828787}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1291549361 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5523749932664436243, guid: 0c832e786f1d81b488f8114283fb00e1, type: 3}
+  m_PrefabInstance: {fileID: 560828787}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1302104018
 GameObject:
   m_ObjectHideFlags: 0
@@ -5564,7 +5586,7 @@ RectTransform:
   m_Children:
   - {fileID: 1523992207}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6200,6 +6222,11 @@ MonoBehaviour:
   instructions: {fileID: 1488273926}
   skip: 0
   coloringWithKeys: {fileID: 0}
+--- !u!224 &1479686923 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5523749933531327051, guid: 0c832e786f1d81b488f8114283fb00e1, type: 3}
+  m_PrefabInstance: {fileID: 560828787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1488273926 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 289616399434548695, guid: 0c832e786f1d81b488f8114283fb00e1, type: 3}
@@ -6556,7 +6583,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1557343319
 MonoBehaviour:
@@ -6928,7 +6955,7 @@ GameObject:
   - component: {fileID: 1586246862}
   m_Layer: 5
   m_Name: Presents
-  m_TagString: Untagged
+  m_TagString: Picture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7756,7 +7783,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1479686923}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7808,7 +7836,7 @@ GameObject:
   - component: {fileID: 1835600336}
   m_Layer: 5
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Picture
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8385,7 +8413,7 @@ RectTransform:
   - {fileID: 541496589}
   - {fileID: 181836770}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8412,6 +8440,12 @@ MonoBehaviour:
   hardHighlight: {fileID: 828803581}
   easyImages: {fileID: 1997771140}
   hardImages: {fileID: 1471672385}
+  uiButtons:
+  - {fileID: 2083535865}
+  - {fileID: 1897154022}
+  - {fileID: 171071510}
+  - {fileID: 1291549361}
+  - {fileID: 415100923}
 --- !u!1 &2011315883
 GameObject:
   m_ObjectHideFlags: 0

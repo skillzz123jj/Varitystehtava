@@ -8,11 +8,12 @@ TagManager:
   - Color
   - UI
   - Empty
+  - Picture
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Picture
   - Water
   - UI
   - 
