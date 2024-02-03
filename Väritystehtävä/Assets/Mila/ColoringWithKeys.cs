@@ -31,13 +31,13 @@ public class ColoringWithKeys : MonoBehaviour
     {
 
         if (GameData.gameData.easy)
-        {     
+        {
             colors.AddRange(colors_12);
             highlightKeys = highlightKeysEasy;
         }
         else if (GameData.gameData.hard)
-        { 
-          
+        {
+
             colors.AddRange(colors_36);
             highlightKeys = highlightKeysHard;
         }
@@ -50,7 +50,7 @@ public class ColoringWithKeys : MonoBehaviour
             if (!colorWasChosen)
             {
                 if (Input.GetKeyDown(KeyCode.Space))
-                {                  
+                {
                     highlightKeys.SetActive(true);
                     ChangeColor();
                 }
@@ -93,7 +93,7 @@ public class ColoringWithKeys : MonoBehaviour
                 }
             }
         }
-      
+
     }
 
     public void ChangeColor()
@@ -117,13 +117,13 @@ public class ColoringWithKeys : MonoBehaviour
                 {
                     ChangeColor();
                 }
-         
+
                 highlightKeys.SetActive(false);
                 coloring.highlight.SetActive(false);
                 coloring.highlight.transform.position = new Vector2(-100, 0);
                 Button button = currentColor.GetComponent<Button>();
                 button.Select();
-            
+
 
             }
             if (currentColor.CompareTag("Empty"))
@@ -139,7 +139,7 @@ public class ColoringWithKeys : MonoBehaviour
                 highlightKeys.transform.position = currentColor.transform.position;
 
             }
-        }    
+        }
     }
 
     public void ChangeColoringArea()
@@ -154,19 +154,19 @@ public class ColoringWithKeys : MonoBehaviour
             ResetColor(currentArea, sprireRendererTest);
 
         }
-       
+
         colorAreaIndex = (colorAreaIndex + 1) % coloring.coloringAreas.Count;
 
         currentArea = coloring.coloringAreas[colorAreaIndex];
 
         SpriteRenderer sprireRenderer = currentArea.GetComponent<SpriteRenderer>();
         coloring.originalColor = sprireRenderer.color;
-            if (!coloring.ObjectsAndTheirColorsDictionary.ContainsKey(currentArea))
-            {
-                coloring.ObjectsAndTheirColorsDictionary.Add(currentArea, coloring.originalColor);
-            }
+        if (!coloring.ObjectsAndTheirColorsDictionary.ContainsKey(currentArea))
+        {
+            coloring.ObjectsAndTheirColorsDictionary.Add(currentArea, coloring.originalColor);
+        }
 
-            sprireRenderer.color = coloring.currentColor;
+        sprireRenderer.color = coloring.currentColor;
     }
 
     public void ResetColor(GameObject currentArea, SpriteRenderer spriteRenderer)
