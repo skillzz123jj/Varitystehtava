@@ -43,22 +43,27 @@ public class MenuManager : MonoBehaviour
         }
         InstructionTextGoAway();
         instructions.SetActive(true);
-        closeInstructions.Select();
+        if (Input.GetKey(KeyCode.Return))
+        {
+            
+            closeInstructions.Select();
+        }
 
     }
     public void CloseInstructions()
     {
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            return;
-        }
+     
         if (coloringWithKeys != null)
         {
             coloringWithKeys.enabled = true;
         }
+        if (Input.GetKey(KeyCode.Return))
+        {
+            instructionButton.Select();
+
+        }
         instructions.SetActive(false);
-        instructionButton.Select();
+
     }
     public void reloadGame(int scene)
     {

@@ -21,6 +21,7 @@ public class SaveImage : MonoBehaviour
     [SerializeField] GameObject hardColors;
     [SerializeField] GameObject highLights;
     [SerializeField] GameObject uiButtons;
+    [SerializeField] GameObject uiButtonsMobile;
     [SerializeField] GameObject saveImageScreen;
 
     int buttonIndex;
@@ -47,6 +48,10 @@ public class SaveImage : MonoBehaviour
             colors = hardColors;
             paper = hardPaper;
 
+        }
+        if (GameData.gameData.IsOnMobile)
+        {
+            uiButtons = uiButtonsMobile;
         }
 
         //if (Application.platform == RuntimePlatform.WebGLPlayer)

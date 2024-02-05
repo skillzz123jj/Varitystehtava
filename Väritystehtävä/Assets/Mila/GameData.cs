@@ -10,6 +10,7 @@ public class GameData : MonoBehaviour
     public bool audioMuted;
 
     public bool skip;
+    public bool IsOnMobile;
 
     public static GameData gameData;
 
@@ -24,6 +25,15 @@ public class GameData : MonoBehaviour
         {
 
             Destroy(gameObject);
+        }
+
+        if (Application.platform == RuntimePlatform.WebGLPlayer && Application.isMobilePlatform)
+        {
+            IsOnMobile = true;
+        }
+        else
+        {
+            IsOnMobile = false;
         }
 
         //if (audioMuted)

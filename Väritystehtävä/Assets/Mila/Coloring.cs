@@ -33,6 +33,21 @@ public class Coloring : MonoBehaviour
         {
             highlight = smallerHighLight;
             chosenColorHighlight = smallerChosenColor;
+
+            if (GameData.gameData.IsOnMobile)
+            {
+                highlight.transform.localScale = new Vector2(1.3f, 1.3f);
+                chosenColorHighlight.transform.localScale = new Vector2(1.3f, 1.3f);
+            }
+        }
+        else if (GameData.gameData.easy && GameData.gameData.IsOnMobile)
+        {
+            if (GameData.gameData.IsOnMobile)
+            {
+                highlight.transform.localScale = new Vector2(1.8f, 1.8f);
+                chosenColorHighlight.transform.localScale = new Vector2(1.8f, 1.8f);
+            }
+
         }
     }
     void Update()
