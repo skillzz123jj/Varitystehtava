@@ -74,7 +74,7 @@ public class ManagePictures : MonoBehaviour
                 imageObject.transform.localScale = new Vector2(27f, 27f);
                 hardPaper.transform.localPosition = new Vector2(-5.56f, -8.82f);
                 hardPaper.transform.localScale = new Vector2(1.468408f, 1.300495f);
-                colors27.transform.localPosition = new Vector2(-18.25f, -3.99f);
+                colors27.transform.localPosition = new Vector2(-17.81f, -3.99f);
                 colors27.transform.localScale = new Vector2(1.2f, 1.2f);
                 hardWhiteBox.transform.localScale = new Vector2(17.27863f, 9.754498f);
                 hardWhiteBox.transform.localPosition = new Vector2(-6.2985f, -8.7871f);

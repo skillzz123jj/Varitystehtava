@@ -2676,6 +2676,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CloseInstructions
       objectReference: {fileID: 0}
+    - target: {fileID: 298987078616486971, guid: 0c832e786f1d81b488f8114283fb00e1, type: 3}
+      propertyPath: m_text
+      value: " \r <color=orange><size=40>  Ohjeet </size> </color> \n\nPeliss\xE4
+        v\xE4rit\xE4t erilaisia v\xE4rityskuvia. Voit v\xE4ritt\xE4\xE4 kuvia hiirell\xE4
+        tai v\xE4lily\xF6nti- tai rivinvaihton\xE4pp\xE4imill\xE4 ja niit\xE4 vastaavilla
+        painikkeilla. Voit v\xE4ritt\xE4\xE4 kuvia my\xF6s k\xE4nnyk\xE4ll\xE4 ja
+        tabletilla.\r\n\nValitse ensin v\xE4rityskuvien taso. Helpot v\xE4rityskuvat
+        ovat yksinkertaisempia, eli v\xE4ritett\xE4vi\xE4 alueita ja v\xE4rej\xE4
+        on v\xE4h\xE4n. Vaikeat v\xE4rityskuvat ovat monimutkaisempia, eli v\xE4ritett\xE4vi\xE4
+        alueita ja v\xE4rej\xE4 on enemm\xE4n. Valitse sen j\xE4lkeen kuva, jonka
+        haluat v\xE4ritt\xE4\xE4.\r\n\nJos v\xE4rit\xE4t kuvia hiirell\xE4, klikkaa
+        ensin haluamaasi v\xE4ri\xE4. Klikkaa sen j\xE4lkeen aluetta, jonka haluat
+        v\xE4ritt\xE4\xE4.\r\n\nJos v\xE4rit\xE4t kuvia painikkeilla, paina ensin
+        v\xE4lily\xF6ntin\xE4pp\xE4int\xE4, jolla voit liikkua v\xE4ripaletissa.
+        Valitse haluamasi v\xE4ri painamalla rivinvaihton\xE4pp\xE4int\xE4. Paina
+        sen j\xE4lkeen v\xE4lily\xF6ntin\xE4pp\xE4int\xE4, jolla voit liikkua v\xE4ritett\xE4viss\xE4
+        alueissa. Kun v\xE4ri on oikeassa kohdassa, paina rivinvaihton\xE4pp\xE4int\xE4.
+        T\xE4m\xE4n j\xE4lkeen palaat takaisin v\xE4ripalettiin, ja voit valita uuden
+        v\xE4rin ja uuden v\xE4ritett\xE4v\xE4n alueen. Jos liikut v\xE4ripaletin
+        loppuun, p\xE4\xE4set kuva alla oleviin valintapainikkeisiin.\n\r\nKun kuva
+        on valmis, voit tulostaa kuvan klikkaamalla Tulosta kuva -painiketta kuvan
+        alta. \nJos haluat v\xE4ritt\xE4\xE4 lis\xE4\xE4 kuvia, klikkaa kuvan alta
+        Valitse uusi kuva -painiketta.\r"
+      objectReference: {fileID: 0}
     - target: {fileID: 2079727779579439194, guid: 0c832e786f1d81b488f8114283fb00e1, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
