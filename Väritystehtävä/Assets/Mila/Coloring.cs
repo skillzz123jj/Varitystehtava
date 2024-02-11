@@ -24,6 +24,8 @@ public class Coloring : MonoBehaviour
     [SerializeField] ColoringWithKeys coloringWithKeys;
     [SerializeField] SaveImage saveImage;
 
+    [SerializeField] AudioSource drawingSound;
+
     public static Coloring coloring;
 
 
@@ -100,6 +102,7 @@ public class Coloring : MonoBehaviour
         {
             if (Hit.collider != null && Hit.collider.gameObject.CompareTag("ColoringArea"))
             {
+                drawingSound.Play();
                 ColorTheArea(Hit.collider.gameObject);
 
             }

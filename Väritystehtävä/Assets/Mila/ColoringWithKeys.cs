@@ -27,6 +27,8 @@ public class ColoringWithKeys : MonoBehaviour
     [SerializeField] List<GameObject> uiButtons = new List<GameObject>();
     [SerializeField] Coloring coloring;
 
+    [SerializeField] AudioSource drawingSound;
+
     private void Start()
     {
 
@@ -83,6 +85,7 @@ public class ColoringWithKeys : MonoBehaviour
                 {
                     if (currentArea != null)
                     {
+                        drawingSound.Play();
                         coloring.ColorTheArea(currentArea);
                         colorWasChosen = false;
                         colorIndex = 0;
