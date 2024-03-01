@@ -1,7 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Coloring : MonoBehaviour
 {
@@ -30,7 +29,7 @@ public class Coloring : MonoBehaviour
 
 
     private void Start()
-    {    
+    {
         if (GameData.gameData.hard)
         {
             highlight = smallerHighLight;
@@ -68,19 +67,19 @@ public class Coloring : MonoBehaviour
                 OnHoverEnter();
 
             }
-            if (Hit.collider.CompareTag("Color"))   
+            if (Hit.collider.CompareTag("Color"))
             {
-              
+
                 highlight.transform.position = Hit.collider.gameObject.transform.position;
                 color = Hit.collider.gameObject;
                 highlight.SetActive(true);
             }
             else if (coloringWithKeys.highlightKeys.transform.position == highlight.transform.position)
             {
-             
+
                 highlight.SetActive(false);
             }
-  
+
         }
         else
         {
@@ -90,9 +89,9 @@ public class Coloring : MonoBehaviour
                 OnHoverExit();
                 coloringArea = null;
             }
-           
+
             if (color != null)
-            {        
+            {
                 highlight.SetActive(false);
                 color = null;
             }
@@ -126,7 +125,7 @@ public class Coloring : MonoBehaviour
 
         if (coloringWithKeys.highlightKeys.transform.position == highlight.transform.position)
         {
-            
+
             highlight.SetActive(false);
         }
     }
@@ -184,7 +183,7 @@ public class Coloring : MonoBehaviour
             {
                 spriteRenderer.color = Color.white;
             }
-         
+
 
         }
     }
@@ -197,7 +196,7 @@ public class Coloring : MonoBehaviour
 
         if (saveImage.screenshot != null)
         {
-            Destroy(saveImage.screenshot);    
+            Destroy(saveImage.screenshot);
         }
         coloringWithKeys.savingImage = false;
         SceneManager.LoadScene(scene);

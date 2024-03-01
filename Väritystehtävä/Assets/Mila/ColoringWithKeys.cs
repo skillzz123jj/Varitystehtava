@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,13 +24,14 @@ public class ColoringWithKeys : MonoBehaviour
     [SerializeField] List<GameObject> colors_12 = new List<GameObject>();
     [SerializeField] List<GameObject> colors_36 = new List<GameObject>();
     [SerializeField] List<GameObject> uiButtons = new List<GameObject>();
+    [SerializeField] List<Button> instructionButtons = new List<Button>();
     [SerializeField] Coloring coloring;
 
     [SerializeField] AudioSource drawingSound;
 
     private void Start()
     {
-
+        GameData.gameData.currentIndex = 0;
         if (GameData.gameData.easy)
         {
             colors.AddRange(colors_12);
@@ -51,10 +51,24 @@ public class ColoringWithKeys : MonoBehaviour
         {
             if (!colorWasChosen)
             {
-                if (Input.GetKeyDown(KeyCode.Space))
+                if (GameData.gameData.instructions)
                 {
-                    highlightKeys.SetActive(true);
-                    ChangeColor();
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+
+                        int nextIndex = GameData.gameData.currentIndex;
+                        nextIndex = (nextIndex + 1) % instructionButtons.Count;
+                        GameData.gameData.currentIndex = nextIndex;
+                        instructionButtons[GameData.gameData.currentIndex].Select();
+                    }
+                }
+                else
+                {
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+                        highlightKeys.SetActive(true);
+                        ChangeColor();
+                    }
                 }
                 if (Input.GetKeyDown(KeyCode.Return))
                 {
@@ -77,10 +91,15 @@ public class ColoringWithKeys : MonoBehaviour
             }
             else
             {
-                if (Input.GetKeyDown(KeyCode.Space))
+                
                 {
-                    ChangeColoringArea();
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+                        ChangeColoringArea();
+                    }
+
                 }
+               
                 if (Input.GetKeyDown(KeyCode.Return))
                 {
                     if (currentArea != null)

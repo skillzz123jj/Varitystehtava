@@ -1,7 +1,7 @@
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
@@ -18,6 +18,8 @@ public class MenuManager : MonoBehaviour
     [SerializeField] GameObject instructionText;
     [SerializeField] GameObject instructions;
 
+    int previousIndex;
+
     public bool skip;
 
     [SerializeField] ColoringWithKeys coloringWithKeys;
@@ -28,7 +30,7 @@ public class MenuManager : MonoBehaviour
     //All of these handle the UI buttons on the top right corner
     private void Start()
     {
-   
+
     }
     public void DisplayInstructions()
     {
@@ -41,18 +43,25 @@ public class MenuManager : MonoBehaviour
         {
             coloringWithKeys.enabled = false;
         }
+        previousIndex = GameData.gameData.currentIndex;
+        GameData.gameData.instructions = true;
         InstructionTextGoAway();
         instructions.SetActive(true);
+        GameData.gameData.currentIndex = 0;
         if (Input.GetKey(KeyCode.Return))
         {
-            
+
             closeInstructions.Select();
         }
 
     }
     public void CloseInstructions()
     {
-     
+        if (Input.GetKey(KeyCode.Space))
+        {
+            return;
+        }
+
         if (coloringWithKeys != null)
         {
             coloringWithKeys.enabled = true;
@@ -62,6 +71,8 @@ public class MenuManager : MonoBehaviour
             instructionButton.Select();
 
         }
+        GameData.gameData.currentIndex = previousIndex;
+        GameData.gameData.instructions = false;
         instructions.SetActive(false);
 
     }
@@ -107,7 +118,7 @@ public class MenuManager : MonoBehaviour
 
     public void Audio()
     {
-   
+
         if (Input.GetKey(KeyCode.Space))
         {
             return;

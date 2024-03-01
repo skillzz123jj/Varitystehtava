@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,32 +5,49 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    int currentIndex = 0;
+   // public int currentIndex = 0;
     bool skip;
     [SerializeField] List<Button> buttons = new List<Button>();
-    
+    [SerializeField] List<Button> instructionButtons = new List<Button>();
+
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!GameData.gameData.instructions)
         {
-
-            int nextIndex = currentIndex;
-
-            do
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                nextIndex = (nextIndex + 1) % buttons.Count;
-                if (GameData.gameData.skip)
+
+                int nextIndex = GameData.gameData.currentIndex;
+
+                do
                 {
-
                     nextIndex = (nextIndex + 1) % buttons.Count;
-                    GameData.gameData.skip = false;
+                    if (GameData.gameData.skip)
+                    {
+
+                        nextIndex = (nextIndex + 1) % buttons.Count;
+                        GameData.gameData.skip = false;
+                    }
+
                 }
+                while (!buttons[nextIndex].interactable);
 
+                GameData.gameData.currentIndex = nextIndex;
+                buttons[GameData.gameData.currentIndex].Select();
             }
-            while (!buttons[nextIndex].interactable);
 
-            currentIndex = nextIndex;
-            buttons[currentIndex].Select();
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+
+                int nextIndex = GameData.gameData.currentIndex;
+                nextIndex = (nextIndex + 1) % instructionButtons.Count;
+                GameData.gameData.currentIndex = nextIndex;
+                instructionButtons[GameData.gameData.currentIndex].Select();
+            }
         }
     }
     public void PlayGame()

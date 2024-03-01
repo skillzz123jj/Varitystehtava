@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
-    public Button defaultButton; 
+    public Button defaultButton;
 
     void Start()
     {

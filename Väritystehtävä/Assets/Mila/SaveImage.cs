@@ -11,7 +11,7 @@ public class SaveImage : MonoBehaviour
     [SerializeField] Button saveImage;
     [SerializeField] List<Button> buttons = new List<Button>();
     [SerializeField] List<Button> lowerButtons = new List<Button>();
-  
+
     [SerializeField] GameObject background;
     [SerializeField] GameObject colors;
     [SerializeField] GameObject paper;
@@ -79,7 +79,7 @@ public class SaveImage : MonoBehaviour
                 buttons[buttonIndex].Select();
 
             }
-        }   
+        }
     }
 
     public void SaveScreenshot()
@@ -101,17 +101,17 @@ public class SaveImage : MonoBehaviour
     }
 
     void DelayedSaveScreenshot()
-    {     
+    {
         SaveScreenshot(screenshot);
-        save.interactable = true; 
+        save.interactable = true;
     }
- 
+
     public void CloseScreenshotSaving()
     {
         if (Input.GetKey(KeyCode.Space))
         {
             return;
-       
+
         }
         Destroy(screenshot);
         saveImageScreen.SetActive(false);
@@ -120,7 +120,7 @@ public class SaveImage : MonoBehaviour
         coloringWithKeys.savingImage = false;
         saveImage.Select();
         ButtonStatus(true);
-       
+
 
     }
     public Button defaultButton;
@@ -134,8 +134,8 @@ public class SaveImage : MonoBehaviour
         coloring.highlight.SetActive(false);
         buttonIndex = 1;
         coloringWithKeys.savingImage = true;
-        ButtonStatus(false); 
-        StartCoroutine(TakeScreenshot());      
+        ButtonStatus(false);
+        StartCoroutine(TakeScreenshot());
 
     }
 
@@ -146,7 +146,7 @@ public class SaveImage : MonoBehaviour
             button.interactable = interactable;
         }
     }
-  
+
     public void SaveScreenshot(Texture2D screenshotTexture)
     {
         byte[] compressedBytes = screenshotTexture.EncodeToPNG();
@@ -170,7 +170,7 @@ public class SaveImage : MonoBehaviour
         //string filename = "SS-" + DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss") + ".png";
         //File.WriteAllBytes(Application.dataPath + filename, test.EncodeToPNG());
     }
- 
+
     Texture2D CreateScreenshot()
     {
         int w = screenshotCamera.pixelWidth * UpScale;
@@ -201,25 +201,25 @@ public class SaveImage : MonoBehaviour
         screenshotCamera.clearFlags = clearFlags;
         return screenShot;
     }
- 
-        IEnumerator TakeScreenshot()
-        {
-            yield return new WaitForEndOfFrame();
-            Texture2D screenshotTexture = CreateScreenshot();
-            screenshot = screenshotTexture; 
-        
 
-            coloringWithKeys.enabled = false;
-            coloring.enabled = false;
-            background.SetActive(true);
-            colors.SetActive(true);
-            highLights.SetActive(true);
-            paper.SetActive(true);
-            uiButtons.SetActive(true);
-           buttons[buttonIndex].Select();
-            saveImageScreen.SetActive(true);
+    IEnumerator TakeScreenshot()
+    {
+        yield return new WaitForEndOfFrame();
+        Texture2D screenshotTexture = CreateScreenshot();
+        screenshot = screenshotTexture;
+
+
+        coloringWithKeys.enabled = false;
+        coloring.enabled = false;
+        background.SetActive(true);
+        colors.SetActive(true);
+        highLights.SetActive(true);
+        paper.SetActive(true);
+        uiButtons.SetActive(true);
+        buttons[buttonIndex].Select();
+        saveImageScreen.SetActive(true);
         buttonIndex = 0;
-           EventSystem.current.SetSelectedGameObject(defaultButton.gameObject);
+        EventSystem.current.SetSelectedGameObject(defaultButton.gameObject);
     }
 }
 

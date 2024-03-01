@@ -1,35 +1,41 @@
 using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayInstructions : MonoBehaviour
 {
-    [SerializeField] Animator animator;
     [SerializeField] AudioSource audioSource;
-    void Start()
-    {
-        
-    }
+    [SerializeField] TMP_Text buttonText;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    bool isAudioPlaying = false;
 
     public void Play()
     {
-
-        StartCoroutine(PlayAudio());
-      
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            return;
+        }
+            if (!isAudioPlaying)
+            {
+                StartCoroutine(PlayAudio());
+            }
+            else
+            {
+                StopCoroutine(PlayAudio());
+                audioSource.Stop();
+                isAudioPlaying = false;
+                buttonText.text = "Kuuntele";
+            }
+        
     }
 
     public IEnumerator PlayAudio()
     {
-        animator.SetBool("Instruction", true);
+        isAudioPlaying = true;
         audioSource.Play();
+        buttonText.text = "Pysäytä";
         yield return new WaitForSeconds(audioSource.clip.length);
-        animator.SetBool("Instruction", false);
-
+        buttonText.text = "Kuuntele";
+        isAudioPlaying = false;
     }
 }

@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,6 +16,7 @@ public class Pictures : MonoBehaviour
 
     List<Button> buttons = new List<Button>();
     [SerializeField] List<Button> uiButtons = new List<Button>();
+    [SerializeField] List<Button> instructionButtons = new List<Button>();
 
     int pictureIndex = -1;
 
@@ -25,6 +25,7 @@ public class Pictures : MonoBehaviour
 
     private void Start()
     {
+        GameData.gameData.currentIndex = 0;
         if (GameData.gameData.easy)
         {
 
@@ -33,65 +34,65 @@ public class Pictures : MonoBehaviour
             easyHighlight.SetActive(true);
             highlight = easyHighlight;
             keyHighlight = easyKeyHighlight;
-               
+
         }
-        else if (GameData.gameData.hard) 
-        { 
-            
+        else if (GameData.gameData.hard)
+        {
+
             hardImages.SetActive(true);
             FindAndAddButtons(hardImages.transform);
             hardHighlight.SetActive(true);
             highlight = hardHighlight;
             keyHighlight = hardKeyHighlight;
 
-        } 
+        }
     }
     private void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!GameData.gameData.instructions)
         {
-
-            int nextIndex = currentIndex;
-
-           
-
-            do
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                nextIndex = (nextIndex + 1) % buttons.Count;
-                if (buttons[nextIndex].gameObject.CompareTag("UI"))
-                {
-                    highlight.SetActive(false);
 
-                }
-                else
-                {
-                    highlight.SetActive(true);
-                }
-                if (GameData.gameData.skip)
-                {
+                int nextIndex = currentIndex;
 
+                do
+                {
                     nextIndex = (nextIndex + 1) % buttons.Count;
-                    GameData.gameData.skip = false;
+                    if (buttons[nextIndex].gameObject.CompareTag("UI"))
+                    {
+                        highlight.SetActive(false);
+
+                    }
+                    else
+                    {
+                        highlight.SetActive(true);
+                    }
+                    if (GameData.gameData.skip)
+                    {
+
+                        nextIndex = (nextIndex + 1) % buttons.Count;
+                        GameData.gameData.skip = false;
+                    }
+
                 }
+                while (!buttons[nextIndex].interactable);
 
+                currentIndex = nextIndex;
+                buttons[currentIndex].Select();
             }
-            while (!buttons[nextIndex].interactable);
-
-            currentIndex = nextIndex;
-            buttons[currentIndex].Select();
         }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
 
-
-        //    if (Input.GetKeyDown(KeyCode.Space))
-        //{            
-        //    pictureIndex = (pictureIndex + 1) % buttons.Count;
-        //    highlight.SetActive(false);
-        //    keyHighlight.SetActive(true);   
-        //    buttons[pictureIndex].Select();
-        //    keyHighlight.transform.position = buttons[pictureIndex].transform.position;
-          
-        //}
+                int nextIndex = GameData.gameData.currentIndex;
+                nextIndex = (nextIndex + 1) % instructionButtons.Count;
+                GameData.gameData.currentIndex = nextIndex;
+                instructionButtons[GameData.gameData.currentIndex].Select();
+            }
+        }
     }
 
     public void HoverOnImage(int picture)

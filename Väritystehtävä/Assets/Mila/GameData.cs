@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameData : MonoBehaviour
@@ -11,6 +9,8 @@ public class GameData : MonoBehaviour
 
     public bool skip;
     public bool IsOnMobile;
+    public bool instructions;
+    public int currentIndex;
 
     public static GameData gameData;
 
