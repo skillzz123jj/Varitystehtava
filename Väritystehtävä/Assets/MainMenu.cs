@@ -8,14 +8,21 @@ public class MainMenu : MonoBehaviour
    // public int currentIndex = 0;
     bool skip;
     [SerializeField] List<Button> buttons = new List<Button>();
+    [SerializeField] List<Button> uiButtons = new List<Button>();
     [SerializeField] List<Button> instructionButtons = new List<Button>();
 
 
     private void Update()
     {
-        if (!GameData.gameData.instructions)
+        if (GameData.gameData.instructions)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            buttons = instructionButtons;
+        }
+        else
+        {
+            buttons = uiButtons;
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
             {
 
                 int nextIndex = GameData.gameData.currentIndex;
@@ -37,18 +44,18 @@ public class MainMenu : MonoBehaviour
                 buttons[GameData.gameData.currentIndex].Select();
             }
 
-        }
-        else
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
+        
+        //else
+        //{
+        //    if (Input.GetKeyDown(KeyCode.Space))
+        //    {
 
-                int nextIndex = GameData.gameData.currentIndex;
-                nextIndex = (nextIndex + 1) % instructionButtons.Count;
-                GameData.gameData.currentIndex = nextIndex;
-                instructionButtons[GameData.gameData.currentIndex].Select();
-            }
-        }
+        //        int nextIndex = GameData.gameData.currentIndex;
+        //        nextIndex = (nextIndex + 1) % instructionButtons.Count;
+        //        GameData.gameData.currentIndex = nextIndex;
+        //        instructionButtons[GameData.gameData.currentIndex].Select();
+        //    }
+        //}
     }
     public void PlayGame()
     {

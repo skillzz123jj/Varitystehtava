@@ -1,13 +1,14 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayInstructions : MonoBehaviour
 {
     [SerializeField] AudioSource audioSource;
     [SerializeField] TMP_Text buttonText;
-
-    bool isAudioPlaying = false;
+    [SerializeField] GameObject startAudioButton;
+    [SerializeField] GameObject stopAudioButton;
 
     public void Play()
     {
@@ -15,27 +16,53 @@ public class PlayInstructions : MonoBehaviour
         {
             return;
         }
-            if (!isAudioPlaying)
-            {
-                StartCoroutine(PlayAudio());
-            }
-            else
-            {
-                StopCoroutine(PlayAudio());
-                audioSource.Stop();
-                isAudioPlaying = false;
-                buttonText.text = "Kuuntele";
-            }
-        
+           
+         StartCoroutine(PlayAudio());
+                   
     }
 
+    public void StopAudio()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            return;
+        }
+
+        startAudioButton.SetActive(true);
+        stopAudioButton.SetActive(false);
+        Button audioOff = stopAudioButton.GetComponent<Button>();
+        audioOff.interactable = false;
+        Button button = startAudioButton.GetComponent<Button>();
+        if (GameData.gameData.instructions)
+        {
+            button.Select();
+        }
+        button.interactable = true;
+        
+
+        audioSource.Stop();
+    }
     public IEnumerator PlayAudio()
     {
-        isAudioPlaying = true;
+       
         audioSource.Play();
-        buttonText.text = "Pysäytä";
+        startAudioButton.SetActive(false);
+        stopAudioButton.SetActive(true);
+        Button button = startAudioButton.GetComponent<Button>();
+        button.interactable = false;
+        Button audioOff = stopAudioButton.GetComponent<Button>();
+        audioOff.Select();
+        audioOff.interactable = true;
+        GameData.gameData.skip = true;
+        Debug.Log(audioSource.clip.length);
         yield return new WaitForSeconds(audioSource.clip.length);
-        buttonText.text = "Kuuntele";
-        isAudioPlaying = false;
+        startAudioButton.SetActive(true);
+        stopAudioButton.SetActive(false);
+        button = startAudioButton.GetComponent<Button>();
+        button.Select();
+        button.interactable = true;
+        audioOff = stopAudioButton.GetComponent<Button>();
+        audioOff.interactable = false;
+
     }
 }

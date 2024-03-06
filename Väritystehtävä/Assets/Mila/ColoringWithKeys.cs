@@ -57,7 +57,20 @@ public class ColoringWithKeys : MonoBehaviour
                     {
 
                         int nextIndex = GameData.gameData.currentIndex;
-                        nextIndex = (nextIndex + 1) % instructionButtons.Count;
+
+                        do
+                        {
+                            nextIndex = (nextIndex + 1) % instructionButtons.Count;
+                            if (GameData.gameData.skip)
+                            {
+
+                                nextIndex = (nextIndex + 1) % instructionButtons.Count;
+                                GameData.gameData.skip = false;
+                            }
+
+                        }
+                        while (!instructionButtons[nextIndex].interactable);
+
                         GameData.gameData.currentIndex = nextIndex;
                         instructionButtons[GameData.gameData.currentIndex].Select();
                     }

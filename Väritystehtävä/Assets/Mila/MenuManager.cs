@@ -66,13 +66,17 @@ public class MenuManager : MonoBehaviour
         {
             coloringWithKeys.enabled = true;
         }
+        GameData.gameData.instructions = false;
         if (Input.GetKey(KeyCode.Return))
         {
             instructionButton.Select();
 
         }
+        else
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+        }
         GameData.gameData.currentIndex = previousIndex;
-        GameData.gameData.instructions = false;
         instructions.SetActive(false);
 
     }
