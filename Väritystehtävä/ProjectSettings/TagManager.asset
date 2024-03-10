@@ -9,6 +9,8 @@ TagManager:
   - UI
   - Empty
   - Picture
+  - Interactable
+  - Button
   layers:
   - Default
   - TransparentFX

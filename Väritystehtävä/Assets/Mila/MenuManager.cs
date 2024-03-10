@@ -17,7 +17,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] GameObject restartText;
     [SerializeField] GameObject instructionText;
     [SerializeField] GameObject instructions;
-
+    [SerializeField] GameObject blur;
     int previousIndex;
 
     public bool skip;
@@ -48,6 +48,7 @@ public class MenuManager : MonoBehaviour
         InstructionTextGoAway();
         instructions.SetActive(true);
         GameData.gameData.currentIndex = 0;
+        blur.GetComponent<Image>().enabled = true;
         if (Input.GetKey(KeyCode.Return))
         {
 
@@ -77,6 +78,7 @@ public class MenuManager : MonoBehaviour
             EventSystem.current.SetSelectedGameObject(null);
         }
         GameData.gameData.currentIndex = previousIndex;
+        blur.GetComponent<Image>().enabled = false;
         instructions.SetActive(false);
 
     }

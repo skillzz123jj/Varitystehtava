@@ -120,6 +120,7 @@ public class Pictures : MonoBehaviour
     }
     public void OnHoverExit()
     {
+        highlight.SetActive(false);
         pictureIndex = -1;
     }
     public void Picture(GameObject image)

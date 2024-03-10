@@ -1591,7 +1591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4979671389024179489, guid: 27455fa96f2b3384ba0d677108f1b6c7, type: 3}
       propertyPath: m_Name
-      value: Ohjeet (2)
+      value: Ohjeet
       objectReference: {fileID: 0}
     - target: {fileID: 4979671389024179489, guid: 27455fa96f2b3384ba0d677108f1b6c7, type: 3}
       propertyPath: m_IsActive

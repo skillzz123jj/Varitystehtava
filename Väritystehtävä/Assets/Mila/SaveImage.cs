@@ -118,12 +118,14 @@ public class SaveImage : MonoBehaviour
         coloringWithKeys.enabled = true;
         coloring.enabled = true;
         coloringWithKeys.savingImage = false;
+        blur.GetComponent<Image>().enabled = false;
         saveImage.Select();
         ButtonStatus(true);
 
 
     }
     public Button defaultButton;
+    [SerializeField] GameObject blur;
     public void TakeScreenshotButton()
     {
 
@@ -133,6 +135,7 @@ public class SaveImage : MonoBehaviour
         }
         coloring.highlight.SetActive(false);
         buttonIndex = 1;
+        blur.GetComponent<Image>().enabled = true;
         coloringWithKeys.savingImage = true;
         ButtonStatus(false);
         StartCoroutine(TakeScreenshot());
