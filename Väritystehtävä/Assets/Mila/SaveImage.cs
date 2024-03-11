@@ -97,7 +97,7 @@ public class SaveImage : MonoBehaviour
             return;
         }
         save.interactable = false;
-        Invoke("DelayedSaveScreenshot", 2f);
+        Invoke("DelayedSaveScreenshot", 2.5f);
     }
 
     void DelayedSaveScreenshot()
@@ -113,13 +113,17 @@ public class SaveImage : MonoBehaviour
             return;
 
         }
+        if (Input.GetKey(KeyCode.Return))
+        {
+            saveImage.Select();
+        }
         Destroy(screenshot);
         saveImageScreen.SetActive(false);
         coloringWithKeys.enabled = true;
         coloring.enabled = true;
         coloringWithKeys.savingImage = false;
         blur.GetComponent<Image>().enabled = false;
-        saveImage.Select();
+       
         ButtonStatus(true);
 
 
@@ -133,8 +137,13 @@ public class SaveImage : MonoBehaviour
         {
             return;
         }
+       // buttonIndex = 1;
+        //if (Input.GetKey(KeyCode.Return))
+        //{
+        //    buttons[buttonIndex].Select();
+        //}
         coloring.highlight.SetActive(false);
-        buttonIndex = 1;
+       
         blur.GetComponent<Image>().enabled = true;
         coloringWithKeys.savingImage = true;
         ButtonStatus(false);
@@ -183,6 +192,7 @@ public class SaveImage : MonoBehaviour
         highLights.SetActive(false);
         paper.SetActive(false);
         uiButtons.SetActive(false);
+        blur.GetComponent<Image>().enabled = false;
 
         RenderTexture rt = new RenderTexture(w, h, 32);
         screenshotCamera.targetTexture = rt;
@@ -219,10 +229,15 @@ public class SaveImage : MonoBehaviour
         highLights.SetActive(true);
         paper.SetActive(true);
         uiButtons.SetActive(true);
-        buttons[buttonIndex].Select();
+       
         saveImageScreen.SetActive(true);
+        blur.GetComponent<Image>().enabled = true;
         buttonIndex = 0;
-        EventSystem.current.SetSelectedGameObject(defaultButton.gameObject);
+        if (Input.GetKey(KeyCode.Return))
+        {
+            buttons[buttonIndex].Select();
+        }
+          //  EventSystem.current.SetSelectedGameObject(defaultButton.gameObject);
     }
 }
 

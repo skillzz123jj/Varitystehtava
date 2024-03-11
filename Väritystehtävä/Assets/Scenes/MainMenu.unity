@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 82152852}
   m_Layer: 5
   m_Name: "Tekij\xE4tLinkki"
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -800,7 +800,7 @@ RectTransform:
   m_GameObject: {fileID: 352493236}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1986214030}
@@ -808,7 +808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -225, y: -258}
+  m_AnchoredPosition: {x: -225, y: -244}
   m_SizeDelta: {x: 374, y: 112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &352493238
@@ -950,6 +950,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 932209856}
+          m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -1130,8 +1142,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -127.270065}
-  m_SizeDelta: {x: 960.8204, y: 425.5801}
+  m_AnchoredPosition: {x: 0, y: -120.271805}
+  m_SizeDelta: {x: 960.8204, y: 411.5836}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &444246448
 MonoBehaviour:
@@ -1840,7 +1852,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &855960830
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1860,7 +1872,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.6564, y: -75.43567}
+  m_AnchoredPosition: {x: -4.6564, y: -30}
   m_SizeDelta: {x: 1197.6266, y: 366.6557}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &855960831
@@ -1989,6 +2001,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &932209856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 932209858}
+  - component: {fileID: 932209857}
+  m_Layer: 0
+  m_Name: Cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &932209857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932209856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0448765f9ebf03448a8b37f9ab120da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCursor: {fileID: 2800000, guid: 6e5568aa9a7141343b5168fb4218cb43, type: 3}
+  hoverCursor: {fileID: 2800000, guid: aabbec79ef37fd641982bbd8e1120df5, type: 3}
+--- !u!4 &932209858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932209856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2928019, y: 2.823879, z: 78.65869}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &966003356
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,6 +3127,7 @@ MonoBehaviour:
   blur: {fileID: 5523749933534826962}
   skip: 0
   coloringWithKeys: {fileID: 0}
+  coloring: {fileID: 0}
 --- !u!1 &1509777349
 GameObject:
   m_ObjectHideFlags: 0
@@ -3152,7 +3211,7 @@ GameObject:
   - component: {fileID: 1644904440}
   m_Layer: 5
   m_Name: SuljeOhjeet
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3442,6 +3501,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1644904442}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+        m_MethodName: SetNativeSize
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4098,7 +4169,7 @@ GameObject:
   - component: {fileID: 2119961810}
   m_Layer: 5
   m_Name: HardButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4112,7 +4183,7 @@ RectTransform:
   m_GameObject: {fileID: 2119961804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1986214030}
@@ -4120,7 +4191,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 204.7, y: -258}
+  m_AnchoredPosition: {x: 204.7, y: -244}
   m_SizeDelta: {x: 374, y: 112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2119961806
@@ -6435,7 +6506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664538310756258017, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_TagString
-      value: UI
+      value: Button
       objectReference: {fileID: 0}
     - target: {fileID: 664538310756258022, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -6575,7 +6646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664538310862248342, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_TagString
-      value: UI
+      value: Button
       objectReference: {fileID: 0}
     - target: {fileID: 664538310978374336, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6599,7 +6670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664538310978374338, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_TagString
-      value: UI
+      value: Button
       objectReference: {fileID: 0}
     - target: {fileID: 664538310978374343, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -6655,7 +6726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664538311360679895, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_TagString
-      value: UI
+      value: Button
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}

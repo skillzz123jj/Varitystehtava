@@ -144,7 +144,7 @@ public class ColoringWithKeys : MonoBehaviour
 
         if (currentColor != null)
         {
-            if (currentColor.CompareTag("UI"))
+            if (currentColor.CompareTag("Button"))
             {
                 Button inactiveButton = currentColor.GetComponent<Button>();
 

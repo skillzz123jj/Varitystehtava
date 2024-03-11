@@ -6753,7 +6753,7 @@ GameObject:
   - component: {fileID: 172218716}
   m_Layer: 5
   m_Name: TallennaNappi
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20759,7 +20759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664538310424383469, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_TagString
-      value: UI
+      value: Button
       objectReference: {fileID: 0}
     - target: {fileID: 664538310728518526, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_Pivot.x
@@ -20851,7 +20851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664538310756258017, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_TagString
-      value: UI
+      value: Button
       objectReference: {fileID: 0}
     - target: {fileID: 664538310756258022, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -20875,7 +20875,7 @@ PrefabInstance:
       objectReference: {fileID: 1915506549}
     - target: {fileID: 664538310862248331, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 664538310862248331, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
@@ -20919,11 +20919,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664538310862248340, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 664538310862248340, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 664538310862248340, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
@@ -20951,7 +20951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664538310862248340, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
+      value: CloseCredits
       objectReference: {fileID: 0}
     - target: {fileID: 664538310862248340, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -20959,7 +20959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664538310862248340, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
+      value: Credits, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 664538310862248340, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -20991,7 +20991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664538310862248342, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_TagString
-      value: UI
+      value: Button
       objectReference: {fileID: 0}
     - target: {fileID: 664538310978374336, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -21015,7 +21015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664538310978374338, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_TagString
-      value: UI
+      value: Button
       objectReference: {fileID: 0}
     - target: {fileID: 664538310978374343, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -21071,7 +21071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 664538311360679895, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_TagString
-      value: UI
+      value: Button
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
@@ -29116,7 +29116,7 @@ GameObject:
   - component: {fileID: 555629521}
   m_Layer: 5
   m_Name: Kuuntele
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30912,7 +30912,7 @@ GameObject:
   - component: {fileID: 569674442}
   m_Layer: 5
   m_Name: UusiKuva
-  m_TagString: UI
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31765,7 +31765,7 @@ GameObject:
   - component: {fileID: 591264580}
   m_Layer: 5
   m_Name: SuljeNappi
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33057,7 +33057,7 @@ GameObject:
   - component: {fileID: 606463329}
   m_Layer: 5
   m_Name: TallennaKuva
-  m_TagString: UI
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44297,7 +44297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &835065978
 RectTransform:
   m_ObjectHideFlags: 0
@@ -69239,7 +69239,7 @@ GameObject:
   - component: {fileID: 1267763818}
   m_Layer: 5
   m_Name: TallennaKuva
-  m_TagString: UI
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79970,7 +79970,7 @@ GameObject:
   - component: {fileID: 1500367030}
   m_Layer: 5
   m_Name: SuljeOhjeet
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80095,18 +80095,6 @@ MonoBehaviour:
         - m_Target: {fileID: 1863792719}
           m_TargetAssemblyTypeName: PlayInstructions, Assembly-CSharp
           m_MethodName: StopAudio
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Credits, Assembly-CSharp
-          m_MethodName: CloseCredits
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -80294,13 +80282,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Credits, Assembly-CSharp
-        m_MethodName: CloseCredits
-        m_Mode: 1
+      - m_Target: {fileID: 1500367031}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+        m_MethodName: set_sprite
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 21300000, guid: 26e06a60e444df74c8a3e52a42cf57ce, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -82077,7 +82065,7 @@ GameObject:
   - component: {fileID: 1562627151}
   m_Layer: 5
   m_Name: UusiKuva
-  m_TagString: UI
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82481,7 +82469,7 @@ GameObject:
   - component: {fileID: 1563930704}
   m_Layer: 5
   m_Name: TakaisinAlkuun
-  m_TagString: UI
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94298,7 +94286,7 @@ GameObject:
   - component: {fileID: 1820441106}
   m_Layer: 5
   m_Name: TakaisinAlkuun
-  m_TagString: UI
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99759,7 +99747,8 @@ MonoBehaviour:
   instructions: {fileID: 1863792718}
   blur: {fileID: 1915506547}
   skip: 0
-  coloringWithKeys: {fileID: 0}
+  coloringWithKeys: {fileID: 1777721761}
+  coloring: {fileID: 1017373287}
 --- !u!114 &1915506550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102432,7 +102421,7 @@ GameObject:
   - component: {fileID: 1996911033}
   m_Layer: 5
   m_Name: "Pys\xE4yt\xE4"
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -23,6 +24,7 @@ public class MenuManager : MonoBehaviour
     public bool skip;
 
     [SerializeField] ColoringWithKeys coloringWithKeys;
+    [SerializeField] Coloring coloring;
 
     public static MenuManager menuManager;
 
@@ -39,21 +41,23 @@ public class MenuManager : MonoBehaviour
         {
             return;
         }
-        if (coloringWithKeys != null)
+        if (coloring != null)
         {
-            coloringWithKeys.enabled = false;
+         
+            coloring.enabled = false;
         }
         previousIndex = GameData.gameData.currentIndex;
         GameData.gameData.instructions = true;
         InstructionTextGoAway();
         instructions.SetActive(true);
-        GameData.gameData.currentIndex = 0;
-        blur.GetComponent<Image>().enabled = true;
         if (Input.GetKey(KeyCode.Return))
         {
 
             closeInstructions.Select();
         }
+        GameData.gameData.currentIndex = 0;
+        blur.GetComponent<Image>().enabled = true;
+        
 
     }
     public void CloseInstructions()
@@ -63,9 +67,10 @@ public class MenuManager : MonoBehaviour
             return;
         }
 
-        if (coloringWithKeys != null)
+        if (coloring != null)
         {
-            coloringWithKeys.enabled = true;
+         
+            coloring.enabled = true;
         }
         GameData.gameData.instructions = false;
         if (Input.GetKey(KeyCode.Return))
@@ -82,6 +87,7 @@ public class MenuManager : MonoBehaviour
         instructions.SetActive(false);
 
     }
+
     public void reloadGame(int scene)
     {
 
