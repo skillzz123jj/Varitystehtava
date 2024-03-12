@@ -20,7 +20,16 @@ public class PlayInstructions : MonoBehaviour
          StartCoroutine(PlayAudio());
                    
     }
+    public void ActivateButtons()
+    {
 
+        startAudioButton.SetActive(true);
+        stopAudioButton.SetActive(false);
+        Button audioOff = stopAudioButton.GetComponent<Button>();
+        audioOff.interactable = false;
+        Button button = startAudioButton.GetComponent<Button>();
+        button.interactable = true;
+    }
     public void StopAudio()
     {
         if (Input.GetKeyDown(KeyCode.Space))

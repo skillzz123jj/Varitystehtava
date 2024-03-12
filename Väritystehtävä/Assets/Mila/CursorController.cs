@@ -49,7 +49,7 @@ public class CursorController : MonoBehaviour
     {
         PointerEventData eventData = new PointerEventData(EventSystem.current);
         eventData.position = Input.mousePosition;
-        List<RaycastResult> results = new List<RaycastResult>(); // Create a list to store raycast results
+        List<RaycastResult> results = new List<RaycastResult>(); 
         EventSystem.current.RaycastAll(eventData, results);
 
         foreach (RaycastResult result in results)

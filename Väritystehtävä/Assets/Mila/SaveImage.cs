@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -163,7 +165,7 @@ public class SaveImage : MonoBehaviour
     {
         byte[] compressedBytes = screenshotTexture.EncodeToPNG();
 
-        // Convert the byte array to a base64-encoded string
+        //// Convert the byte array to a base64-encoded string
         string base64String = System.Convert.ToBase64String(compressedBytes);
 
         string screenshotName = System.DateTime.Now.ToString("dd.MM.yyyy klo HH.mm");
@@ -180,13 +182,16 @@ public class SaveImage : MonoBehaviour
 
         //string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         //string filename = "SS-" + DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss") + ".png";
-        //File.WriteAllBytes(Application.dataPath + filename, test.EncodeToPNG());
+        //File.WriteAllBytes(Application.dataPath + filename, screenshotTexture.EncodeToPNG());
     }
 
     Texture2D CreateScreenshot()
     {
-        int w = screenshotCamera.pixelWidth * UpScale;
-        int h = screenshotCamera.pixelHeight * UpScale;
+      //  int w = screenshotCamera.pixelWidth * UpScale;
+    //    int h = screenshotCamera.pixelHeight * UpScale;
+        int w = Screen.width / 2;
+        int h = Screen.height / 2;
+
         background.SetActive(false);
         colors.SetActive(false);
         highLights.SetActive(false);

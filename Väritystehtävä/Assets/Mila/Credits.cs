@@ -7,7 +7,7 @@ public class Credits : MonoBehaviour
 {
     [SerializeField] TMP_Text text;
     [SerializeField] GameObject credits;
-    bool active;
+  
     // Start is called before the first frame update
     void Start()
     {

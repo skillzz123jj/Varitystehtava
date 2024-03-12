@@ -29116,7 +29116,7 @@ GameObject:
   - component: {fileID: 555629521}
   m_Layer: 5
   m_Name: Kuuntele
-  m_TagString: UI
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79970,7 +79970,7 @@ GameObject:
   - component: {fileID: 1500367030}
   m_Layer: 5
   m_Name: SuljeOhjeet
-  m_TagString: UI
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102421,7 +102421,7 @@ GameObject:
   - component: {fileID: 1996911033}
   m_Layer: 5
   m_Name: "Pys\xE4yt\xE4"
-  m_TagString: UI
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
