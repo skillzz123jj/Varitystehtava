@@ -74,7 +74,7 @@ public class SaveImage : MonoBehaviour
     {
         if (coloringWithKeys.savingImage)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
             {
                 buttonIndex = (buttonIndex + 1) % buttons.Count;
 
@@ -94,7 +94,7 @@ public class SaveImage : MonoBehaviour
     }
     public void SaveScreenshotButton()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }
@@ -110,7 +110,7 @@ public class SaveImage : MonoBehaviour
 
     public void CloseScreenshotSaving()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
 
@@ -135,7 +135,7 @@ public class SaveImage : MonoBehaviour
     public void TakeScreenshotButton()
     {
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }

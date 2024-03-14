@@ -27,7 +27,7 @@ public class Coloring : MonoBehaviour
 
     public static Coloring coloring;
 
-
+  
     private void Start()
     {
         if (GameData.gameData.hard)
@@ -189,7 +189,7 @@ public class Coloring : MonoBehaviour
     }
     public void NewPicture(int scene)
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }

@@ -51,7 +51,7 @@ public class Pictures : MonoBehaviour
     {
         if (!GameData.gameData.instructions)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
             {
 
                 int nextIndex = currentIndex;
@@ -84,7 +84,7 @@ public class Pictures : MonoBehaviour
         }
         else
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
             {
 
                 int nextIndex = GameData.gameData.currentIndex;
@@ -125,7 +125,7 @@ public class Pictures : MonoBehaviour
     }
     public void Picture(GameObject image)
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }
@@ -133,7 +133,7 @@ public class Pictures : MonoBehaviour
     }
     public void ChangeScene(int scene)
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }
@@ -161,7 +161,7 @@ public class Pictures : MonoBehaviour
     }
     public void NewPicture(int scene)
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }

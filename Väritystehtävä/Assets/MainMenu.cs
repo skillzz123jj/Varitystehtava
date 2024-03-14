@@ -11,9 +11,13 @@ public class MainMenu : MonoBehaviour
     [SerializeField] List<Button> uiButtons = new List<Button>();
     [SerializeField] List<Button> instructionButtons = new List<Button>();
 
-
+    private void Start()
+    {
+        GameData.gameData.currentIndex = -1;
+    }
     private void Update()
     {
+        
         if (GameData.gameData.instructions)
         {
             buttons = instructionButtons;
@@ -22,7 +26,7 @@ public class MainMenu : MonoBehaviour
         {
             buttons = uiButtons;
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
             {
 
                 int nextIndex = GameData.gameData.currentIndex;

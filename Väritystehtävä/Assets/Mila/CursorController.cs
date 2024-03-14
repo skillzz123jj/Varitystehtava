@@ -7,6 +7,7 @@ public class CursorController : MonoBehaviour
 {
     public Texture2D defaultCursor;
     public Texture2D hoverCursor;
+    [SerializeField] Vector2 hotspot = new Vector2(0, 31);
 
     public static CursorController cursor;
 
@@ -29,12 +30,12 @@ public class CursorController : MonoBehaviour
 
     public void ChangeCursor(Texture2D cursorType)
     {
-        Cursor.SetCursor(cursorType, Vector2.zero, CursorMode.Auto);
+        Cursor.SetCursor(cursorType, hotspot, CursorMode.Auto);
     }
 
     void Update()
     {
-        if (IsPointerOverSpecificUIElement())
+        if (IsPointerOverSpecificUIElement() || CheckForClickableObjects())
         {
             ChangeCursor(hoverCursor);
         }
@@ -47,15 +48,20 @@ public class CursorController : MonoBehaviour
 
     bool IsPointerOverSpecificUIElement()
     {
+        // Create a pointer event data
         PointerEventData eventData = new PointerEventData(EventSystem.current);
         eventData.position = Input.mousePosition;
-        List<RaycastResult> results = new List<RaycastResult>(); 
+
+        // Perform raycast
+        List<RaycastResult> results = new List<RaycastResult>();
         EventSystem.current.RaycastAll(eventData, results);
 
         foreach (RaycastResult result in results)
         {
             GameObject hitObject = result.gameObject;
-            if (hitObject.CompareTag("Button") || hitObject.transform.parent != null && hitObject.transform.parent.CompareTag("Button"))
+
+            // Check if the hit object has the "Button" or "Color" tag
+            if (hitObject.CompareTag("Button") || hitObject.CompareTag("Picture"))
             {
                 return true;
             }
@@ -63,4 +69,23 @@ public class CursorController : MonoBehaviour
 
         return false;
     }
+
+    bool CheckForClickableObjects()
+    {
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero);
+
+        if (hit)
+        {
+           
+            if (hit.collider.gameObject.CompareTag("Color") || hit.collider.gameObject.CompareTag("ColoringArea"))
+            {
+                return true;
+            }
+        }
+       
+        return false;
+    }
+
 }

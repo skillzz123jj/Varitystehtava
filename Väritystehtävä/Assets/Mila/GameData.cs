@@ -35,16 +35,5 @@ public class GameData : MonoBehaviour
         {
             IsOnMobile = false;
         }
-
-   
-
-        //if (audioMuted)
-        //{
-        //    MenuManager.menuManager.MuteAudio();
-        //}
-        //else
-        //{
-        //    MenuManager.menuManager.Audio();
-        //}
     }
 }

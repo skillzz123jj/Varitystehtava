@@ -37,7 +37,7 @@ public class MenuManager : MonoBehaviour
     public void DisplayInstructions()
     {
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }
@@ -62,7 +62,7 @@ public class MenuManager : MonoBehaviour
     }
     public void CloseInstructions()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }
@@ -92,7 +92,7 @@ public class MenuManager : MonoBehaviour
     {
 
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }
@@ -102,7 +102,7 @@ public class MenuManager : MonoBehaviour
     public void QuitGame()
     {
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }
@@ -112,7 +112,7 @@ public class MenuManager : MonoBehaviour
     public void MuteAudio()
     {
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }
@@ -131,7 +131,7 @@ public class MenuManager : MonoBehaviour
     public void Audio()
     {
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }
@@ -168,7 +168,7 @@ public class MenuManager : MonoBehaviour
             muteAudioAsDefault.interactable = false;
             audioAsDefault.interactable = true;
 
-        }
+        } 
     }
     public void ExitGameText()
     {

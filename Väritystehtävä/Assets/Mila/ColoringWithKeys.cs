@@ -13,7 +13,7 @@ public class ColoringWithKeys : MonoBehaviour
 
     GameObject currentColor;
     GameObject currentArea;
-
+    
     Color chosenColorValue;
 
     [SerializeField] public GameObject highlightKeys;
@@ -53,7 +53,7 @@ public class ColoringWithKeys : MonoBehaviour
             {
                 if (GameData.gameData.instructions)
                 {
-                    if (Input.GetKeyDown(KeyCode.Space))
+                    if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
                     {
 
                         int nextIndex = GameData.gameData.currentIndex;
@@ -77,7 +77,7 @@ public class ColoringWithKeys : MonoBehaviour
                 }
                 else
                 {
-                    if (Input.GetKeyDown(KeyCode.Space))
+                    if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
                     {
                         highlightKeys.SetActive(true);
                         ChangeColor();
@@ -106,7 +106,7 @@ public class ColoringWithKeys : MonoBehaviour
             {
                 
                 {
-                    if (Input.GetKeyDown(KeyCode.Space))
+                    if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
                     {
                         ChangeColoringArea();
                     }

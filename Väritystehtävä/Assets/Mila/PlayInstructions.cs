@@ -12,7 +12,7 @@ public class PlayInstructions : MonoBehaviour
 
     public void Play()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }
@@ -32,7 +32,7 @@ public class PlayInstructions : MonoBehaviour
     }
     public void StopAudio()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
         }
