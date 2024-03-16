@@ -1,51 +1,65 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
-using UnityEngine.Playables;
+using UnityEngine.UI;
+
 
 public class CursorController : MonoBehaviour
 {
     public Texture2D defaultCursor;
     public Texture2D hoverCursor;
-    [SerializeField] Vector2 hotspot = new Vector2(0, 31);
+    bool hovering;
+    [SerializeField] Vector2 hotspotDefault = new Vector2(8, 5);
+    [SerializeField] Vector2 hotspotHover = new Vector2(10, 6);
+   
+
 
     public static CursorController cursor;
 
-    void Start()
-    {
-        // Set the default cursor
-        ChangeCursor(defaultCursor);
+    //void Start()
+    //{
+    //    // Set the default cursor
+    //    ChangeCursor(defaultCursor, hotspotDefault);
 
-        if (cursor == null)
-        {
-            DontDestroyOnLoad(gameObject);
-            cursor = this;
-        }
-        else
-        {
+    //    if (cursor == null)
+    //    {
+    //        DontDestroyOnLoad(gameObject);
+    //        cursor = this;
+    //    }
+    //    else
+    //    {
 
-            Destroy(gameObject);
-        }
-    }
+    //        Destroy(gameObject);
+    //    }
+    //}
 
-    public void ChangeCursor(Texture2D cursorType)
+    public void ChangeCursor(Texture2D cursorType, Vector2 hotspot)
     {
         Cursor.SetCursor(cursorType, hotspot, CursorMode.Auto);
-    }
+    } //x8 y5  x10 y6
 
     void Update()
     {
-        if (IsPointerOverSpecificUIElement() || CheckForClickableObjects())
+        if (hovering || CheckForClickableObjects())
         {
-            ChangeCursor(hoverCursor);
+            ChangeCursor(hoverCursor, hotspotHover);
         }
         else
         {
-            ChangeCursor(defaultCursor);
+            ChangeCursor(defaultCursor, hotspotDefault);
      
         }
-    }
 
+      
+    }
+    public void Hovering()
+    {
+        hovering = true;
+    }
+    public void ExitHovering()
+    {
+        hovering = false;
+    }
     bool IsPointerOverSpecificUIElement()
     {
         // Create a pointer event data
@@ -58,13 +72,18 @@ public class CursorController : MonoBehaviour
 
         foreach (RaycastResult result in results)
         {
-            GameObject hitObject = result.gameObject;
 
-            // Check if the hit object has the "Button" or "Color" tag
-            if (hitObject.CompareTag("Button") || hitObject.CompareTag("Picture"))
+            GameObject hitObject = result.gameObject;
+            if (!hitObject.CompareTag("Interactable"))
             {
-                return true;
+                // Check if the hit object has the "Button" or "Color" tag
+                if (hitObject.CompareTag("Button") || hitObject.CompareTag("Picture"))
+                {
+                        return true;
+                    
+                }
             }
+         
         }
 
         return false;
@@ -78,10 +97,14 @@ public class CursorController : MonoBehaviour
 
         if (hit)
         {
-           
-            if (hit.collider.gameObject.CompareTag("Color") || hit.collider.gameObject.CompareTag("ColoringArea"))
+            if (!GameData.gameData.instructions && !GameData.gameData.savingAnImage)
             {
-                return true;
+
+
+                if (hit.collider.gameObject.CompareTag("Color") || hit.collider.gameObject.CompareTag("ColoringArea"))
+                {
+                    return true;
+                }
             }
         }
        

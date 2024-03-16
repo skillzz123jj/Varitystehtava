@@ -63,7 +63,6 @@ public class PlayInstructions : MonoBehaviour
         audioOff.Select();
         audioOff.interactable = true;
         GameData.gameData.skip = true;
-        Debug.Log(audioSource.clip.length);
         yield return new WaitForSeconds(audioSource.clip.length);
         startAudioButton.SetActive(true);
         stopAudioButton.SetActive(false);

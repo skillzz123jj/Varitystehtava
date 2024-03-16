@@ -6,9 +6,6 @@ using UnityEngine.UI;
 public class Pictures : MonoBehaviour
 {
     [SerializeField] GameObject highlight;
-    [SerializeField] GameObject keyHighlight;
-    [SerializeField] GameObject easyKeyHighlight;
-    [SerializeField] GameObject hardKeyHighlight;
     [SerializeField] GameObject easyHighlight;
     [SerializeField] GameObject hardHighlight;
     [SerializeField] GameObject easyImages;
@@ -18,34 +15,32 @@ public class Pictures : MonoBehaviour
     [SerializeField] List<Button> uiButtons = new List<Button>();
     [SerializeField] List<Button> instructionButtons = new List<Button>();
 
-    int pictureIndex = -1;
-
-
     private int currentIndex;
 
     private void Start()
     {
+        currentIndex = 0;
         GameData.gameData.currentIndex = 0;
+ 
         if (GameData.gameData.easy)
         {
 
             easyImages.SetActive(true);
             FindAndAddButtons(easyImages.transform);
-            easyHighlight.SetActive(true);
             highlight = easyHighlight;
-            keyHighlight = easyKeyHighlight;
-
+            highlight.SetActive(true);
+      
         }
         else if (GameData.gameData.hard)
         {
 
             hardImages.SetActive(true);
             FindAndAddButtons(hardImages.transform);
-            hardHighlight.SetActive(true);
             highlight = hardHighlight;
-            keyHighlight = hardKeyHighlight;
+            highlight.SetActive(true);
 
         }
+       
     }
     private void Update()
     {
@@ -59,10 +54,9 @@ public class Pictures : MonoBehaviour
                 do
                 {
                     nextIndex = (nextIndex + 1) % buttons.Count;
-                    if (buttons[nextIndex].gameObject.CompareTag("UI"))
+                    if (buttons[nextIndex].gameObject.CompareTag("Button"))
                     {
                         highlight.SetActive(false);
-
                     }
                     else
                     {
@@ -110,18 +104,16 @@ public class Pictures : MonoBehaviour
 
     public void HoverOnImage(int picture)
     {
-
+      
         buttons[picture].Select();
         highlight.SetActive(true);
-        keyHighlight.SetActive(false);
         highlight.transform.position = buttons[picture].transform.position;
-
 
     }
     public void OnHoverExit()
     {
-        highlight.SetActive(false);
-        pictureIndex = -1;
+        currentIndex = -1;
+        highlight.SetActive(false); 
     }
     public void Picture(GameObject image)
     {
@@ -140,7 +132,7 @@ public class Pictures : MonoBehaviour
         SceneManager.LoadScene(scene);
 
     }
-    int amountOfPictures;
+ 
     void FindAndAddButtons(Transform parentTransform)
     {
         // Iterate through all immediate children of the parentTransform
@@ -152,7 +144,6 @@ public class Pictures : MonoBehaviour
             if (button != null)
             {
                 // Add the button to the List<Button>
-                amountOfPictures++;
                 buttons.Add(button);
             }
         }

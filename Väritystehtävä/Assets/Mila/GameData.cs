@@ -8,9 +8,11 @@ public class GameData : MonoBehaviour
     public bool audioMuted;
 
     public bool skip;
+    public bool savingAnImage;
     public bool IsOnMobile;
     public bool instructions;
     public int currentIndex;
+    public bool finnish;
 
     public static GameData gameData;
 

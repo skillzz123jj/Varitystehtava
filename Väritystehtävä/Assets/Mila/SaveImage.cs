@@ -124,6 +124,7 @@ public class SaveImage : MonoBehaviour
         coloringWithKeys.enabled = true;
         coloring.enabled = true;
         coloringWithKeys.savingImage = false;
+        GameData.gameData.savingAnImage = false;
         blur.GetComponent<Image>().enabled = false;
        
         ButtonStatus(true);
@@ -139,15 +140,12 @@ public class SaveImage : MonoBehaviour
         {
             return;
         }
-       // buttonIndex = 1;
-        //if (Input.GetKey(KeyCode.Return))
-        //{
-        //    buttons[buttonIndex].Select();
-        //}
+ 
         coloring.highlight.SetActive(false);
        
         blur.GetComponent<Image>().enabled = true;
         coloringWithKeys.savingImage = true;
+        GameData.gameData.savingAnImage = true;
         ButtonStatus(false);
         StartCoroutine(TakeScreenshot());
 
