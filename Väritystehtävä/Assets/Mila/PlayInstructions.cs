@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class PlayInstructions : MonoBehaviour
 {
-    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioSource finnishAudio;
+    [SerializeField] AudioSource swedishAudio;
     [SerializeField] TMP_Text buttonText;
     [SerializeField] GameObject startAudioButton;
     [SerializeField] GameObject stopAudioButton;
@@ -47,14 +48,19 @@ public class PlayInstructions : MonoBehaviour
             button.Select();
         }
         button.interactable = true;
-        
 
-        audioSource.Stop();
+        if (GameData.gameData.finnish)
+        {
+            finnishAudio.Stop();
+        }
+        else
+        {
+            swedishAudio.Stop();
+        }
     }
     public IEnumerator PlayAudio()
     {
        
-        audioSource.Play();
         startAudioButton.SetActive(false);
         stopAudioButton.SetActive(true);
         Button button = startAudioButton.GetComponent<Button>();
@@ -63,7 +69,17 @@ public class PlayInstructions : MonoBehaviour
         audioOff.Select();
         audioOff.interactable = true;
         GameData.gameData.skip = true;
-        yield return new WaitForSeconds(audioSource.clip.length);
+        if (GameData.gameData.finnish)
+        {
+            finnishAudio.Play();
+            yield return new WaitForSeconds(finnishAudio.clip.length);
+        }
+        else
+        {
+            swedishAudio.Play();
+            yield return new WaitForSeconds(swedishAudio.clip.length);
+
+        }
         startAudioButton.SetActive(true);
         stopAudioButton.SetActive(false);
         button = startAudioButton.GetComponent<Button>();
