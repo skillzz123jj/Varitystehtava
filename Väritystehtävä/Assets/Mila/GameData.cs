@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class GameData : MonoBehaviour
 {
     public string currentPicture;
@@ -12,10 +11,10 @@ public class GameData : MonoBehaviour
     public bool IsOnMobile;
     public bool instructions;
     public int currentIndex;
-    public bool finnish;
 
     public static GameData gameData;
 
+    //Stores game data across scenes
     void Start()
     {
         if (gameData == null)

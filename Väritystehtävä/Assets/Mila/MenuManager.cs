@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -28,12 +27,7 @@ public class MenuManager : MonoBehaviour
 
     public static MenuManager menuManager;
 
-
     //All of these handle the UI buttons on the top right corner
-    private void Start()
-    {
-
-    }
     public void DisplayInstructions()
     {
 
@@ -78,10 +72,6 @@ public class MenuManager : MonoBehaviour
             instructionButton.Select();
 
         }
-        else
-        {
-            EventSystem.current.SetSelectedGameObject(null);
-        }
         GameData.gameData.currentIndex = previousIndex;
         blur.GetComponent<Image>().enabled = false;
         instructions.SetActive(false);
@@ -90,8 +80,6 @@ public class MenuManager : MonoBehaviour
 
     public void reloadGame(int scene)
     {
-
-
         if (Input.GetKey(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
         {
             return;
@@ -125,7 +113,6 @@ public class MenuManager : MonoBehaviour
         muteAudioText.SetActive(false);
         EventSystem.current.SetSelectedGameObject(muteAudioAsDefault.gameObject);
 
-
     }
 
     public void Audio()
@@ -144,11 +131,10 @@ public class MenuManager : MonoBehaviour
         audioText.SetActive(false);
         EventSystem.current.SetSelectedGameObject(audioAsDefault.gameObject);
 
-
     }
+
     private void Update()
     {
-
         if (GameData.gameData.audioMuted)
         {
             AudioListener.volume = 0f;

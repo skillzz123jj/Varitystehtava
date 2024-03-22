@@ -23,6 +23,7 @@ public class ManagePictures : MonoBehaviour
     {
         string chosenImage = GameData.gameData.currentPicture;
         FindImage(chosenImage);
+        //Changes layout to fit mobile 
         if (GameData.gameData.easy)
         {
             easycoloring.SetActive(true);
@@ -61,10 +62,7 @@ public class ManagePictures : MonoBehaviour
                 uiButtonsMobile.SetActive(true);
                 uiButtons.SetActive(false);
             }
-
         }
-
-
     }
 
     //Finds the chosen image's coloring areas so they can be colored with keys
@@ -78,8 +76,6 @@ public class ManagePictures : MonoBehaviour
             {
                 coloring.coloringAreas.Add(area.gameObject);
             }
-
         }
-
     }
 }

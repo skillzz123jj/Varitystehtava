@@ -8,12 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
-    path: Assets/Scenes/CategoryScene.unity
-    guid: 0a12c1e6eff473a4aa94951169a59513
-  - enabled: 0
-    path: Assets/Mila/MilanScene.unity
-    guid: b9a3dd9859ca4254495648fd0c3aec56
   - enabled: 1
     path: Assets/Scenes/PictureSelection.unity
     guid: 1b342f5010e03e4428bf7810025f1d3a

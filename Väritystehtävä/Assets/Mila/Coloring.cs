@@ -26,7 +26,6 @@ public class Coloring : MonoBehaviour
     [SerializeField] AudioSource drawingSound;
 
     public static Coloring coloring;
-
   
     private void Start()
     {

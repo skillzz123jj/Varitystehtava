@@ -1,60 +1,43 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using System.Collections;
-
 
 public class Credits : MonoBehaviour
 {
     [SerializeField] TMP_Text text;
-    string credit = "Tekijät";
     [SerializeField] GameObject credits;
     [SerializeField] Button closeCredits;
-  
-    // Start is called before the first frame update
-    void Start()
-    {
-        StartCoroutine(enumerator());
-    }
+    [SerializeField] Button closeInstructions;
 
-    // Update is called once per frame
     void Update()
     {
-        credit = GameData.gameData.finnish ? "Tekijät" : "Skapare";
         if (credits.activeSelf)
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Tab))
             {
                 closeCredits.onClick.Invoke();
+                GameData.gameData.instructions = false;
             }
-            text.text = $"<b>{credit}</b>";
+           
+            HoverCredits();
         }
-      
+
     }
     public void CloseCredits()
     {
         
-            text.text = $"{credit}";
-        
-        
+        text.text = $"Tekijät";
+       
     }
     public void HoverCredits()
     {
         
-        text.text = $"<b>{credit}</b>";
+        text.text = $"<b>Tekijät</b>";
+    }
+    public void Instructions()
+    {
+        GameData.gameData.instructions = false;
+
     }
 
-    public void ExitCredits()
-    {
-        credit = GameData.gameData.finnish ? "Tekijät" : "Skapare";
-        text.text = $"{credit}";
-    }
-
-    IEnumerator enumerator()
-    {
-        yield return new WaitForEndOfFrame();
-      
-            text.text = $"{credit}";
-        
-    }
 }

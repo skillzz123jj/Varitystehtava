@@ -19,29 +19,25 @@ public class Pictures : MonoBehaviour
 
     private void Start()
     {
-        currentIndex = 0;
+        currentIndex = -1;
         GameData.gameData.currentIndex = 0;
  
         if (GameData.gameData.easy)
         {
-
             easyImages.SetActive(true);
             FindAndAddButtons(easyImages.transform);
             highlight = easyHighlight;
-            highlight.SetActive(true);
       
         }
         else if (GameData.gameData.hard)
         {
-
             hardImages.SetActive(true);
             FindAndAddButtons(hardImages.transform);
             highlight = hardHighlight;
-            highlight.SetActive(true);
-
-        }
-       
+          
+        }  
     }
+
     private void Update()
     {
         if (!GameData.gameData.instructions)
@@ -135,15 +131,15 @@ public class Pictures : MonoBehaviour
  
     void FindAndAddButtons(Transform parentTransform)
     {
-        // Iterate through all immediate children of the parentTransform
+        //Iterate through all immediate children of the parentTransform
         foreach (Transform childTransform in parentTransform)
         {
-            // Attempt to get a Button component from the child
+            //Attempt to get a Button component from the child
             Button button = childTransform.GetComponent<Button>();
 
             if (button != null)
             {
-                // Add the button to the List<Button>
+                //Add the button to the List<Button>
                 buttons.Add(button);
             }
         }

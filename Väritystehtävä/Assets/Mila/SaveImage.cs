@@ -1,11 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
-
 
 public class SaveImage : MonoBehaviour
 {
@@ -25,11 +21,11 @@ public class SaveImage : MonoBehaviour
     [SerializeField] GameObject uiButtons;
     [SerializeField] GameObject uiButtonsMobile;
     [SerializeField] GameObject saveImageScreen;
+    [SerializeField] GameObject blur;
 
     int buttonIndex;
     public int UpScale = 4;
 
-    //bool mobile = false;
     public bool AlphaBackground = true;
 
     public Texture2D screenshot;
@@ -37,6 +33,8 @@ public class SaveImage : MonoBehaviour
 
     [SerializeField] Coloring coloring;
     [SerializeField] ColoringWithKeys coloringWithKeys;
+
+
     void Start()
     {
         if (GameData.gameData.easy)
@@ -55,18 +53,6 @@ public class SaveImage : MonoBehaviour
         {
             uiButtons = uiButtonsMobile;
         }
-
-        //if (Application.platform == RuntimePlatform.WebGLPlayer)
-        //{
-        //    if (Application.isMobilePlatform)
-        //    {
-        //        mobile = true;
-        //    }
-        //    else
-        //    {
-        //        mobile = false;
-        //    }
-        //}
     }
 
 
@@ -131,8 +117,7 @@ public class SaveImage : MonoBehaviour
 
 
     }
-    public Button defaultButton;
-    [SerializeField] GameObject blur;
+ 
     public void TakeScreenshotButton()
     {
 
@@ -157,6 +142,7 @@ public class SaveImage : MonoBehaviour
         {
             button.interactable = interactable;
         }
+      
     }
 
     public void SaveScreenshot(Texture2D screenshotTexture)
@@ -178,15 +164,11 @@ public class SaveImage : MonoBehaviour
                             $"document.body.removeChild(a);";
         Application.ExternalEval(jsCode);
 
-        //string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-        //string filename = "SS-" + DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss") + ".png";
-        //File.WriteAllBytes(Application.dataPath + filename, screenshotTexture.EncodeToPNG());
     }
 
+    //Sets everything in the scene inactive for a transparent background and takes a screenshot
     Texture2D CreateScreenshot()
     {
-      //  int w = screenshotCamera.pixelWidth * UpScale;
-    //    int h = screenshotCamera.pixelHeight * UpScale;
         int w = Screen.width / 2;
         int h = Screen.height / 2;
 
@@ -224,7 +206,6 @@ public class SaveImage : MonoBehaviour
         Texture2D screenshotTexture = CreateScreenshot();
         screenshot = screenshotTexture;
 
-
         coloringWithKeys.enabled = false;
         coloring.enabled = false;
         background.SetActive(true);
@@ -240,101 +221,5 @@ public class SaveImage : MonoBehaviour
         {
             buttons[buttonIndex].Select();
         }
-          //  EventSystem.current.SetSelectedGameObject(defaultButton.gameObject);
     }
 }
-
-
-
-//Texture2D CompressAndDownsampleTexture(Texture2D originalTexture)
-//{
-//    int maxSize = 2048;
-//    //2048
-
-//    // Downsample the texture if it exceeds the maximum size
-//    if (originalTexture.width > maxSize || originalTexture.height > maxSize)
-//    {
-//        int newWidth = Mathf.Min(originalTexture.width, maxSize);
-//        int newHeight = Mathf.Min(originalTexture.height, maxSize);
-
-//        // Create a new downsampled texture without destroying the original one
-//        Texture2D downsampledTexture = new Texture2D(newWidth, newHeight);
-//        for (int x = 0; x < newWidth; x++)
-//        {
-//            for (int y = 0; y < newHeight; y++)
-//            {
-//                downsampledTexture.SetPixel(x, y, originalTexture.GetPixelBilinear((float)x / newWidth, (float)y / newHeight));
-//            }
-//        }
-//        downsampledTexture.Apply();
-
-//        // Compress the downsampled texture before converting to PNG
-//        byte[] compressedBytes = downsampledTexture.EncodeToPNG();
-//        Destroy(downsampledTexture);
-
-//        // Create a new Texture2D to load the compressed bytes
-//        Texture2D compressedTexture = new Texture2D(2, 2);
-//        compressedTexture.LoadImage(compressedBytes);
-
-//        return compressedTexture;
-//    }
-
-//    // If no downsampling is needed, directly compress the original texture
-//    byte[] compressedOriginalBytes = originalTexture.EncodeToPNG();
-//    Texture2D compressedOriginalTexture = new Texture2D(2, 2);
-//    compressedOriginalTexture.LoadImage(compressedOriginalBytes);
-
-//    return compressedOriginalTexture;
-//}
-
-
-//Rect CalculateNonTransparentBounds(Texture2D targetTexture)
-//{
-//    Color[] pixels = targetTexture.GetPixels();
-
-//    int minX = targetTexture.width;
-//    int minY = targetTexture.height;
-//    int maxX = 0;
-//    int maxY = 0;
-
-//    // Iterate through each pixel to find the bounds of non-transparent pixels
-//    for (int x = 0; x < targetTexture.width; x++)
-//    {
-//        for (int y = 0; y < targetTexture.height; y++)
-//        {
-//            if (pixels[y * targetTexture.width + x].a > 0)
-//            {
-//                // Found a non-transparent pixel
-//                minX = Mathf.Min(minX, x);
-//                minY = Mathf.Min(minY, y);
-//                maxX = Mathf.Max(maxX, x);
-//                maxY = Mathf.Max(maxY, y);
-//            }
-//        }
-//    }
-
-//    // Calculate the rect bounds
-//    int width = maxX - minX + 1;
-//    int height = maxY - minY + 1;
-
-//    return new Rect(minX, minY, width, height);
-//}
-
-//  public Texture2D texture; 
-
-//Texture2D croppedTexture;
-//void CropTexture(Texture2D targetTexture)
-//{
-//    Color[] pixels = targetTexture.GetPixels();
-//    Rect nonTransparentRect = CalculateNonTransparentBounds(targetTexture);
-
-//    // Create a new texture with the non-transparent bounds
-//    croppedTexture = new Texture2D((int)nonTransparentRect.width, (int)nonTransparentRect.height);
-//    croppedTexture.SetPixels(targetTexture.GetPixels((int)nonTransparentRect.x, (int)nonTransparentRect.y, (int)nonTransparentRect.width, (int)nonTransparentRect.height));
-//    croppedTexture.Apply();
-
-//    // Optional: Replace the original texture with the cropped one
-//    // targetTexture = croppedTexture;
-
-//    // You can now use 'croppedTexture' for further processing or rendering
-//}

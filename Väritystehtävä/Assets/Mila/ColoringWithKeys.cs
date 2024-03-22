@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class ColoringWithKeys : MonoBehaviour
 {
     public bool colorWasChosen;
@@ -16,7 +15,7 @@ public class ColoringWithKeys : MonoBehaviour
     
     Color chosenColorValue;
 
-    [SerializeField] public GameObject highlightKeys;
+    public GameObject highlightKeys;
     [SerializeField] GameObject highlightKeysEasy;
     [SerializeField] GameObject highlightKeysHard;
 
