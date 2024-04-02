@@ -26,13 +26,13 @@ public class Credits : MonoBehaviour
     public void CloseCredits()
     {
         
-        text.text = $"Tekijät";
+        text.text = $"Skapare";
        
     }
     public void HoverCredits()
     {
         
-        text.text = $"<b>Tekijät</b>";
+        text.text = $"<b>Skapare</b>";
     }
     public void Instructions()
     {

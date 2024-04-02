@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-   // public int currentIndex = 0;
+ 
     bool skip;
     [SerializeField] List<Button> buttons = new List<Button>();
     [SerializeField] List<Button> uiButtons = new List<Button>();
@@ -48,18 +48,6 @@ public class MainMenu : MonoBehaviour
                 buttons[GameData.gameData.currentIndex].Select();
             }
 
-        
-        //else
-        //{
-        //    if (Input.GetKeyDown(KeyCode.Space))
-        //    {
-
-        //        int nextIndex = GameData.gameData.currentIndex;
-        //        nextIndex = (nextIndex + 1) % instructionButtons.Count;
-        //        GameData.gameData.currentIndex = nextIndex;
-        //        instructionButtons[GameData.gameData.currentIndex].Select();
-        //    }
-        //}
     }
     public void PlayGame()
     {
