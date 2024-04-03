@@ -153,11 +153,10 @@ public class SaveImage : MonoBehaviour
         string base64String = System.Convert.ToBase64String(compressedBytes);
 
         string screenshotName = System.DateTime.Now.ToString("dd.MM.yyyy klo HH.mm");
-        Debug.Log($"piirrustus {screenshotName}.png");
         // Call a JavaScript function to trigger download
         string jsCode = $"var a = document.createElement('a');" +
                             $"a.href = 'data:image/png;base64,{base64String}';" +
-                            $"a.download = 'piirrustus {screenshotName}.png';" +
+                            $"a.download = 'teckning {screenshotName}.png';" +
                             $"a.style.display = 'none';" +
                             $"document.body.appendChild(a);" +
                             $"a.click();" +

@@ -40,10 +40,6 @@ public class PlayInstructions : MonoBehaviour
         Button audioOff = stopAudioButton.GetComponent<Button>();
         audioOff.interactable = false;
         Button button = startAudioButton.GetComponent<Button>();
-        //if (GameData.gameData.instructions)
-        //{
-        //    button.Select();
-        //}
         button.interactable = true;
         instructionAudio.Stop();
     }
