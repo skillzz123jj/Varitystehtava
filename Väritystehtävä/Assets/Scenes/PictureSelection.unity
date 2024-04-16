@@ -12466,7 +12466,15 @@ PrefabInstance:
     - target: {fileID: 664538310983999410, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 84f18750b8127cc4793c132f214a5fc0, type: 3}
+      objectReference: {fileID: 21300000, guid: f1400988f17c13a469608c100dab4cb0, type: 3}
+    - target: {fileID: 664538310983999411, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 677
+      objectReference: {fileID: 0}
+    - target: {fileID: 664538310983999411, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -170.9
+      objectReference: {fileID: 0}
     - target: {fileID: 664538310983999420, guid: e969df3fbc421cb47ae135b5520de2a5, type: 3}
       propertyPath: m_IsActive
       value: 0
