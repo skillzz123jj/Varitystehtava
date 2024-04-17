@@ -95,10 +95,7 @@ public class MenuManager : MonoBehaviour
             return;
         }
 
-        Application.Quit(); 
-    //#if (UNITY_WEBGL)
-    //    Application.OpenURL("about:blank");
-    //#endif
+        Application.ExternalEval("window.close();");
     }
     public void MuteAudio()
     {
